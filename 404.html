@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+
+      html.dark {
+        --c-bg: #22272e;
+      }
+
+      html,
+      body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Yi-Docs</title><meta name="description" content="你好！我是子亿，一名计算机专业在读研究生。这是我的个人博客。">
+    <link rel="preload" href="/yi-doc/assets/style-oEKQ6XZm.css" as="style"><link rel="stylesheet" href="/yi-doc/assets/style-oEKQ6XZm.css">
+    <link rel="modulepreload" href="/yi-doc/assets/app-y9LT_fh6.js"><link rel="modulepreload" href="/yi-doc/assets/404.html-9lQD_BF9.js">
+    <link rel="prefetch" href="/yi-doc/assets/index.html-BwKeQM-E.js" as="script"><link rel="prefetch" href="/yi-doc/assets/get-started.html-C1N0VoF4.js" as="script"><link rel="prefetch" href="/yi-doc/assets/index.html-LZoyl4kx.js" as="script"><link rel="prefetch" href="/yi-doc/assets/index.html-Df6o2Koc.js" as="script"><link rel="prefetch" href="/yi-doc/assets/index.html-BchiXsjI.js" as="script"><link rel="prefetch" href="/yi-doc/assets/style-l0sNRNKZ.js" as="script"><link rel="prefetch" href="/yi-doc/assets/docsearch-l0sNRNKZ.js" as="script"><link rel="prefetch" href="/yi-doc/assets/index-DWGeGWcS.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" data-v-303656ba><main class="page" data-v-303656ba><div class="theme-default-content" data-v-303656ba><h1 data-v-303656ba>404</h1><blockquote data-v-303656ba>How did we get here?</blockquote><a class="route-link" href="/yi-doc/" data-v-303656ba>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/yi-doc/assets/app-y9LT_fh6.js" defer></script>
+  </body>
+</html>
