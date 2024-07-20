@@ -1,5 +1,5 @@
 import comp from "Z:/code3/yi-doc-doc/vuepress-starter/docs/.vuepress/.temp/pages/dev/tool/idea/1-常用快捷键.html.vue"
-const data = JSON.parse("{\"path\":\"/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html\",\"title\":\"IDEA 常用快捷键\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"dev/tool/idea/1-常用快捷键.md\"}")
+const data = JSON.parse("{\"path\":\"/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html\",\"title\":\"IDEA 常用快捷键\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1721491077000,\"contributors\":[{\"name\":\"ZhangZiYi\",\"email\":\"ecustzzy1@163.com\",\"commits\":1}]},\"filePathRelative\":\"dev/tool/idea/1-常用快捷键.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
