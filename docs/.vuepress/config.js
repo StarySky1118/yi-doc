@@ -48,6 +48,18 @@ export default defineUserConfig({
                     path: '/dev/',
                     children: [
                         {
+                            text: '工具',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'IDEA',
+                                    children: [
+                                        '/dev/tool/idea/1-常用快捷键'
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             text: 'Go',
                             collapsible: true,
                             children: [
@@ -55,11 +67,62 @@ export default defineUserConfig({
                                     text: 'Go 基础',
                                     children: [
                                         '/dev/go/go_basic/1-环境安装',
-                                        '/dev/go/go_basic/2-基本结构和基本数据类型'
+                                        '/dev/go/go_basic/2-基本结构和基本数据类型',
+                                        '/dev/go/go_basic/3-控制结构',
+                                        '/dev/go/go_basic/4-函数',
+                                        '/dev/go/go_basic/5-数组与切片',
+                                        '/dev/go/go_basic/6-Map',
+                                        '/dev/go/go_basic/7-结构体与方法',
+                                        '/dev/go/go_basic/8-接口与反射'
+                                    ]
+                                },
+                                {
+                                    text: 'Gin',
+                                    children: [
+                                        '/dev/go/gin/Gin示例程序'
                                     ]
                                 }
                             ]
-                        }
+                        },
+                        {
+                            text: 'Java',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'SpringSecurity',
+                                    children: [
+                                        '/dev/java/spring_security/1-基本原理',
+                                        '/dev/java/spring_security/2-认证接口',
+                                        '/dev/java/spring_security/3-其他资源接口'
+                                    ]
+                                },
+                                {
+                                    text: 'SpringBoot 多环境配置',
+                                    children: [
+                                        '/dev/java/springboot_multi_env/1-单体项目'
+                                    ]
+                                },
+                                {
+                                    text: 'SpringBoot 第三方服务接入',
+                                    children: [
+                                        '/dev/java/third_party_in/1-高德地图接入',
+                                        '/dev/java/third_party_in/2-AWS_S3'
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            text: '中间件',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'TDEngine',
+                                    children: [
+                                        '/dev/middleware/tdengine/1-基本概念'
+                                    ]
+                                }
+                            ]
+                        },
                     ]
                 }
             ],

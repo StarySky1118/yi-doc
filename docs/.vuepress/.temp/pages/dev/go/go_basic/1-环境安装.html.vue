@@ -1,4 +1,4 @@
-<template><div><h1 id="环境安装" tabindex="-1"><a class="header-anchor" href="#环境安装"><span>环境安装</span></a></h1>
+<template><div><h1 id="一、环境安装" tabindex="-1"><a class="header-anchor" href="#一、环境安装"><span>一、环境安装</span></a></h1>
 <p><a href="https://golang.google.cn/dl/" target="_blank" rel="noopener noreferrer">https://golang.google.cn/dl/</a>
 <img src="/images/dev/go/go_basic/go_installer.png" alt="image.png">
 安装会自动将<code v-pre>Go/bin</code>添加到环境变量。</p>

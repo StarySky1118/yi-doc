@@ -1,42 +1,36 @@
-<template><div><h1 id="基本结构和基本数据类型" tabindex="-1"><a class="header-anchor" href="#基本结构和基本数据类型"><span>基本结构和基本数据类型</span></a></h1>
-<h2 id="文件名、关键字与标识符" tabindex="-1"><a class="header-anchor" href="#文件名、关键字与标识符"><span>文件名、关键字与标识符</span></a></h2>
-<p><strong>文件名</strong></p>
-<p>Go 的<strong>源文件均由小写字母组成</strong>，如<code v-pre>scanner.go</code>。如果文件名由多个部分组成，则使用下划线<code v-pre>_</code>对它们进行分隔，如<code v-pre>scanner_test.go</code>。</p>
+<template><div><h1 id="二、基本结构和基本数据类型" tabindex="-1"><a class="header-anchor" href="#二、基本结构和基本数据类型"><span>二、基本结构和基本数据类型</span></a></h1>
+<h2 id="_1、文件名、关键字与标识符" tabindex="-1"><a class="header-anchor" href="#_1、文件名、关键字与标识符"><span>1、文件名、关键字与标识符</span></a></h2>
+<p><strong>文件名</strong>
+Go 的<strong>源文件均由小写字母组成</strong>，如<code v-pre>scanner.go</code>。如果文件名由多个部分组成，则使用下划线<code v-pre>_</code>对它们进行分隔，如<code v-pre>scanner_test.go</code>。</p>
 <p><strong>关键字</strong></p>
-<p>Go 语言有如下的关键字：
-<img src="/images/dev/go/go_basic/go_keywords.png" alt="image.png"></p>
-<p>Go 语句无需<code v-pre>;</code>结尾。</p>
-<h2 id="go-程序的基本结构和要素" tabindex="-1"><a class="header-anchor" href="#go-程序的基本结构和要素"><span>Go 程序的基本结构和要素</span></a></h2>
-<h3 id="包的概念、导入与可见性" tabindex="-1"><a class="header-anchor" href="#包的概念、导入与可见性"><span>包的概念、导入与可见性</span></a></h3>
-<p>每个 Go 文件都属于且仅属于一个包。
-一个包可以由许多以<code v-pre>.go</code>为扩展名的源文件组成，因此文件名和包名一般来说都是不相同的。
+<p><img src="/images/dev/go/go_basic/go_keywords.png" alt="image.png">
+Go 语句无需<code v-pre>;</code>结尾。</p>
+<h2 id="_2、go-程序的基本结构和要素" tabindex="-1"><a class="header-anchor" href="#_2、go-程序的基本结构和要素"><span>2、Go 程序的基本结构和要素</span></a></h2>
+<h3 id="_1-包的概念、导入与可见性" tabindex="-1"><a class="header-anchor" href="#_1-包的概念、导入与可见性"><span>(1) 包的概念、导入与可见性</span></a></h3>
+<p>每个 Go 文件都属于且仅属于一个包。一个包可以由许多以<code v-pre>.go</code>为扩展名的源文件组成，因此文件名和包名一般来说都是不相同的。
 你必须在源文件中非注释的第一行指明这个文件属于哪个包，如：<code v-pre>package main</code>。<code v-pre>package main</code>表示一个可独立执行的程序，每个 Go 应用程序都包含一个名为<code v-pre>main</code>的包。
 所有的<strong>包名都应该使用小写字母</strong>。</p>
 <p><strong>标准库</strong></p>
 <p>在 Go 的安装文件里包含了一些可以直接使用的包，即标准库。一般情况下，标准包会存放在 <code v-pre>$GOROOT/pkg/$GOOS_$GOARCH/</code>目录下。</p>
 <p><strong>包的编译</strong></p>
-<p>如果想要构建一个程序，则包和包内的文件都必须以正确的顺序进行编译。
-包的依赖关系决定了其构建顺序。属于同一个包的源文件必须全部被一起编译，<strong>一个包即是编译时的一个单元</strong>，因此根据惯例，每个目录都只包含一个包。
-<strong>如果对一个包进行更改或重新编译，所有引用了这个包的客户端程序都必须全部重新编译。</strong>
+<p>如果想要构建一个程序，则包和包内的文件都必须以正确的顺序进行编译。包的依赖关系决定了其构建顺序。属于同一个包的源文件必须全部被一起编译，<strong>一个包即是编译时的一个单元</strong>，因此根据惯例，每个目录都只包含一个包。<strong>如果对一个包进行更改或重新编译，所有引用了这个包的客户端程序都必须全部重新编译。</strong>
 Go 中的包模型采用了显式依赖关系的机制来达到快速编译的目的，编译器会从后缀名为<code v-pre>.o</code>的对象文件（需要且只需要这个文件）中提取传递依赖类型的信息。
 如果<code v-pre>A.go</code>依赖<code v-pre>B.go</code>，而<code v-pre>B.go</code>又依赖<code v-pre>C.go</code>：</p>
 <ul>
 <li>编译<code v-pre>C.go</code>, <code v-pre>B.go</code>, 然后是<code v-pre>A.go</code>.</li>
-<li>为了编译<code v-pre>A.go</code>, 编译器读取的是<code v-pre>B.o</code>而不是<code v-pre>C.o</code>.
-这种机制对于编译大型的项目时可以显著地提升编译速度。</li>
-<li></li>
+<li>为了编译<code v-pre>A.go</code>, 编译器读取的是<code v-pre>B.o</code>而不是<code v-pre>C.o</code>.</li>
 </ul>
+<p>这种机制对于编译大型的项目时可以显著地提升编译速度。</p>
 <p><strong>包的链接</strong></p>
-<p>一个 Go 程序是通过<code v-pre>import</code>关键字将一组包链接在一起。</p>
-<p>通过如下代码导入多个包：</p>
+<p>一个 Go 程序是通过<code v-pre>import</code>关键字将一组包链接在一起。
+通过如下代码导入多个包：</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">(</span></span>
 <span class="line">    <span class="token string">"fmt"</span></span>
 <span class="line">    <span class="token string">"os"</span></span>
 <span class="line"><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>包内对象的可见性规则——大写可见、小写不可见</strong></p>
-<p>当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如：<code v-pre>Group1</code>，那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需要先导入这个包），这被称为导出（像面向对象语言中的<code v-pre>public</code>）；
-标识符如果以小写字母开头，则对包外是不可见的，但是它们在整个包的内部是可见并且可用的（像面向对象语言中的<code v-pre>private</code>）。</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>包内对象的可见性规则——大写可见、小写不可见</strong>
+当标识符（包括常量、变量、类型、函数名、结构字段等等）以一个大写字母开头，如：<code v-pre>Group1</code>，那么使用这种形式的标识符的对象就可以被外部包的代码所使用（客户端程序需要先导入这个包），这被称为导出（像面向对象语言中的<code v-pre>public</code>）；标识符如果以小写字母开头，则对包外是不可见的，但是它们在整个包的内部是可见并且可用的（像面向对象语言中的<code v-pre>private</code>）。</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">package</span> main</span>
 <span class="line"></span>
 <span class="line"><span class="token keyword">import</span> fm <span class="token string">"fmt"</span> <span class="token comment">// alias3</span></span>
@@ -46,7 +40,7 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>你可以在使用<code v-pre>import</code>导入包之后定义或声明 0 个或多个常量 (const)、变量 (var) 和类型 (type)，这些对象的作用域都是全局的（在本包范围内），所以可以被本包中所有的函数调用，然后声明一个或多个函数 (func)。</p>
-<h3 id="函数" tabindex="-1"><a class="header-anchor" href="#函数"><span>函数</span></a></h3>
+<h3 id="_2-函数" tabindex="-1"><a class="header-anchor" href="#_2-函数"><span>(2) 函数</span></a></h3>
 <p>函数的语法格式如下：</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">func</span> <span class="token function">functionName</span><span class="token punctuation">(</span>parameter_list<span class="token punctuation">)</span> <span class="token punctuation">(</span>return_value_list<span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
 <span class="line">   …</span>
@@ -57,30 +51,24 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <li><code v-pre>parameter_list</code>的形式为<code v-pre>(param1 type1, param2 type2, …)</code></li>
 <li><code v-pre>return_value_list</code>的形式为<code v-pre>(ret1 type1, ret2 type2, …)</code></li>
 </ul>
-<p>这种多返回值一般用于判断某个函数是否执行成功 (<code v-pre>true</code>/<code v-pre>false</code>) 或与其它返回值一同返回错误消息。</p>
-<p>只有当某个函数需要被外部包调用的时候才使用大写字母开头，并遵循 Pascal 命名法；否则就遵循骆驼命名法，即第一个单词的首字母小写，其余单词的首字母大写。(导出：<code v-pre>GetUserList</code>、不导出：<code v-pre>getUserList</code>)</p>
-<p><code v-pre>main()</code>函数是每一个可执行程序所必须包含的，一般来说都是在启动后第一个执行的函数（如果有<code v-pre>init()</code>函数则会先执行该函数）。<code v-pre>main()</code>函数既没有参数，也没有返回类型（与 C 家族中的其它语言恰好相反）。</p>
-<h3 id="注释" tabindex="-1"><a class="header-anchor" href="#注释"><span>注释</span></a></h3>
-<p>单行：<code v-pre>//</code></p>
-<p>多行：</p>
+<p>这种多返回值一般用于判断某个函数是否执行成功 (<code v-pre>true</code>/<code v-pre>false</code>) 或与其它返回值一同返回错误消息。
+只有当某个函数需要被外部包调用的时候才使用大写字母开头，并遵循 Pascal 命名法；否则就遵循骆驼命名法，即第一个单词的首字母小写，其余单词的首字母大写。(导出：<code v-pre>GetUserList</code>、不导出：<code v-pre>getUserList</code>)
+<code v-pre>main()</code>函数是每一个可执行程序所必须包含的，一般来说都是在启动后第一个执行的函数（如果有<code v-pre>init()</code>函数则会先执行该函数）。<code v-pre>main()</code>函数既没有参数，也没有返回类型（与 C 家族中的其它语言恰好相反）。</p>
+<h3 id="_3-注释" tabindex="-1"><a class="header-anchor" href="#_3-注释"><span>(3) 注释</span></a></h3>
+<p>单行：<code v-pre>//</code>
+多行：</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token comment">/*</span>
 <span class="line">	多行注释</span>
 <span class="line">*/</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p>每一个包应该有相关注释，在<code v-pre>package</code>语句之前的块注释将被默认认为是这个包的文档说明，其中应该提供一些相关信息并对整体功能做简要的介绍。
-一个包可以分散在多个文件中，但是只需要在其中一个进行注释说明即可。
-当开发人员需要了解包的一些情况时，自然会用<code v-pre>godoc</code>来显示包的文档说明，在首行的简要注释之后可以用成段的注释来进行更详细的说明，而不必拥挤在一起。
-另外，在多段注释之间应以空行分隔加以区分。</p>
-</blockquote>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>每一个包应该有相关注释，在<code v-pre>package</code>语句之前的块注释将被默认认为是这个包的文档说明，其中应该提供一些相关信息并对整体功能做简要的介绍。一个包可以分散在多个文件中，但是只需要在其中一个进行注释说明即可。当开发人员需要了解包的一些情况时，自然会用<code v-pre>godoc</code>来显示包的文档说明，在首行的简要注释之后可以用成段的注释来进行更详细的说明，而不必拥挤在一起。另外，在多段注释之间应以空行分隔加以区分。</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token comment">// Package superman implements methods for saving the world.</span></span>
 <span class="line"><span class="token comment">//</span></span>
 <span class="line"><span class="token comment">// Experience has shown that a small number of procedures can prove</span></span>
 <span class="line"><span class="token comment">// helpful when attempting to save the world.</span></span>
 <span class="line"><span class="token keyword">package</span> superman</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>几乎所有全局作用域的类型、常量、变量、函数和被导出的对象都应该有一个合理的注释。
-如果这种注释（称为文档注释）出现在函数前面，例如函数<code v-pre>Abcd</code>，则要以 &quot;Abcd...&quot; 作为开头。</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>几乎所有全局作用域的类型、常量、变量、函数和被导出的对象都应该有一个合理的注释。如果这种注释（称为文档注释）出现在函数前面，例如函数<code v-pre>Abcd</code>，则要以 &quot;Abcd...&quot; 作为开头。</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token comment">// enterOrbit causes Superman to fly into low Earth orbit, a position</span></span>
 <span class="line"><span class="token comment">// that presents several possibilities for planet salvation.</span></span>
 <span class="line"><span class="token keyword">func</span> <span class="token function">enterOrbit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span></span>
@@ -88,13 +76,13 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>godoc 工具会收集这些注释并产生一个技术文档。</p>
-<h3 id="类型" tabindex="-1"><a class="header-anchor" href="#类型"><span>类型</span></a></h3>
+<h3 id="_4-类型" tabindex="-1"><a class="header-anchor" href="#_4-类型"><span>(4) 类型</span></a></h3>
 <p>使用<code v-pre>var</code>声明的变量的值会自动初始化为该类型的零值。
 类型可以是基本类型，如：<code v-pre>int</code>、<code v-pre>float</code>、<code v-pre>bool</code>、<code v-pre>string</code>；结构化的（复合的），如：<code v-pre>struct</code>、<code v-pre>array</code>、切片 (slice)、<code v-pre>map</code>、通道 (channel)；只描述类型的行为的，如：<code v-pre>interface</code>。
 结构化的类型没有真正的值，它使用<code v-pre>nil</code>作为默认值。<strong>Go 语言中不存在类型继承</strong>。
 使用<code v-pre>type</code>关键字可以定义你自己的类型，你可能想要定义一个结构体。如果你有多个类型需要定义，可以使用因式分解关键字的方式。
-每个值都必须在经过编译后属于某个类型（编译器必须能够推断出所有值的类型），因为 Go 语言是一种<strong>静态类型语言</strong>。</p>
-<h3 id="go-程序的一般结构" tabindex="-1"><a class="header-anchor" href="#go-程序的一般结构"><span>Go 程序的一般结构</span></a></h3>
+每个值都必须在经过编译后属于某个类型（编译器必须能够推断出所有值的类型），因为 Go 语言是一种静态类型语言。</p>
+<h3 id="_5-go-程序的一般结构" tabindex="-1"><a class="header-anchor" href="#_5-go-程序的一般结构"><span>(5) Go 程序的一般结构</span></a></h3>
 <ul>
 <li>在完成包的<code v-pre>import</code>之后，开始对常量、变量和类型的定义或声明。</li>
 <li>如果存在<code v-pre>init()</code>函数的话，则对该函数进行定义（这是一个特殊的函数，每个含有该函数的包都会首先执行这个函数）。</li>
@@ -131,7 +119,7 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line">   <span class="token comment">//...</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="类型转换" tabindex="-1"><a class="header-anchor" href="#类型转换"><span>类型转换</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6-类型转换" tabindex="-1"><a class="header-anchor" href="#_6-类型转换"><span>(6) 类型转换</span></a></h3>
 <p>由于 Go 语言不存在隐式类型转换，因此所有的转换都必须显式说明，就像调用一个函数一样（类型在这里的作用可以看作是一种函数）：<code v-pre>valueOfTypeB = typeB(valueOfTypeA)</code></p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line">a <span class="token operator">:=</span> <span class="token number">5.0</span></span>
 <span class="line">b <span class="token operator">:=</span> <span class="token function">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span></span>
@@ -143,18 +131,18 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line">c <span class="token operator">:=</span> <span class="token function">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span></span>
 <span class="line">d <span class="token operator">:=</span> <span class="token function">IZ</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="go-命名规范" tabindex="-1"><a class="header-anchor" href="#go-命名规范"><span>Go 命名规范</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_7-go-命名规范" tabindex="-1"><a class="header-anchor" href="#_7-go-命名规范"><span>(7) Go 命名规范</span></a></h3>
 <p>名称不需要指出自己所属的包，因为在调用的时候会使用包名作为限定符。
 返回某个对象的函数或方法的名称一般都是使用名词，没有<code v-pre>Get...</code>之类的字符，如果是用于修改某个对象，则使用<code v-pre>SetName()</code>。
 有必须要的话可以使用大小写混合的方式，如<code v-pre>MixedCaps()</code>或<code v-pre>mixedCaps()</code>，而不是使用下划线来分割多个名称。</p>
-<h2 id="常量" tabindex="-1"><a class="header-anchor" href="#常量"><span>常量</span></a></h2>
+<h2 id="_3、常量" tabindex="-1"><a class="header-anchor" href="#_3、常量"><span>3、常量</span></a></h2>
 <p>常量使用关键字<code v-pre>const</code>定义，用于存储不会改变的数据。存储在常量中的数据类型只可以是<strong>布尔型</strong>、数字型（整数型、浮点型和复数）和字符串型。
 常量的定义格式：<code v-pre>const identifier [type] = value</code></p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">const</span> pi <span class="token operator">=</span> <span class="token number">3.14</span></span>
 <span class="line"><span class="token keyword">const</span> str <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">"zhangsan"</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>可以省略类型说明符<code v-pre>[type]</code>，因为编译器可以根据变量的值来推断其类型。
-常量的值必须是能够在编译时就能够确定的；你可以在其赋值表达式中涉及计算过程，但是所有用于计算的值必须在编译期间就能获得。<strong>在编译期间自定义函数均属于未知，因此无法用于常量的赋值，但内置函数可以使用，如：</strong><code v-pre>**len()**</code><strong>。</strong></p>
+常量的值必须是能够在编译时就能够确定的；你可以在其赋值表达式中涉及计算过程，但是所有用于计算的值必须在编译期间就能获得。<strong>在编译期间自定义函数均属于未知，因此无法用于常量的赋值，但内置函数可以使用，如：</strong><code v-pre>len()</code><strong>。</strong></p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token comment">// 正确用法</span></span>
 <span class="line"><span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">/</span> <span class="token number">3</span></span>
 <span class="line"><span class="token comment">// 错误用法</span></span>
@@ -175,9 +163,9 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line">	Female <span class="token operator">=</span> <span class="token number">2</span></span>
 <span class="line"><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="变量" tabindex="-1"><a class="header-anchor" href="#变量"><span>变量</span></a></h2>
-<p><strong>变量的声明</strong>
-声明变量的一般形式是使用<code v-pre>var</code>关键字：<code v-pre>var identifier type</code>。</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4、变量" tabindex="-1"><a class="header-anchor" href="#_4、变量"><span>4、变量</span></a></h2>
+<p><strong>变量的声明</strong></p>
+<p>声明变量的一般形式是使用<code v-pre>var</code>关键字：<code v-pre>var identifier type</code>。</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">var</span> a <span class="token builtin">int</span></span>
 <span class="line"><span class="token keyword">var</span> b <span class="token builtin">bool</span></span>
 <span class="line"><span class="token keyword">var</span> str <span class="token builtin">string</span></span>
@@ -190,11 +178,11 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line">    str <span class="token builtin">string</span></span>
 <span class="line"><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当一个变量被声明之后，系统自动赋予它该类型的零值：<code v-pre>int</code>为<code v-pre>0</code>，<code v-pre>float32(64)</code>为<code v-pre>0.0</code>，<code v-pre>bool</code>为<code v-pre>false</code>，<code v-pre>string</code>为空字符串，指针为<code v-pre>nil</code>。所有的变量在 Go 中都是经过初始化的。
-<strong>变量的命名规则</strong>
-变量的命名规则遵循<strong>驼峰命名法</strong>，即首个单词小写，每个新单词的首字母大写，例如：<code v-pre>numShips</code>和 <code v-pre>startDate</code>。但如果你的全局变量希望能够被外部包所使用，则需要将首个单词的首字母也大写。
-<strong>变量的作用域</strong>
-一个变量（常量、类型或函数）在程序中都有一定的作用范围，称之为作用域。如果一个变量在函数体外声明，则被认为是全局变量，可以在整个包甚至外部包（被导出后）使用，不管你声明在哪个源文件里或在哪个源文件里调用该变量。
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当一个变量被声明之后，系统自动赋予它该类型的零值：<code v-pre>int</code>为<code v-pre>0</code>，<code v-pre>float32(64)</code>为<code v-pre>0.0</code>，<code v-pre>bool</code>为<code v-pre>false</code>，<code v-pre>string</code>为空字符串，指针为<code v-pre>nil</code>。所有的变量在 Go 中都是经过初始化的。</p>
+<p><strong>变量的命名规则</strong></p>
+<p>变量的命名规则遵循<strong>驼峰命名法</strong>，即首个单词小写，每个新单词的首字母大写，例如：<code v-pre>numShips</code>和 <code v-pre>startDate</code>。但如果你的全局变量希望能够被外部包所使用，则需要将首个单词的首字母也大写。</p>
+<p><strong>变量的作用域</strong></p>
+<p>一个变量（常量、类型或函数）在程序中都有一定的作用范围，称之为作用域。如果一个变量在函数体外声明，则被认为是全局变量，可以在整个包甚至外部包（被导出后）使用，不管你声明在哪个源文件里或在哪个源文件里调用该变量。
 变量可以编译期间就被赋值，赋值给变量使用运算符等号<code v-pre>=</code>，当然你也可以在运行时对变量进行赋值操作。
 在函数体内声明局部变量，最好使用<code v-pre>a := 6</code>的形式。这被称为初始化声明。</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">package</span> main</span>
@@ -214,11 +202,11 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line">	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"Path is %s\n"</span><span class="token punctuation">,</span> path<span class="token punctuation">)</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>值类型和引用类型</strong>
-所有像<code v-pre>int</code>、<code v-pre>float</code>、<code v-pre>bool</code>和<code v-pre>string</code>这些基本类型都属于值类型，使用这些类型的变量直接指向存在内存中的值。另外，像数组和结构这些复合类型也是值类型。
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>值类型和引用类型</strong></p>
+<p>所有像<code v-pre>int</code>、<code v-pre>float</code>、<code v-pre>bool</code>和<code v-pre>string</code>这些基本类型都属于值类型，使用这些类型的变量直接指向存在内存中的值。另外，像数组和结构这些复合类型也是值类型。
 当使用等号<code v-pre>=</code>将一个变量的值赋值给另一个变量时，如：<code v-pre>j = i</code>，实际上是在内存中将<code v-pre>i</code>的值进行了拷贝：
-<img src="https://cdn.nlark.com/yuque/0/2023/png/34476449/1686045110624-f2eeec2a-3040-4429-82b9-40bb886a243e.png#averageHue=%23fbfbfa&amp;clientId=u9a21f0f0-f38d-4&amp;from=paste&amp;id=u80afa5c1&amp;originHeight=238&amp;originWidth=356&amp;originalType=url&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=45198&amp;status=done&amp;style=stroke&amp;taskId=u474a007a-716c-4c49-ae94-af3cc793324&amp;title=" alt="image.png">
-你可以通过<code v-pre>&amp;i</code>来获取变量<code v-pre>i</code>的内存地址：</p>
+<img src="/images/dev/go/go_basic/pointer.png" alt="image.png"></p>
+<p>你可以通过<code v-pre>&amp;i</code>来获取变量<code v-pre>i</code>的内存地址：</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line"><span class="token keyword">package</span> main</span>
 <span class="line"></span>
 <span class="line"><span class="token keyword">import</span> <span class="token string">"fmt"</span></span>
@@ -232,26 +220,28 @@ Go 中的包模型采用了显式依赖关系的机制来达到快速编译的�
 <span class="line"></span>
 <span class="line"><span class="token comment">// 输出结果：true、false</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>一个引用类型的变量<code v-pre>r1</code>存储的是<code v-pre>r1</code>的值所在的内存地址（数字），或内存地址中第一个字所在的位置。
-<img src="https://cdn.nlark.com/yuque/0/2023/png/34476449/1686045327822-deb4b95c-a787-4a48-b966-1a912f5ffd0c.png#averageHue=%23fafaf9&amp;clientId=u9a21f0f0-f38d-4&amp;from=paste&amp;id=u4ceb2eb7&amp;originHeight=213&amp;originWidth=624&amp;originalType=url&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=70409&amp;status=done&amp;style=stroke&amp;taskId=uc0495e7a-a524-41f2-8cbf-3036bb73d2a&amp;title=" alt="image.png">
-这个内存地址被称之为指针。
-在 Go 语言中，指针属于引用类型，其它的引用类型还包括<code v-pre>slices</code>，<code v-pre>maps</code>和<code v-pre>channel</code>。被引用的变量会存储在堆中，以便进行垃圾回收，且比栈拥有更大的内存空间。
-<strong>打印</strong>
-函数<code v-pre>fmt.Print</code>和<code v-pre>fmt.Println</code>会自动使用格式化标识符<code v-pre>%v</code>对字符串进行格式化，两者都会在每个参数之间自动增加空格，例如：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>一个引用类型的变量<code v-pre>r1</code>存储的是<code v-pre>r1</code>的值所在的内存地址（数字），或内存地址中第一个字所在的位置。</p>
+<p><img src="/images/dev/go/go_basic/pointer2.png" alt="image.png"></p>
+<p>这个内存地址被称之为指针。
+在 Go 语言中，指针属于引用类型，其它的引用类型还包括<code v-pre>slices</code>，<code v-pre>maps</code>和<code v-pre>channel</code>。
+被引用的变量会存储在堆中，以便进行垃圾回收，且比栈拥有更大的内存空间。</p>
+<p><strong>打印</strong></p>
+<p>函数<code v-pre>fmt.Print</code>和<code v-pre>fmt.Println</code>会自动使用格式化标识符<code v-pre>%v</code>对字符串进行格式化，两者都会在每个参数之间自动增加空格，例如：</p>
 <div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre v-pre><code><span class="line">fmt<span class="token punctuation">.</span><span class="token function">Print</span><span class="token punctuation">(</span><span class="token string">"Hello:"</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">)</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">// 将会输出：Hello: 23</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>变量赋值</strong>
-可以使用<code v-pre>a, b, c = 5, 7, &quot;abc&quot;</code>或<code v-pre>a, b, c := 5, 7, &quot;abc&quot;</code>进行多变量并行赋值。
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>变量赋值</strong></p>
+<p>可以使用<code v-pre>a, b, c = 5, 7, &quot;abc&quot;</code>或<code v-pre>a, b, c := 5, 7, &quot;abc&quot;</code>进行多变量并行赋值。
 交换值：<code v-pre>a, b = b, a</code>。
 空白标识符<code v-pre>_</code>也被用于抛弃值，如值<code v-pre>5</code>在：<code v-pre>_, b = 5, 7</code>中被抛弃。
 <code v-pre>_</code>实际上是一个只写变量，你不能得到它的值。这样做是因为 Go 语言中你必须使用所有被声明的变量，但有时你并不需要使用从一个函数得到的所有返回值。
-<code v-pre>**init()**</code><strong>函数</strong>
-变量除了可以在全局声明中初始化，也可以在<code v-pre>init()</code>函数中初始化。这是一类非常特殊的函数，它不能够被人为调用，而是在每个包完成初始化后自动执行，并且执行优先级比<code v-pre>main()</code>函数高。
+<code v-pre>init()</code></p>
+<p><strong>函数</strong></p>
+<p>变量除了可以在全局声明中初始化，也可以在<code v-pre>init()</code>函数中初始化。这是一类非常特殊的函数，它不能够被人为调用，而是在每个包完成初始化后自动执行，并且执行优先级比<code v-pre>main()</code>函数高。
 每个源文件可以包含多个<code v-pre>init()</code>函数，同一个源文件中的<code v-pre>init()</code>函数会按照从上到下的顺序执行，如果一个包有多个源文件包含<code v-pre>init()</code>函数的话，则官方鼓励但不保证以文件名的顺序调用。初始化总是以单线程并且按照包的依赖关系顺序执行。
 一个可能的用途是在开始执行程序之前对数据进行检验或修复，以保证程序状态的正确性。</p>
-<h2 id="基本类型与运算符" tabindex="-1"><a class="header-anchor" href="#基本类型与运算符"><span>基本类型与运算符</span></a></h2>
+<h2 id="_5、基本类型与运算符" tabindex="-1"><a class="header-anchor" href="#_5、基本类型与运算符"><span>5、基本类型与运算符</span></a></h2>
 <h3 id="_1-布尔类型bool" tabindex="-1"><a class="header-anchor" href="#_1-布尔类型bool"><span>(1) 布尔类型<code v-pre>bool</code></span></a></h3>
 <p>两个类型相同的值可以使用相等<code v-pre>==</code>或者不等<code v-pre>!=</code>运算符来进行比较并获得一个布尔型的值。
 Go 对于值之间的比较有非常严格的限制，只有两个类型相同的值才可以进行比较，如果值的类型是接口，它们也必须都实现了相同的接口。如果其中一个值是常量，那么另外一个值的类型必须和该常量类型相兼容的。如果以上条件都不满足，则其中一个值的类型必须在被转换为和另外一个值的类型相同之后才可以进行比较。
@@ -263,7 +253,7 @@ Go 对于值之间的比较有非常严格的限制，只有两个类型相同�
 <code v-pre>int</code>和<code v-pre>uint</code>在 32 位操作系统上，它们均使用 32 位（4 个字节），在 64 位操作系统上，它们均使用 64 位（8 个字节）。
 <code v-pre>uintptr</code>的长度被设定为足够存放一个指针即可。
 Go 语言中没有 float 类型。（Go语言中只有 float32 和 float64）没有 double 类型。
-<img src="https://cdn.nlark.com/yuque/0/2023/png/34476449/1686648998656-bf985af8-cdf7-402c-b491-9f8239b95f88.png#averageHue=%23fefdfc&amp;clientId=uc5fb4fe5-bdf1-4&amp;from=paste&amp;height=535&amp;id=u12fb2dd5&amp;originHeight=669&amp;originWidth=811&amp;originalType=binary&amp;ratio=1.25&amp;rotation=0&amp;showTitle=false&amp;size=81671&amp;status=done&amp;style=stroke&amp;taskId=u305312bd-97a4-46b3-9920-6b3dd7f6a62&amp;title=&amp;width=648.8" alt="image.png">
+<img src="/images/dev/go/go_basic/number_go.png" alt="image.png">
 尽可能地使用<code v-pre>float64</code>，因为<code v-pre>math</code>包中所有有关数学运算的函数都会要求接收这个类型。
 你可以通过增加前缀<code v-pre>0</code>来表示 8 进制数（如：<code v-pre>077</code>），增加前缀<code v-pre>0x</code>来表示 16 进制数（如：<code v-pre>0xFF</code>），以及使用 e 来表示 10 的连乘（如： 1e3 = 1000，或者 6.022e23 = 6.022 x 1e23）。
 在格式化字符串里，<code v-pre>%d</code>用于格式化整数（<code v-pre>%x</code>和<code v-pre>%X</code>用于格式化 16 进制表示的数字），<code v-pre>%g</code>用于格式化浮点型（<code v-pre>%f</code>输出浮点数，<code v-pre>%e</code>输出科学计数表示法），<code v-pre>%0nd</code>用于规定输出长度为 n 的整数，其中开头的数字 0 是必须的。
