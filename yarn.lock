@@ -1213,6 +1213,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vuepress/plugin-search@npm:^2.0.0-rc.39":
+  version: 2.0.0-rc.39
+  resolution: "@vuepress/plugin-search@npm:2.0.0-rc.39"
+  dependencies:
+    chokidar: "npm:^3.6.0"
+    vue: "npm:^3.4.32"
+  peerDependencies:
+    vuepress: 2.0.0-rc.14
+  checksum: 10c0/cd18e23474876faa096fd90137e135bc04f8764ed19f5a470e4b2a2ebbd0122fdd5e7f0f8bef2cf070e3cb86e8bf8ff73d4b8c9f0a584108dfa91592bd109dde
+  languageName: node
+  linkType: hard
+
 "@vuepress/plugin-seo@npm:2.0.0-rc.39":
   version: 2.0.0-rc.39
   resolution: "@vuepress/plugin-seo@npm:2.0.0-rc.39"
@@ -2658,6 +2670,7 @@ __metadata:
   dependencies:
     "@vuepress/bundler-vite": "npm:^2.0.0-rc.7"
     "@vuepress/plugin-docsearch": "npm:^2.0.0-rc.39"
+    "@vuepress/plugin-search": "npm:^2.0.0-rc.39"
     "@vuepress/theme-default": "npm:^2.0.0-rc.11"
     vue: "npm:^3.4.0"
     vuepress: "npm:^2.0.0-rc.7"
