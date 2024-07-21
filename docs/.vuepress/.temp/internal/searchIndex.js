@@ -43,16 +43,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "算法",
+    "title": "开发",
     "headers": [],
-    "path": "/al/",
+    "path": "/dev/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "开发",
+    "title": "算法",
     "headers": [],
-    "path": "/dev/",
+    "path": "/al/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -928,9 +928,59 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "IDEA 常用快捷键",
-    "headers": [],
-    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+    "title": "一、基本概念",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、采集量(Metric)",
+        "slug": "_1、采集量-metric",
+        "link": "#_1、采集量-metric",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、标签(Tag)",
+        "slug": "_2、标签-tag",
+        "link": "#_2、标签-tag",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、数据采集点(Data Collection Point)",
+        "slug": "_3、数据采集点-data-collection-point",
+        "link": "#_3、数据采集点-data-collection-point",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、表",
+        "slug": "_4、表",
+        "link": "#_4、表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、超级表(STable)",
+        "slug": "_5、超级表-stable",
+        "link": "#_5、超级表-stable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、子表(Subtable)",
+        "slug": "_6、子表-subtable",
+        "link": "#_6、子表-subtable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、库(Database)",
+        "slug": "_7、库-database",
+        "link": "#_7、库-database",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1058,6 +1108,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "IDEA 常用快捷键",
+    "headers": [],
+    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/404.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "AWS S3",
     "headers": [
       {
@@ -1076,70 +1140,6 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/java/third_party_in/2-AWS_S3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "一、基本概念",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、采集量(Metric)",
-        "slug": "_1、采集量-metric",
-        "link": "#_1、采集量-metric",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、标签(Tag)",
-        "slug": "_2、标签-tag",
-        "link": "#_2、标签-tag",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、数据采集点(Data Collection Point)",
-        "slug": "_3、数据采集点-data-collection-point",
-        "link": "#_3、数据采集点-data-collection-point",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、表",
-        "slug": "_4、表",
-        "link": "#_4、表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、超级表(STable)",
-        "slug": "_5、超级表-stable",
-        "link": "#_5、超级表-stable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6、子表(Subtable)",
-        "slug": "_6、子表-subtable",
-        "link": "#_6、子表-subtable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、库(Database)",
-        "slug": "_7、库-database",
-        "link": "#_7、库-database",
-        "children": []
-      }
-    ],
-    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/404.html",
     "pathLocale": "/",
     "extraFields": []
   }
