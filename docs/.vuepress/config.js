@@ -116,6 +116,14 @@ export default defineUserConfig({
                             collapsible: true,
                             children: [
                                 {
+                                    text: 'MongoDB',
+                                    children: [
+                                        '/dev/middleware/mongo/1-MongoDB基础',
+                                        '/dev/middleware/mongo/2-单机部署',
+                                        '/dev/middleware/mongo/3-基本命令'
+                                    ]
+                                },
+                                {
                                     text: 'TDEngine',
                                     children: [
                                         '/dev/middleware/tdengine/1-基本概念'

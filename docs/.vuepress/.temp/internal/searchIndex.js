@@ -43,16 +43,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开发",
+    "title": "算法",
     "headers": [],
-    "path": "/dev/",
+    "path": "/al/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "算法",
+    "title": "开发",
     "headers": [],
-    "path": "/al/",
+    "path": "/dev/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -928,63 +928,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一、基本概念",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、采集量(Metric)",
-        "slug": "_1、采集量-metric",
-        "link": "#_1、采集量-metric",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、标签(Tag)",
-        "slug": "_2、标签-tag",
-        "link": "#_2、标签-tag",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、数据采集点(Data Collection Point)",
-        "slug": "_3、数据采集点-data-collection-point",
-        "link": "#_3、数据采集点-data-collection-point",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、表",
-        "slug": "_4、表",
-        "link": "#_4、表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、超级表(STable)",
-        "slug": "_5、超级表-stable",
-        "link": "#_5、超级表-stable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6、子表(Subtable)",
-        "slug": "_6、子表-subtable",
-        "link": "#_6、子表-subtable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、库(Database)",
-        "slug": "_7、库-database",
-        "link": "#_7、库-database",
-        "children": []
-      }
-    ],
-    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "单体项目",
     "headers": [
       {
@@ -1086,6 +1029,210 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "一、MongoDB 基础",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、业务场景",
+        "slug": "_1、业务场景",
+        "link": "#_1、业务场景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、简介",
+        "slug": "_2、简介",
+        "link": "#_2、简介",
+        "children": [
+          {
+            "level": 3,
+            "title": "MongoDB 与 MySQL 概念对比",
+            "slug": "mongodb-与-mysql-概念对比",
+            "link": "#mongodb-与-mysql-概念对比",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/mongo/1-MongoDB%E5%9F%BA%E7%A1%80.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、单机部署",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Windows 中部署",
+        "slug": "_1、windows-中部署",
+        "link": "#_1、windows-中部署",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 安装包下载",
+            "slug": "_1-安装包下载",
+            "link": "#_1-安装包下载",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 解压",
+            "slug": "_2-解压",
+            "link": "#_2-解压",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 编写配置文件并启动",
+            "slug": "_3-编写配置文件并启动",
+            "link": "#_3-编写配置文件并启动",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "连接测试",
+            "slug": "连接测试",
+            "link": "#连接测试",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、Linux 中部署",
+        "slug": "_2、linux-中部署",
+        "link": "#_2、linux-中部署",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/mongo/2-%E5%8D%95%E6%9C%BA%E9%83%A8%E7%BD%B2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、基本命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、数据库操作",
+        "slug": "_1、数据库操作",
+        "link": "#_1、数据库操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 选择与创建数据库",
+            "slug": "_1-选择与创建数据库",
+            "link": "#_1-选择与创建数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查看所有的数据库",
+            "slug": "_2-查看所有的数据库",
+            "link": "#_2-查看所有的数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 查看当前正在使用的数据库",
+            "slug": "_3-查看当前正在使用的数据库",
+            "link": "#_3-查看当前正在使用的数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 删除数据库",
+            "slug": "_4-删除数据库",
+            "link": "#_4-删除数据库",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、集合操作",
+        "slug": "_2、集合操作",
+        "link": "#_2、集合操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 显式创建集合",
+            "slug": "_1-显式创建集合",
+            "link": "#_1-显式创建集合",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查看所有集合",
+            "slug": "_2-查看所有集合",
+            "link": "#_2-查看所有集合",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 删除集合",
+            "slug": "_3-删除集合",
+            "link": "#_3-删除集合",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、文档操作",
+        "slug": "_3、文档操作",
+        "link": "#_3、文档操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 文档插入",
+            "slug": "_1-文档插入",
+            "link": "#_1-文档插入",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 文档基本查询",
+            "slug": "_2-文档基本查询",
+            "link": "#_2-文档基本查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 文档更新",
+            "slug": "_3-文档更新",
+            "link": "#_3-文档更新",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 删除文档",
+            "slug": "_4-删除文档",
+            "link": "#_4-删除文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 文档的分页查询",
+            "slug": "_5-文档的分页查询",
+            "link": "#_5-文档的分页查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 复杂查询",
+            "slug": "_6-复杂查询",
+            "link": "#_6-复杂查询",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/mongo/3-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "高德地图接入",
     "headers": [
       {
@@ -1108,20 +1255,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "IDEA 常用快捷键",
-    "headers": [],
-    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/404.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "AWS S3",
     "headers": [
       {
@@ -1140,6 +1273,77 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/java/third_party_in/2-AWS_S3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、基本概念",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、采集量(Metric)",
+        "slug": "_1、采集量-metric",
+        "link": "#_1、采集量-metric",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、标签(Tag)",
+        "slug": "_2、标签-tag",
+        "link": "#_2、标签-tag",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、数据采集点(Data Collection Point)",
+        "slug": "_3、数据采集点-data-collection-point",
+        "link": "#_3、数据采集点-data-collection-point",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、表",
+        "slug": "_4、表",
+        "link": "#_4、表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、超级表(STable)",
+        "slug": "_5、超级表-stable",
+        "link": "#_5、超级表-stable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、子表(Subtable)",
+        "slug": "_6、子表-subtable",
+        "link": "#_6、子表-subtable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、库(Database)",
+        "slug": "_7、库-database",
+        "link": "#_7、库-database",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "IDEA 常用快捷键",
+    "headers": [],
+    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/404.html",
     "pathLocale": "/",
     "extraFields": []
   }
