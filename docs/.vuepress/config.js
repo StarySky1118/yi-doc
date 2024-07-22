@@ -120,13 +120,27 @@ export default defineUserConfig({
                                     children: [
                                         '/dev/middleware/mongo/1-MongoDB基础',
                                         '/dev/middleware/mongo/2-单机部署',
-                                        '/dev/middleware/mongo/3-基本命令'
+                                        '/dev/middleware/mongo/3-基本命令',
+                                        '/dev/middleware/mongo/4-索引',
+                                        '/dev/middleware/mongo/5-JavaMongo'
                                     ]
                                 },
                                 {
                                     text: 'TDEngine',
                                     children: [
                                         '/dev/middleware/tdengine/1-基本概念'
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            text: '系统架构',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: '微服务',
+                                    children: [
+                                        '/dev/sys_infras/micro_service/1-微服务',
                                     ]
                                 }
                             ]

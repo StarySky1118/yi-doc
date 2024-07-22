@@ -79,6 +79,42 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [],
+    "path": "/dev/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "基本原理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "登录接口",
+        "slug": "登录接口",
+        "link": "#登录接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 Provider",
+        "slug": "自定义-provider",
+        "link": "#自定义-provider",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 UserDetails和userDetailsService",
+        "slug": "自定义-userdetails和userdetailsservice",
+        "link": "#自定义-userdetails和userdetailsservice",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/SpringSecurity.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Go 基础",
     "headers": [
       {
@@ -415,9 +451,74 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "单体项目",
+    "headers": [
+      {
+        "level": 2,
+        "title": "在resources目录下添加多个application.yml",
+        "slug": "在resources目录下添加多个application-yml",
+        "link": "#在resources目录下添加多个application-yml",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在POM.xml中添加多个 Profile",
+        "slug": "在pom-xml中添加多个-profile",
+        "link": "#在pom-xml中添加多个-profile",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "打包时使用制定 Profile",
+        "slug": "打包时使用制定-profile",
+        "link": "#打包时使用制定-profile",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "基本原理",
     "headers": [],
-    "path": "/dev/java/",
+    "path": "/dev/java/spring_security/1-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "认证接口",
+    "headers": [
+      {
+        "level": 2,
+        "title": "登录接口",
+        "slug": "登录接口",
+        "link": "#登录接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 Provider",
+        "slug": "自定义-provider",
+        "link": "#自定义-provider",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 UserDetails和userDetailsService",
+        "slug": "自定义-userdetails和userdetailsservice",
+        "link": "#自定义-userdetails和userdetailsservice",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/spring_security/2-%E8%AE%A4%E8%AF%81%E6%8E%A5%E5%8F%A3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "其他资源接口",
+    "headers": [],
+    "path": "/dev/java/spring_security/3-%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90%E6%8E%A5%E5%8F%A3.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -446,7 +547,51 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/dev/java/SpringSecurity.html",
+    "path": "/dev/java/spring_security/SpringSecurity.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "高德地图接入",
+    "headers": [
+      {
+        "level": 2,
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "AWS S3",
+    "headers": [
+      {
+        "level": 2,
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/third_party_in/2-AWS_S3.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -928,107 +1073,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "单体项目",
-    "headers": [
-      {
-        "level": 2,
-        "title": "在resources目录下添加多个application.yml",
-        "slug": "在resources目录下添加多个application-yml",
-        "link": "#在resources目录下添加多个application-yml",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "在POM.xml中添加多个 Profile",
-        "slug": "在pom-xml中添加多个-profile",
-        "link": "#在pom-xml中添加多个-profile",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "打包时使用制定 Profile",
-        "slug": "打包时使用制定-profile",
-        "link": "#打包时使用制定-profile",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "基本原理",
-    "headers": [],
-    "path": "/dev/java/spring_security/1-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "认证接口",
-    "headers": [
-      {
-        "level": 2,
-        "title": "登录接口",
-        "slug": "登录接口",
-        "link": "#登录接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 Provider",
-        "slug": "自定义-provider",
-        "link": "#自定义-provider",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 UserDetails和userDetailsService",
-        "slug": "自定义-userdetails和userdetailsservice",
-        "link": "#自定义-userdetails和userdetailsservice",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/spring_security/2-%E8%AE%A4%E8%AF%81%E6%8E%A5%E5%8F%A3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "其他资源接口",
-    "headers": [],
-    "path": "/dev/java/spring_security/3-%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90%E6%8E%A5%E5%8F%A3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "基本原理",
-    "headers": [
-      {
-        "level": 2,
-        "title": "登录接口",
-        "slug": "登录接口",
-        "link": "#登录接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 Provider",
-        "slug": "自定义-provider",
-        "link": "#自定义-provider",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 UserDetails和userDetailsService",
-        "slug": "自定义-userdetails和userdetailsservice",
-        "link": "#自定义-userdetails和userdetailsservice",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/spring_security/SpringSecurity.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "一、MongoDB 基础",
     "headers": [
       {
@@ -1233,46 +1277,127 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "高德地图接入",
+    "title": "四、索引",
     "headers": [
       {
         "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
+        "title": "1、概述",
+        "slug": "_1、概述",
+        "link": "#_1、概述",
         "children": []
       },
       {
         "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
-        "children": []
+        "title": "2、索引的类型",
+        "slug": "_2、索引的类型",
+        "link": "#_2、索引的类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 单字段索引",
+            "slug": "_1-单字段索引",
+            "link": "#_1-单字段索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 多字段索引",
+            "slug": "_2-多字段索引",
+            "link": "#_2-多字段索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 其他索引",
+            "slug": "_3-其他索引",
+            "link": "#_3-其他索引",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、索引的管理操作",
+        "slug": "_3、索引的管理操作",
+        "link": "#_3、索引的管理操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 查看所有索引",
+            "slug": "_1-查看所有索引",
+            "link": "#_1-查看所有索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 创建索引",
+            "slug": "_2-创建索引",
+            "link": "#_2-创建索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 删除索引",
+            "slug": "_3-删除索引",
+            "link": "#_3-删除索引",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、索引使用",
+        "slug": "_4、索引使用",
+        "link": "#_4、索引使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 执行计划",
+            "slug": "_1-执行计划",
+            "link": "#_1-执行计划",
+            "children": []
+          }
+        ]
       }
     ],
-    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
+    "path": "/dev/middleware/mongo/4-%E7%B4%A2%E5%BC%95.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "AWS S3",
+    "title": "五、Java 操作 MongoDB",
     "headers": [
       {
         "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
-        "children": []
+        "title": "1、使用MongoRepository",
+        "slug": "_1、使用mongorepository",
+        "link": "#_1、使用mongorepository",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 使用步骤",
+            "slug": "_1-使用步骤",
+            "link": "#_1-使用步骤",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 示例代码",
+            "slug": "_2-示例代码",
+            "link": "#_2-示例代码",
+            "children": []
+          }
+        ]
       },
       {
         "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
+        "title": "2、使用MongoTemplate",
+        "slug": "_2、使用mongotemplate",
+        "link": "#_2、使用mongotemplate",
         "children": []
       }
     ],
-    "path": "/dev/java/third_party_in/2-AWS_S3.html",
+    "path": "/dev/middleware/mongo/5-JavaMongo.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1337,6 +1462,195 @@ export const searchIndex = [
     "title": "IDEA 常用快捷键",
     "headers": [],
     "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、微服务介绍",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、单体项目和微服务项目",
+        "slug": "_1、单体项目和微服务项目",
+        "link": "#_1、单体项目和微服务项目",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 单体项目",
+            "slug": "_1-单体项目",
+            "link": "#_1-单体项目",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 分布式架构",
+            "slug": "_2-分布式架构",
+            "link": "#_2-分布式架构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 微服务",
+            "slug": "_3-微服务",
+            "link": "#_3-微服务",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) SpringCloud",
+            "slug": "_4-springcloud",
+            "link": "#_4-springcloud",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、服务拆分与远程调用",
+        "slug": "_2、服务拆分与远程调用",
+        "link": "#_2、服务拆分与远程调用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 提供者与消费者",
+            "slug": "_1-提供者与消费者",
+            "link": "#_1-提供者与消费者",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、Eureka 注册中心",
+        "slug": "_3、eureka-注册中心",
+        "link": "#_3、eureka-注册中心",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Eureka 的作用",
+            "slug": "_1-eureka-的作用",
+            "link": "#_1-eureka-的作用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 搭建 Eureka",
+            "slug": "_2-搭建-eureka",
+            "link": "#_2-搭建-eureka",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 服务注册",
+            "slug": "_3-服务注册",
+            "link": "#_3-服务注册",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 服务发现",
+            "slug": "_4-服务发现",
+            "link": "#_4-服务发现",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、Ribbon 负载均衡",
+        "slug": "_4、ribbon-负载均衡",
+        "link": "#_4、ribbon-负载均衡",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 负载均衡流程",
+            "slug": "_1-负载均衡流程",
+            "link": "#_1-负载均衡流程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 负载均衡策略",
+            "slug": "_2-负载均衡策略",
+            "link": "#_2-负载均衡策略",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 饥饿加载",
+            "slug": "_3-饥饿加载",
+            "link": "#_3-饥饿加载",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、Nacos 注册中心",
+        "slug": "_5、nacos-注册中心",
+        "link": "#_5、nacos-注册中心",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 安装 Nacos",
+            "slug": "_1-安装-nacos",
+            "link": "#_1-安装-nacos",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 服务注册",
+            "slug": "_2-服务注册",
+            "link": "#_2-服务注册",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) Nacos 服务分级存储模型",
+            "slug": "_3-nacos-服务分级存储模型",
+            "link": "#_3-nacos-服务分级存储模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 负载均衡",
+            "slug": "_4-负载均衡",
+            "link": "#_4-负载均衡",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 环境隔离 - namespace",
+            "slug": "_5-环境隔离-namespace",
+            "link": "#_5-环境隔离-namespace",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) Eureka 和 Nacos 对比",
+            "slug": "_6-eureka-和-nacos-对比",
+            "link": "#_6-eureka-和-nacos-对比",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、Nacos 配置管理",
+        "slug": "_6、nacos-配置管理",
+        "link": "#_6、nacos-配置管理",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 统一配置管理",
+            "slug": "_1-统一配置管理",
+            "link": "#_1-统一配置管理",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/sys_infras/micro_service/1-%E5%BE%AE%E6%9C%8D%E5%8A%A1.html",
     "pathLocale": "/",
     "extraFields": []
   },
