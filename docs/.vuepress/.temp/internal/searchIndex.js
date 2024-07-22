@@ -79,42 +79,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/dev/java/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "基本原理",
-    "headers": [
-      {
-        "level": 2,
-        "title": "登录接口",
-        "slug": "登录接口",
-        "link": "#登录接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 Provider",
-        "slug": "自定义-provider",
-        "link": "#自定义-provider",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 UserDetails和userDetailsService",
-        "slug": "自定义-userdetails和userdetailsservice",
-        "link": "#自定义-userdetails和userdetailsservice",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/SpringSecurity.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Go 基础",
     "headers": [
       {
@@ -451,74 +415,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "单体项目",
-    "headers": [
-      {
-        "level": 2,
-        "title": "在resources目录下添加多个application.yml",
-        "slug": "在resources目录下添加多个application-yml",
-        "link": "#在resources目录下添加多个application-yml",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "在POM.xml中添加多个 Profile",
-        "slug": "在pom-xml中添加多个-profile",
-        "link": "#在pom-xml中添加多个-profile",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "打包时使用制定 Profile",
-        "slug": "打包时使用制定-profile",
-        "link": "#打包时使用制定-profile",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "基本原理",
+    "title": "",
     "headers": [],
-    "path": "/dev/java/spring_security/1-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "认证接口",
-    "headers": [
-      {
-        "level": 2,
-        "title": "登录接口",
-        "slug": "登录接口",
-        "link": "#登录接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 Provider",
-        "slug": "自定义-provider",
-        "link": "#自定义-provider",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 UserDetails和userDetailsService",
-        "slug": "自定义-userdetails和userdetailsservice",
-        "link": "#自定义-userdetails和userdetailsservice",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/spring_security/2-%E8%AE%A4%E8%AF%81%E6%8E%A5%E5%8F%A3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "其他资源接口",
-    "headers": [],
-    "path": "/dev/java/spring_security/3-%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90%E6%8E%A5%E5%8F%A3.html",
+    "path": "/dev/java/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -547,51 +446,116 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/dev/java/spring_security/SpringSecurity.html",
+    "path": "/dev/java/SpringSecurity.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "高德地图接入",
+    "title": "Docker",
     "headers": [
       {
         "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
+        "title": "1、Docker 介绍",
+        "slug": "_1、docker-介绍",
+        "link": "#_1、docker-介绍",
         "children": []
       },
       {
         "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "AWS S3",
-    "headers": [
-      {
-        "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
+        "title": "2、Docker 与虚拟机",
+        "slug": "_2、docker-与虚拟机",
+        "link": "#_2、docker-与虚拟机",
         "children": []
       },
       {
         "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
+        "title": "3、镜像和容器",
+        "slug": "_3、镜像和容器",
+        "link": "#_3、镜像和容器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、安装 Docker",
+        "slug": "_4、安装-docker",
+        "link": "#_4、安装-docker",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、Docker 基本操作",
+        "slug": "_5、docker-基本操作",
+        "link": "#_5、docker-基本操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 镜像相关命令",
+            "slug": "_1-镜像相关命令",
+            "link": "#_1-镜像相关命令",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 容器相关命令",
+            "slug": "_2-容器相关命令",
+            "link": "#_2-容器相关命令",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 数据卷命令",
+            "slug": "_3-数据卷命令",
+            "link": "#_3-数据卷命令",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、Dockfile 自定义镜像",
+        "slug": "_5、dockfile-自定义镜像",
+        "link": "#_5、dockfile-自定义镜像",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 镜像结构",
+            "slug": "_1-镜像结构",
+            "link": "#_1-镜像结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 镜像构建",
+            "slug": "_2-镜像构建",
+            "link": "#_2-镜像构建",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、DockCompose",
+        "slug": "_6、dockcompose",
+        "link": "#_6、dockcompose",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) DockCompose 作用",
+            "slug": "_1-dockcompose-作用",
+            "link": "#_1-dockcompose-作用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、Docker 镜像仓库",
+        "slug": "_7、docker-镜像仓库",
+        "link": "#_7、docker-镜像仓库",
         "children": []
       }
     ],
-    "path": "/dev/java/third_party_in/2-AWS_S3.html",
+    "path": "/dev/container/docker/1-Docker.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1073,6 +1037,316 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "IDEA 常用快捷键",
+    "headers": [],
+    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "分布式搜索",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、ElasticSearch 介绍",
+        "slug": "_1、elasticsearch-介绍",
+        "link": "#_1、elasticsearch-介绍",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) ES 和 ELK",
+            "slug": "_1-es-和-elk",
+            "link": "#_1-es-和-elk",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 倒排索引",
+            "slug": "_2-倒排索引",
+            "link": "#_2-倒排索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) MySQL 与 ES",
+            "slug": "_3-mysql-与-es",
+            "link": "#_3-mysql-与-es",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 安装 ES、kibana",
+            "slug": "_4-安装-es、kibana",
+            "link": "#_4-安装-es、kibana",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) IK 分词器配置",
+            "slug": "_5-ik-分词器配置",
+            "link": "#_5-ik-分词器配置",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、索引库(表)操作",
+        "slug": "_2、索引库-表-操作",
+        "link": "#_2、索引库-表-操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Mapping",
+            "slug": "_1-mapping",
+            "link": "#_1-mapping",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 增删改查",
+            "slug": "_2-增删改查",
+            "link": "#_2-增删改查",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、文档(记录)操作",
+        "slug": "_3、文档-记录-操作",
+        "link": "#_3、文档-记录-操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 增删改查",
+            "slug": "_1-增删改查",
+            "link": "#_1-增删改查",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、RestClient 操作索引库",
+        "slug": "_4、restclient-操作索引库",
+        "link": "#_4、restclient-操作索引库",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 依赖引入与测试代码",
+            "slug": "_1-依赖引入与测试代码",
+            "link": "#_1-依赖引入与测试代码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 创建索引库",
+            "slug": "_2-创建索引库",
+            "link": "#_2-创建索引库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 删除索引库",
+            "slug": "_3-删除索引库",
+            "link": "#_3-删除索引库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 判断索引库是否存在",
+            "slug": "_4-判断索引库是否存在",
+            "link": "#_4-判断索引库是否存在",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、RestClient 操作文档",
+        "slug": "_5、restclient-操作文档",
+        "link": "#_5、restclient-操作文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 新建文档",
+            "slug": "_1-新建文档",
+            "link": "#_1-新建文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查询文档",
+            "slug": "_2-查询文档",
+            "link": "#_2-查询文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 更新文档",
+            "slug": "_3-更新文档",
+            "link": "#_3-更新文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 删除文档",
+            "slug": "_4-删除文档",
+            "link": "#_4-删除文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 批量导入文档",
+            "slug": "_5-批量导入文档",
+            "link": "#_5-批量导入文档",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、DSL 查询文档",
+        "slug": "_6、dsl-查询文档",
+        "link": "#_6、dsl-查询文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) DSL 查询分类",
+            "slug": "_1-dsl-查询分类",
+            "link": "#_1-dsl-查询分类",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 全文检索查询",
+            "slug": "_2-全文检索查询",
+            "link": "#_2-全文检索查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 精确查询",
+            "slug": "_3-精确查询",
+            "link": "#_3-精确查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 地理查询",
+            "slug": "_4-地理查询",
+            "link": "#_4-地理查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 复合查询",
+            "slug": "_5-复合查询",
+            "link": "#_5-复合查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 排序",
+            "slug": "_6-排序",
+            "link": "#_6-排序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(7) 分页",
+            "slug": "_7-分页",
+            "link": "#_7-分页",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(8) 高亮",
+            "slug": "_8-高亮",
+            "link": "#_8-高亮",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、RestClient 查询文档",
+        "slug": "_7、restclient-查询文档",
+        "link": "#_7、restclient-查询文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 入门案例：查询所有",
+            "slug": "_1-入门案例-查询所有",
+            "link": "#_1-入门案例-查询所有",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 全文检索查询",
+            "slug": "_2-全文检索查询-1",
+            "link": "#_2-全文检索查询-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 精确查询",
+            "slug": "_3-精确查询-1",
+            "link": "#_3-精确查询-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 复合查询——布尔查询",
+            "slug": "_4-复合查询——布尔查询",
+            "link": "#_4-复合查询——布尔查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 排序、分页",
+            "slug": "_5-排序、分页",
+            "link": "#_5-排序、分页",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 高亮",
+            "slug": "_6-高亮",
+            "link": "#_6-高亮",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、ES 提高",
+        "slug": "_8、es-提高",
+        "link": "#_8、es-提高",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 数据聚合",
+            "slug": "_1-数据聚合",
+            "link": "#_1-数据聚合",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 自动补全",
+            "slug": "_2-自动补全",
+            "link": "#_2-自动补全",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/es/1-es.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "一、MongoDB 基础",
     "headers": [
       {
@@ -1402,70 +1676,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一、基本概念",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、采集量(Metric)",
-        "slug": "_1、采集量-metric",
-        "link": "#_1、采集量-metric",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、标签(Tag)",
-        "slug": "_2、标签-tag",
-        "link": "#_2、标签-tag",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、数据采集点(Data Collection Point)",
-        "slug": "_3、数据采集点-data-collection-point",
-        "link": "#_3、数据采集点-data-collection-point",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、表",
-        "slug": "_4、表",
-        "link": "#_4、表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、超级表(STable)",
-        "slug": "_5、超级表-stable",
-        "link": "#_5、超级表-stable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6、子表(Subtable)",
-        "slug": "_6、子表-subtable",
-        "link": "#_6、子表-subtable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、库(Database)",
-        "slug": "_7、库-database",
-        "link": "#_7、库-database",
-        "children": []
-      }
-    ],
-    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "IDEA 常用快捷键",
-    "headers": [],
-    "path": "/dev/tool/idea/1-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "一、微服务介绍",
     "headers": [
       {
@@ -1651,6 +1861,944 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/sys_infras/micro_service/1-%E5%BE%AE%E6%9C%8D%E5%8A%A1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、统一网关 Gateway",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、网关的作用",
+        "slug": "_1、网关的作用",
+        "link": "#_1、网关的作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、网关的技术实现",
+        "slug": "_2、网关的技术实现",
+        "link": "#_2、网关的技术实现",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、快速入门",
+        "slug": "_3、快速入门",
+        "link": "#_3、快速入门",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、路由断言工厂 Route Predicate Factory",
+        "slug": "_4、路由断言工厂-route-predicate-factory",
+        "link": "#_4、路由断言工厂-route-predicate-factory",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、路由过滤器 GatewayFilter",
+        "slug": "_5、路由过滤器-gatewayfilter",
+        "link": "#_5、路由过滤器-gatewayfilter",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、全局过滤器 Global Filter",
+        "slug": "_6、全局过滤器-global-filter",
+        "link": "#_6、全局过滤器-global-filter",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、过滤器执行顺序",
+        "slug": "_7、过滤器执行顺序",
+        "link": "#_7、过滤器执行顺序",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8、跨域问题",
+        "slug": "_8、跨域问题",
+        "link": "#_8、跨域问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/sys_infras/micro_service/2-%E7%BB%9F%E4%B8%80%E7%BD%91%E5%85%B3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、服务异步通讯",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、MQ 介绍",
+        "slug": "_1、mq-介绍",
+        "link": "#_1、mq-介绍",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 同步调用与异步调用",
+            "slug": "_1-同步调用与异步调用",
+            "link": "#_1-同步调用与异步调用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 消息队列 MQ(Message Queue)",
+            "slug": "_2-消息队列-mq-message-queue",
+            "link": "#_2-消息队列-mq-message-queue",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、RabbitMQ 入门",
+        "slug": "_2、rabbitmq-入门",
+        "link": "#_2、rabbitmq-入门",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) RabbitMQ 安装",
+            "slug": "_1-rabbitmq-安装",
+            "link": "#_1-rabbitmq-安装",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) RabbitMQ 结构",
+            "slug": "_2-rabbitmq-结构",
+            "link": "#_2-rabbitmq-结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 消息模型",
+            "slug": "_3-消息模型",
+            "link": "#_3-消息模型",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、SpringAMQP",
+        "slug": "_3、springamqp",
+        "link": "#_3、springamqp",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本消息队列",
+            "slug": "_1-基本消息队列",
+            "link": "#_1-基本消息队列",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 工作队列",
+            "slug": "_2-工作队列",
+            "link": "#_2-工作队列",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 发布(Publish)、订阅(Subscribe)",
+            "slug": "_3-发布-publish-、订阅-subscribe",
+            "link": "#_3-发布-publish-、订阅-subscribe",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 消息转换器",
+            "slug": "_4-消息转换器",
+            "link": "#_4-消息转换器",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/sys_infras/micro_service/3-%E5%BC%82%E6%AD%A5%E9%80%9A%E8%AE%AF.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、简介与入门",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、SQL 与 NoSQL",
+        "slug": "_1、sql-与-nosql",
+        "link": "#_1、sql-与-nosql",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Redis",
+        "slug": "_2、redis",
+        "link": "#_2、redis",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、安装 Redis",
+        "slug": "_3、安装-redis",
+        "link": "#_3、安装-redis",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 单机安装 Redis",
+            "slug": "_1-单机安装-redis",
+            "link": "#_1-单机安装-redis",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) Redis 客户端",
+            "slug": "_2-redis-客户端",
+            "link": "#_2-redis-客户端",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/redis/1-Redis%E4%BB%8B%E7%BB%8D.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Redis 常见命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Redis 数据结构",
+        "slug": "_1、redis-数据结构",
+        "link": "#_1、redis-数据结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Redis 通用命令",
+        "slug": "_2、redis-通用命令",
+        "link": "#_2、redis-通用命令",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、String 类型",
+        "slug": "_3、string-类型",
+        "link": "#_3、string-类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、Hash 类型",
+        "slug": "_4、hash-类型",
+        "link": "#_4、hash-类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、List 类型",
+        "slug": "_5、list-类型",
+        "link": "#_5、list-类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、Set 类型",
+        "slug": "_6、set-类型",
+        "link": "#_6、set-类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、Sorted Set 类型",
+        "slug": "_7、sorted-set-类型",
+        "link": "#_7、sorted-set-类型",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/redis/2-Redis%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Redis 的 Java 客户端",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Jedis",
+        "slug": "_1、jedis",
+        "link": "#_1、jedis",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 快速入门",
+            "slug": "_1-快速入门",
+            "link": "#_1-快速入门",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) Jedis 连接池",
+            "slug": "_2-jedis-连接池",
+            "link": "#_2-jedis-连接池",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、SpringDataRedis",
+        "slug": "_2、springdataredis",
+        "link": "#_2、springdataredis",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 快速入门",
+            "slug": "_1-快速入门-1",
+            "link": "#_1-快速入门-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) SpringData 的序列化",
+            "slug": "_2-springdata-的序列化",
+            "link": "#_2-springdata-的序列化",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/redis/3-RedisJava.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、基本概念",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、采集量(Metric)",
+        "slug": "_1、采集量-metric",
+        "link": "#_1、采集量-metric",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、标签(Tag)",
+        "slug": "_2、标签-tag",
+        "link": "#_2、标签-tag",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、数据采集点(Data Collection Point)",
+        "slug": "_3、数据采集点-data-collection-point",
+        "link": "#_3、数据采集点-data-collection-point",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、表",
+        "slug": "_4、表",
+        "link": "#_4、表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、超级表(STable)",
+        "slug": "_5、超级表-stable",
+        "link": "#_5、超级表-stable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、子表(Subtable)",
+        "slug": "_6、子表-subtable",
+        "link": "#_6、子表-subtable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、库(Database)",
+        "slug": "_7、库-database",
+        "link": "#_7、库-database",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "基本原理",
+    "headers": [],
+    "path": "/dev/java/spring_security/1-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "认证接口",
+    "headers": [
+      {
+        "level": 2,
+        "title": "登录接口",
+        "slug": "登录接口",
+        "link": "#登录接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 Provider",
+        "slug": "自定义-provider",
+        "link": "#自定义-provider",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 UserDetails和userDetailsService",
+        "slug": "自定义-userdetails和userdetailsservice",
+        "link": "#自定义-userdetails和userdetailsservice",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/spring_security/2-%E8%AE%A4%E8%AF%81%E6%8E%A5%E5%8F%A3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "其他资源接口",
+    "headers": [],
+    "path": "/dev/java/spring_security/3-%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90%E6%8E%A5%E5%8F%A3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "基本原理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "登录接口",
+        "slug": "登录接口",
+        "link": "#登录接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 Provider",
+        "slug": "自定义-provider",
+        "link": "#自定义-provider",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 UserDetails和userDetailsService",
+        "slug": "自定义-userdetails和userdetailsservice",
+        "link": "#自定义-userdetails和userdetailsservice",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/spring_security/SpringSecurity.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "单体项目",
+    "headers": [
+      {
+        "level": 2,
+        "title": "在resources目录下添加多个application.yml",
+        "slug": "在resources目录下添加多个application-yml",
+        "link": "#在resources目录下添加多个application-yml",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在POM.xml中添加多个 Profile",
+        "slug": "在pom-xml中添加多个-profile",
+        "link": "#在pom-xml中添加多个-profile",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "打包时使用制定 Profile",
+        "slug": "打包时使用制定-profile",
+        "link": "#打包时使用制定-profile",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Mybatis-plus 入门案例",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、数据库",
+        "slug": "_1、数据库",
+        "link": "#_1、数据库",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、创建 SpringBoot 工程",
+        "slug": "_2、创建-springboot-工程",
+        "link": "#_2、创建-springboot-工程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、编写代码",
+        "slug": "_3、编写代码",
+        "link": "#_3、编写代码",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/1-%E5%85%A5%E9%97%A8%E6%A1%88%E4%BE%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "十、TypeHandler类型转换器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、使用案例",
+        "slug": "_1、使用案例",
+        "link": "#_1、使用案例",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/10-TypeHandler%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%99%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Mybatis-plus 中的 CRUD",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、源码以及注释",
+        "slug": "_1、源码以及注释",
+        "link": "#_1、源码以及注释",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、测试",
+        "slug": "_2、测试",
+        "link": "#_2、测试",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 插入",
+            "slug": "_1-插入",
+            "link": "#_1-插入",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 删除",
+            "slug": "_2-删除",
+            "link": "#_2-删除",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 修改",
+            "slug": "_3-修改",
+            "link": "#_3-修改",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 查询",
+            "slug": "_4-查询",
+            "link": "#_4-查询",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、自定义功能",
+        "slug": "_3、自定义功能",
+        "link": "#_3、自定义功能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、通用 Service",
+        "slug": "_4、通用-service",
+        "link": "#_4、通用-service",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 构建方法",
+            "slug": "_1-构建方法",
+            "link": "#_1-构建方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 常用 API",
+            "slug": "_2-常用-api",
+            "link": "#_2-常用-api",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/java/mb_plus/2-CRUD.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、常用注解",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、@TableName",
+        "slug": "_1、-tablename",
+        "link": "#_1、-tablename",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、@TableId",
+        "slug": "_2、-tableid",
+        "link": "#_2、-tableid",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、@TableFiled",
+        "slug": "_3、-tablefiled",
+        "link": "#_3、-tablefiled",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、@TableLogic",
+        "slug": "_4、-tablelogic",
+        "link": "#_4、-tablelogic",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/3-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "四、条件构造器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、QueryWrapper",
+        "slug": "_1、querywrapper",
+        "link": "#_1、querywrapper",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 组装查询条件",
+            "slug": "_1-组装查询条件",
+            "link": "#_1-组装查询条件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 组装排序条件",
+            "slug": "_2-组装排序条件",
+            "link": "#_2-组装排序条件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 条件优先级",
+            "slug": "_3-条件优先级",
+            "link": "#_3-条件优先级",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 字段选择",
+            "slug": "_4-字段选择",
+            "link": "#_4-字段选择",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 子查询",
+            "slug": "_5-子查询",
+            "link": "#_5-子查询",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、UpdateWrapper",
+        "slug": "_2、updatewrapper",
+        "link": "#_2、updatewrapper",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、真实开发环境中条件拼接",
+        "slug": "_3、真实开发环境中条件拼接",
+        "link": "#_3、真实开发环境中条件拼接",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、Lambda 条件构造器",
+        "slug": "_4、lambda-条件构造器",
+        "link": "#_4、lambda-条件构造器",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/4-%E6%9D%A1%E4%BB%B6%E6%9E%84%E9%80%A0%E5%99%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "五、插件",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、分页插件",
+        "slug": "_1、分页插件",
+        "link": "#_1、分页插件",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本使用",
+            "slug": "_1-基本使用",
+            "link": "#_1-基本使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 自定义 SQL 中使用分页插件",
+            "slug": "_2-自定义-sql-中使用分页插件",
+            "link": "#_2-自定义-sql-中使用分页插件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、乐观锁",
+        "slug": "_2、乐观锁",
+        "link": "#_2、乐观锁",
+        "children": [
+          {
+            "level": 3,
+            "title": "使用步骤",
+            "slug": "使用步骤",
+            "link": "#使用步骤",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/java/mb_plus/5-%E6%8F%92%E4%BB%B6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "六、通用枚举",
+    "headers": [
+      {
+        "level": 2,
+        "title": "使用案例",
+        "slug": "使用案例",
+        "link": "#使用案例",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/6-%E9%80%9A%E7%94%A8%E6%9E%9A%E4%B8%BE.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "七、代码生成器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "使用案例",
+        "slug": "使用案例",
+        "link": "#使用案例",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/7-%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "八、多数据源",
+    "headers": [
+      {
+        "level": 2,
+        "title": "使用测试",
+        "slug": "使用测试",
+        "link": "#使用测试",
+        "children": [
+          {
+            "level": 3,
+            "title": "1、数据库",
+            "slug": "_1、数据库",
+            "link": "#_1、数据库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2、依赖引入",
+            "slug": "_2、依赖引入",
+            "link": "#_2、依赖引入",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3、配置多数据源",
+            "slug": "_3、配置多数据源",
+            "link": "#_3、配置多数据源",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4、创建用户 Service 和商品 Service",
+            "slug": "_4、创建用户-service-和商品-service",
+            "link": "#_4、创建用户-service-和商品-service",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/java/mb_plus/8-%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "九、MybatisX 插件",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、使用 MybatisX 生成代码",
+        "slug": "_1、使用-mybatisx-生成代码",
+        "link": "#_1、使用-mybatisx-生成代码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、使用 MybatisX 生成 CRUD",
+        "slug": "_2、使用-mybatisx-生成-crud",
+        "link": "#_2、使用-mybatisx-生成-crud",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/mb_plus/9-MybatisX%E6%8F%92%E4%BB%B6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "高德地图接入",
+    "headers": [
+      {
+        "level": 2,
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "AWS S3",
+    "headers": [
+      {
+        "level": 2,
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/third_party_in/2-AWS_S3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "HTTP 客户端 Feign",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、使用 Feign 客户端",
+        "slug": "_1、使用-feign-客户端",
+        "link": "#_1、使用-feign-客户端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、自定义 Feign 的配置",
+        "slug": "_2、自定义-feign-的配置",
+        "link": "#_2、自定义-feign-的配置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、Feign 性能优化",
+        "slug": "_3、feign-性能优化",
+        "link": "#_3、feign-性能优化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、Feign 最佳实践",
+        "slug": "_4、feign-最佳实践",
+        "link": "#_4、feign-最佳实践",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 最佳实践1[继承]",
+            "slug": "_1-最佳实践1-继承",
+            "link": "#_1-最佳实践1-继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 最佳实践2[抽取]",
+            "slug": "_2-最佳实践2-抽取",
+            "link": "#_2-最佳实践2-抽取",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/java/tool/1-Feign.html",
     "pathLocale": "/",
     "extraFields": []
   },

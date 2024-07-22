@@ -53,6 +53,7 @@ export default defineUserConfig({
                             children: [
                                 {
                                     text: 'IDEA',
+                                    collapsible: true,
                                     children: [
                                         '/dev/tool/idea/1-常用快捷键'
                                     ]
@@ -65,6 +66,7 @@ export default defineUserConfig({
                             children: [
                                 {
                                     text: 'Go 基础',
+                                    collapsible: true,
                                     children: [
                                         '/dev/go/go_basic/1-环境安装',
                                         '/dev/go/go_basic/2-基本结构和基本数据类型',
@@ -78,6 +80,7 @@ export default defineUserConfig({
                                 },
                                 {
                                     text: 'Gin',
+                                    collapsible: true,
                                     children: [
                                         '/dev/go/gin/Gin示例程序'
                                     ]
@@ -90,6 +93,7 @@ export default defineUserConfig({
                             children: [
                                 {
                                     text: 'SpringSecurity',
+                                    collapsible: true,
                                     children: [
                                         '/dev/java/spring_security/1-基本原理',
                                         '/dev/java/spring_security/2-认证接口',
@@ -98,15 +102,40 @@ export default defineUserConfig({
                                 },
                                 {
                                     text: 'SpringBoot 多环境配置',
+                                    collapsible: true,
                                     children: [
                                         '/dev/java/springboot_multi_env/1-单体项目'
                                     ]
                                 },
                                 {
                                     text: 'SpringBoot 第三方服务接入',
+                                    collapsible: true,
                                     children: [
                                         '/dev/java/third_party_in/1-高德地图接入',
                                         '/dev/java/third_party_in/2-AWS_S3'
+                                    ]
+                                },
+                                {
+                                    text: 'Java生态',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/java/tool/1-Feign'
+                                    ]
+                                },
+                                {
+                                    text: 'Mybatis-Plus',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/java/mb_plus/1-入门案例',
+                                        '/dev/java/mb_plus/2-CRUD',
+                                        '/dev/java/mb_plus/3-常用注解',
+                                        '/dev/java/mb_plus/4-条件构造器',
+                                        '/dev/java/mb_plus/5-插件',
+                                        '/dev/java/mb_plus/6-通用枚举',
+                                        '/dev/java/mb_plus/7-代码生成器',
+                                        '/dev/java/mb_plus/8-多数据源',
+                                        '/dev/java/mb_plus/9-MybatisX插件',
+                                        '/dev/java/mb_plus/10-TypeHandler类型转换器',
                                     ]
                                 }
                             ]
@@ -116,7 +145,17 @@ export default defineUserConfig({
                             collapsible: true,
                             children: [
                                 {
+                                    text: 'Redis',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/middleware/redis/1-Redis介绍',
+                                        '/dev/middleware/redis/2-Redis常见命令',
+                                        '/dev/middleware/redis/3-RedisJava'
+                                    ]
+                                },
+                                {
                                     text: 'MongoDB',
+                                    collapsible: true,
                                     children: [
                                         '/dev/middleware/mongo/1-MongoDB基础',
                                         '/dev/middleware/mongo/2-单机部署',
@@ -127,8 +166,16 @@ export default defineUserConfig({
                                 },
                                 {
                                     text: 'TDEngine',
+                                    collapsible: true,
                                     children: [
                                         '/dev/middleware/tdengine/1-基本概念'
+                                    ]
+                                },
+                                {
+                                    text: 'ElasticSearch',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/middleware/es/1-es.md'
                                     ]
                                 }
                             ]
@@ -139,12 +186,28 @@ export default defineUserConfig({
                             children: [
                                 {
                                     text: '微服务',
+                                    collapsible: true,
                                     children: [
                                         '/dev/sys_infras/micro_service/1-微服务',
+                                        '/dev/sys_infras/micro_service/2-统一网关',
+                                        '/dev/sys_infras/micro_service/3-异步通讯'
                                     ]
                                 }
                             ]
                         },
+                        {
+                            text: '容器技术',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'Docker',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/container/docker/1-Docker'
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ],
