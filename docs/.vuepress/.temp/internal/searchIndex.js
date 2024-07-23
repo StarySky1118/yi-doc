@@ -43,7 +43,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "算法",
+    "title": "关于我",
     "headers": [],
     "path": "/al/",
     "pathLocale": "/",
@@ -58,22 +58,7 @@ export const searchIndex = [
   },
   {
     "title": "机器学习",
-    "headers": [
-      {
-        "level": 2,
-        "title": "传统机器学习",
-        "slug": "传统机器学习",
-        "link": "#传统机器学习",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "深度学习",
-        "slug": "深度学习",
-        "link": "#深度学习",
-        "children": []
-      }
-    ],
+    "headers": [],
     "path": "/ml/",
     "pathLocale": "/",
     "extraFields": []
@@ -451,6 +436,1273 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "操作系统",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Linux 零拷贝",
+        "slug": "linux-零拷贝",
+        "link": "#linux-零拷贝",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在 Linux 上定位磁盘已满、CPU 利用率过高的问题",
+        "slug": "在-linux-上定位磁盘已满、cpu-利用率过高的问题",
+        "link": "#在-linux-上定位磁盘已满、cpu-利用率过高的问题",
+        "children": [
+          {
+            "level": 3,
+            "title": "磁盘情况",
+            "slug": "磁盘情况",
+            "link": "#磁盘情况",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "CPU 使用情况",
+            "slug": "cpu-使用情况",
+            "link": "#cpu-使用情况",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "乐观锁与悲观锁",
+        "slug": "乐观锁与悲观锁",
+        "link": "#乐观锁与悲观锁",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "进程间通信的方法",
+        "slug": "进程间通信的方法",
+        "link": "#进程间通信的方法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Linux 目录结构",
+        "slug": "linux-目录结构",
+        "link": "#linux-目录结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "进程与线程有什么区别？",
+        "slug": "进程与线程有什么区别",
+        "link": "#进程与线程有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "进程调度算法",
+        "slug": "进程调度算法",
+        "link": "#进程调度算法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "进程有哪几种状态？如何转换？",
+        "slug": "进程有哪几种状态-如何转换",
+        "link": "#进程有哪几种状态-如何转换",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Java",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Java 创建线程有哪几种方式？",
+        "slug": "java-创建线程有哪几种方式",
+        "link": "#java-创建线程有哪几种方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 线程池有哪几个参数",
+        "slug": "java-线程池有哪几个参数",
+        "link": "#java-线程池有哪几个参数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "线程池的实现方式",
+        "slug": "线程池的实现方式",
+        "link": "#线程池的实现方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "线程池核心线程数如何设置",
+        "slug": "线程池核心线程数如何设置",
+        "link": "#线程池核心线程数如何设置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "SpringBoot 自动装配",
+        "slug": "springboot-自动装配",
+        "link": "#springboot-自动装配",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的引用类型",
+        "slug": "java-中的引用类型",
+        "link": "#java-中的引用类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "ArrayList和 LinkedList有什么区别？",
+        "slug": "arraylist和-linkedlist有什么区别",
+        "link": "#arraylist和-linkedlist有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "说一说 ConcurrentHashMap的实现原理",
+        "slug": "说一说-concurrenthashmap的实现原理",
+        "link": "#说一说-concurrenthashmap的实现原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 的生命周期",
+        "slug": "spring-bean-的生命周期",
+        "link": "#spring-bean-的生命周期",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring AOP",
+        "slug": "spring-aop",
+        "link": "#spring-aop",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring IoC",
+        "slug": "spring-ioc",
+        "link": "#spring-ioc",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring 常用的注解",
+        "slug": "spring-常用的注解",
+        "link": "#spring-常用的注解",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@Transactional注解失效的场景",
+        "slug": "transactional注解失效的场景",
+        "link": "#transactional注解失效的场景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "堆和栈的区别",
+        "slug": "堆和栈的区别",
+        "link": "#堆和栈的区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 内存结构是怎样的？",
+        "slug": "java-内存结构是怎样的",
+        "link": "#java-内存结构是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "synchronized关键字底层原理",
+        "slug": "synchronized关键字底层原理",
+        "link": "#synchronized关键字底层原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Atomic原子类",
+        "slug": "atomic原子类",
+        "link": "#atomic原子类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "垃圾回收机制",
+        "slug": "垃圾回收机制",
+        "link": "#垃圾回收机制",
+        "children": [
+          {
+            "level": 3,
+            "title": "垃圾回收机制概述",
+            "slug": "垃圾回收机制概述",
+            "link": "#垃圾回收机制概述",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "对象死亡判断",
+            "slug": "对象死亡判断",
+            "link": "#对象死亡判断",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "垃圾回收算法",
+            "slug": "垃圾回收算法",
+            "link": "#垃圾回收算法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Java 垃圾收集器",
+            "slug": "java-垃圾收集器",
+            "link": "#java-垃圾收集器",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Java 内存泄漏",
+        "slug": "java-内存泄漏",
+        "link": "#java-内存泄漏",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "ThreadLocal 的原理",
+        "slug": "threadlocal-的原理",
+        "link": "#threadlocal-的原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 异常体系",
+        "slug": "java-异常体系",
+        "link": "#java-异常体系",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/2-java.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MySQL",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MySQL 慢查询",
+        "slug": "mysql-慢查询",
+        "link": "#mysql-慢查询",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 一张表能存放多少数据",
+        "slug": "mysql-一张表能存放多少数据",
+        "link": "#mysql-一张表能存放多少数据",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "说说 MySQL 事务？幻读是什么？何时出现幻读？",
+        "slug": "说说-mysql-事务-幻读是什么-何时出现幻读",
+        "link": "#说说-mysql-事务-幻读是什么-何时出现幻读",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引有哪些分类？",
+        "slug": "索引有哪些分类",
+        "link": "#索引有哪些分类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引有哪些优点或缺点？",
+        "slug": "索引有哪些优点或缺点",
+        "link": "#索引有哪些优点或缺点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中的三大日志及作用",
+        "slug": "mysql-中的三大日志及作用",
+        "link": "#mysql-中的三大日志及作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "常见索引失效场景",
+        "slug": "常见索引失效场景",
+        "link": "#常见索引失效场景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "常见的 SQL 优化方案",
+        "slug": "常见的-sql-优化方案",
+        "link": "#常见的-sql-优化方案",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/3-mysql.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Redis",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Redis 常见数据类型应用场景",
+        "slug": "redis-常见数据类型应用场景",
+        "link": "#redis-常见数据类型应用场景",
+        "children": [
+          {
+            "level": 3,
+            "title": "String",
+            "slug": "string",
+            "link": "#string",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Set",
+            "slug": "set",
+            "link": "#set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "List",
+            "slug": "list",
+            "link": "#list",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Hash",
+            "slug": "hash",
+            "link": "#hash",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZSet",
+            "slug": "zset",
+            "link": "#zset",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Redis 数据类型底层数据结构",
+        "slug": "redis-数据类型底层数据结构",
+        "link": "#redis-数据类型底层数据结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "String",
+            "slug": "string-1",
+            "link": "#string-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "List",
+            "slug": "list-1",
+            "link": "#list-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Set",
+            "slug": "set-1",
+            "link": "#set-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Hash",
+            "slug": "hash-1",
+            "link": "#hash-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZSet",
+            "slug": "zset-1",
+            "link": "#zset-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "为什么 Lua 脚本可以保证原子性",
+        "slug": "为什么-lua-脚本可以保证原子性",
+        "link": "#为什么-lua-脚本可以保证原子性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 和 Redis 数据同步方式",
+        "slug": "mysql-和-redis-数据同步方式",
+        "link": "#mysql-和-redis-数据同步方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "缓存雪崩、缓存击穿、缓存穿透",
+        "slug": "缓存雪崩、缓存击穿、缓存穿透",
+        "link": "#缓存雪崩、缓存击穿、缓存穿透",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Redis 有哪些过期策略？",
+        "slug": "redis-有哪些过期策略",
+        "link": "#redis-有哪些过期策略",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Redis 大 key 有什么问题？",
+        "slug": "redis-大-key-有什么问题",
+        "link": "#redis-大-key-有什么问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/4-Redis.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算机网络",
+    "headers": [
+      {
+        "level": 2,
+        "title": "HTTPS 中间人攻击",
+        "slug": "https-中间人攻击",
+        "link": "#https-中间人攻击",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 常见的状态码有哪些？",
+        "slug": "http-常见的状态码有哪些",
+        "link": "#http-常见的状态码有哪些",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "DNS 解析的过程是怎样的？",
+        "slug": "dns-解析的过程是怎样的",
+        "link": "#dns-解析的过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "从键入 URL 到显示网页，中间发生了什么？",
+        "slug": "从键入-url-到显示网页-中间发生了什么",
+        "link": "#从键入-url-到显示网页-中间发生了什么",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. URL 解析与 HTTP 请求生成",
+            "slug": "_1-url-解析与-http-请求生成",
+            "link": "#_1-url-解析与-http-请求生成",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. DNS 查询",
+            "slug": "_2-dns-查询",
+            "link": "#_2-dns-查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. TCP 连接",
+            "slug": "_3-tcp-连接",
+            "link": "#_3-tcp-连接",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 发送 HTTP 请求",
+            "slug": "_4-发送-http-请求",
+            "link": "#_4-发送-http-请求",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 服务端处理请求",
+            "slug": "_5-服务端处理请求",
+            "link": "#_5-服务端处理请求",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6. 浏览器渲染页面",
+            "slug": "_6-浏览器渲染页面",
+            "link": "#_6-浏览器渲染页面",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "TCP/IP 网络模型有哪几层，各自有什么作用？",
+        "slug": "tcp-ip-网络模型有哪几层-各自有什么作用",
+        "link": "#tcp-ip-网络模型有哪几层-各自有什么作用",
+        "children": [
+          {
+            "level": 3,
+            "title": "为什么要分层",
+            "slug": "为什么要分层",
+            "link": "#为什么要分层",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "各层的作用",
+            "slug": "各层的作用",
+            "link": "#各层的作用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "TCP 的流量控制和拥塞控制",
+        "slug": "tcp-的流量控制和拥塞控制",
+        "link": "#tcp-的流量控制和拥塞控制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 协议的特点",
+        "slug": "tcp-协议的特点",
+        "link": "#tcp-协议的特点",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/5-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "零、Python 包使用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Numpy",
+        "slug": "_1、numpy",
+        "link": "#_1、numpy",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) tile()方法",
+            "slug": "_1-tile-方法",
+            "link": "#_1-tile-方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) sum()方法",
+            "slug": "_2-sum-方法",
+            "link": "#_2-sum-方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) argsort()方法",
+            "slug": "_3-argsort-方法",
+            "link": "#_3-argsort-方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) min()方法",
+            "slug": "_4-min-方法",
+            "link": "#_4-min-方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) nonzero()方法",
+            "slug": "_5-nonzero-方法",
+            "link": "#_5-nonzero-方法",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、sklearn",
+        "slug": "_2、sklearn",
+        "link": "#_2、sklearn",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) train_test_split()",
+            "slug": "_1-train-test-split",
+            "link": "#_1-train-test-split",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) accuracy_score()",
+            "slug": "_2-accuracy-score",
+            "link": "#_2-accuracy-score",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) fit_transform()",
+            "slug": "_3-fit-transform",
+            "link": "#_3-fit-transform",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 各种数据集介绍",
+            "slug": "_4-各种数据集介绍",
+            "link": "#_4-各种数据集介绍",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、内置函数",
+        "slug": "_3、内置函数",
+        "link": "#_3、内置函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) randrange()",
+            "slug": "_1-randrange",
+            "link": "#_1-randrange",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) map()",
+            "slug": "_2-map",
+            "link": "#_2-map",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/0-Python%E5%8C%85%E4%BD%BF%E7%94%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、K 近邻算法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、算法原理",
+        "slug": "_1、算法原理",
+        "link": "#_1、算法原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、算法步骤",
+        "slug": "_2、算法步骤",
+        "link": "#_2、算法步骤",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、算法特点",
+        "slug": "_3、算法特点",
+        "link": "#_3、算法特点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、代码实战",
+        "slug": "_4、代码实战",
+        "link": "#_4、代码实战",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 双特征二分类模拟数据集",
+            "slug": "_1-双特征二分类模拟数据集",
+            "link": "#_1-双特征二分类模拟数据集",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 三特征三分类——约会对象",
+            "slug": "_2-三特征三分类——约会对象",
+            "link": "#_2-三特征三分类——约会对象",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 1024 特征 10 分类——手写字体",
+            "slug": "_3-1024-特征-10-分类——手写字体",
+            "link": "#_3-1024-特征-10-分类——手写字体",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、sklearn 中的 knn",
+        "slug": "_5、sklearn-中的-knn",
+        "link": "#_5、sklearn-中的-knn",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 使用案例：鸢尾花",
+            "slug": "_1-使用案例-鸢尾花",
+            "link": "#_1-使用案例-鸢尾花",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 约会对象",
+            "slug": "_2-约会对象",
+            "link": "#_2-约会对象",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 手写字体识别",
+            "slug": "_3-手写字体识别",
+            "link": "#_3-手写字体识别",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/1-K%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、决策树",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、算法步骤",
+        "slug": "_1、算法步骤",
+        "link": "#_1、算法步骤",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、算法特点",
+        "slug": "_2、算法特点",
+        "link": "#_2、算法特点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、sklearn 中的决策树",
+        "slug": "_3、sklearn-中的决策树",
+        "link": "#_3、sklearn-中的决策树",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 鸢尾花",
+            "slug": "_1-鸢尾花",
+            "link": "#_1-鸢尾花",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 隐形眼镜",
+            "slug": "_2-隐形眼镜",
+            "link": "#_2-隐形眼镜",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/2-%E5%86%B3%E7%AD%96%E6%A0%91.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、朴素贝叶斯",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、算法简介",
+        "slug": "_1、算法简介",
+        "link": "#_1、算法简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、代码实战",
+        "slug": "_2、代码实战",
+        "link": "#_2、代码实战",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 屏蔽社区留言板中的侮辱性言论",
+            "slug": "_1-屏蔽社区留言板中的侮辱性言论",
+            "link": "#_1-屏蔽社区留言板中的侮辱性言论",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、sklearn 中的朴素贝叶斯分类器",
+        "slug": "_3、sklearn-中的朴素贝叶斯分类器",
+        "link": "#_3、sklearn-中的朴素贝叶斯分类器",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 示例代码",
+            "slug": "_1-示例代码",
+            "link": "#_1-示例代码",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/3-%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "四、逻辑回归",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、算法简介",
+        "slug": "_1、算法简介",
+        "link": "#_1、算法简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、代码实战",
+        "slug": "_2、代码实战",
+        "link": "#_2、代码实战",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) sklearn 逻辑回归分类器示例代码",
+            "slug": "_1-sklearn-逻辑回归分类器示例代码",
+            "link": "#_1-sklearn-逻辑回归分类器示例代码",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/4-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "五、支持向量机",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、代码实战",
+        "slug": "_1、代码实战",
+        "link": "#_1、代码实战",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) sklearn SVM 示例代码",
+            "slug": "_1-sklearn-svm-示例代码",
+            "link": "#_1-sklearn-svm-示例代码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 手写字体识别：1和9",
+            "slug": "_2-手写字体识别-1和9",
+            "link": "#_2-手写字体识别-1和9",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/5-SVM.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "六、集成学习",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、随机森林",
+        "slug": "_1、随机森林",
+        "link": "#_1、随机森林",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 简介",
+            "slug": "_1-简介",
+            "link": "#_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析",
+            "slug": "_2-源码分析",
+            "link": "#_2-源码分析",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) sklearn 随机森林示例代码",
+            "slug": "_3-sklearn-随机森林示例代码",
+            "link": "#_3-sklearn-随机森林示例代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、AdaBoost",
+        "slug": "_2、adaboost",
+        "link": "#_2、adaboost",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 算法简介",
+            "slug": "_1-算法简介",
+            "link": "#_1-算法简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 算法过程",
+            "slug": "_2-算法过程",
+            "link": "#_2-算法过程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) sklearn adaboost 示例代码",
+            "slug": "_3-sklearn-adaboost-示例代码",
+            "link": "#_3-sklearn-adaboost-示例代码",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/6-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "七、线性回归",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、基本线性回归(LR)",
+        "slug": "_1、基本线性回归-lr",
+        "link": "#_1、基本线性回归-lr",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 算法介绍",
+            "slug": "_1-算法介绍",
+            "link": "#_1-算法介绍",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析——线性回归与可视化",
+            "slug": "_2-源码分析——线性回归与可视化",
+            "link": "#_2-源码分析——线性回归与可视化",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) sklearn 示例代码",
+            "slug": "_3-sklearn-示例代码",
+            "link": "#_3-sklearn-示例代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、局部加权线性回归(LWLR)",
+        "slug": "_2、局部加权线性回归-lwlr",
+        "link": "#_2、局部加权线性回归-lwlr",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 算法介绍",
+            "slug": "_1-算法介绍-1",
+            "link": "#_1-算法介绍-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析",
+            "slug": "_2-源码分析",
+            "link": "#_2-源码分析",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 存在问题",
+            "slug": "_3-存在问题",
+            "link": "#_3-存在问题",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、岭回归(Ridge Regression)",
+        "slug": "_3、岭回归-ridge-regression",
+        "link": "#_3、岭回归-ridge-regression",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本介绍",
+            "slug": "_1-基本介绍",
+            "link": "#_1-基本介绍",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析",
+            "slug": "_2-源码分析-1",
+            "link": "#_2-源码分析-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) sklearn 中的岭回归",
+            "slug": "_3-sklearn-中的岭回归",
+            "link": "#_3-sklearn-中的岭回归",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、LASSO 方法",
+        "slug": "_4、lasso-方法",
+        "link": "#_4、lasso-方法",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本介绍",
+            "slug": "_1-基本介绍-1",
+            "link": "#_1-基本介绍-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) sklearn lasso 回归示例代码",
+            "slug": "_2-sklearn-lasso-回归示例代码",
+            "link": "#_2-sklearn-lasso-回归示例代码",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/7-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "八、树回归",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Cart 树",
+        "slug": "_1、cart-树",
+        "link": "#_1、cart-树",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 算法介绍",
+            "slug": "_1-算法介绍",
+            "link": "#_1-算法介绍",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 算法步骤",
+            "slug": "_2-算法步骤",
+            "link": "#_2-算法步骤",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 源码分析",
+            "slug": "_3-源码分析",
+            "link": "#_3-源码分析",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) sklearn cart 树示例代码",
+            "slug": "_4-sklearn-cart-树示例代码",
+            "link": "#_4-sklearn-cart-树示例代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、树剪枝",
+        "slug": "_2、树剪枝",
+        "link": "#_2、树剪枝",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本介绍",
+            "slug": "_1-基本介绍",
+            "link": "#_1-基本介绍",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 后剪枝",
+            "slug": "_2-后剪枝",
+            "link": "#_2-后剪枝",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 源码分析",
+            "slug": "_3-源码分析-1",
+            "link": "#_3-源码分析-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、模型树",
+        "slug": "_3、模型树",
+        "link": "#_3、模型树",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本介绍",
+            "slug": "_1-基本介绍-1",
+            "link": "#_1-基本介绍-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析",
+            "slug": "_2-源码分析",
+            "link": "#_2-源码分析",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/8-%E6%A0%91%E5%9B%9E%E5%BD%92.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "九、KMeans 聚类",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、算法介绍",
+        "slug": "_1、算法介绍",
+        "link": "#_1、算法介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、源码分析",
+        "slug": "_2、源码分析",
+        "link": "#_2、源码分析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、算法缺陷",
+        "slug": "_3、算法缺陷",
+        "link": "#_3、算法缺陷",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、二分 KMeans 聚类",
+        "slug": "_4、二分-kmeans-聚类",
+        "link": "#_4、二分-kmeans-聚类",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 算法步骤",
+            "slug": "_1-算法步骤",
+            "link": "#_1-算法步骤",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 源码分析",
+            "slug": "_2-源码分析",
+            "link": "#_2-源码分析",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、sklearn 聚类",
+        "slug": "_5、sklearn-聚类",
+        "link": "#_5、sklearn-聚类",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 普通聚类",
+            "slug": "_1-普通聚类",
+            "link": "#_1-普通聚类",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 二分聚类",
+            "slug": "_2-二分聚类",
+            "link": "#_2-二分聚类",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/ml/traditional_ml/9-KMeans.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Docker",
     "headers": [
       {
@@ -560,64 +1812,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一、Gin 示例程序",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、搭建 Gin 服务器步骤",
-        "slug": "_1、搭建-gin-服务器步骤",
-        "link": "#_1、搭建-gin-服务器步骤",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、接口参数获取",
-        "slug": "_2、接口参数获取",
-        "link": "#_2、接口参数获取",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) GET 请求获取路径参数和请求参数",
-            "slug": "_1-get-请求获取路径参数和请求参数",
-            "link": "#_1-get-请求获取路径参数和请求参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) POST 请求获取请求体中的参数",
-            "slug": "_2-post-请求获取请求体中的参数",
-            "link": "#_2-post-请求获取请求体中的参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 文件的接收与返回",
-            "slug": "_3-文件的接收与返回",
-            "link": "#_3-文件的接收与返回",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、路由分组与中间件",
-        "slug": "_3、路由分组与中间件",
-        "link": "#_3、路由分组与中间件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、GORM",
-        "slug": "_4、gorm",
-        "link": "#_4、gorm",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/gin/Gin%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "一、布局",
     "headers": [
       {
@@ -676,864 +1870,60 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "零、附录与补充",
+    "title": "一、Gin 示例程序",
     "headers": [
       {
         "level": 2,
-        "title": "1、在 webstorm 中使用 Emmet 语法",
-        "slug": "_1、在-webstorm-中使用-emmet-语法",
-        "link": "#_1、在-webstorm-中使用-emmet-语法",
+        "title": "1、搭建 Gin 服务器步骤",
+        "slug": "_1、搭建-gin-服务器步骤",
+        "link": "#_1、搭建-gin-服务器步骤",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、接口参数获取",
+        "slug": "_2、接口参数获取",
+        "link": "#_2、接口参数获取",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) GET 请求获取路径参数和请求参数",
+            "slug": "_1-get-请求获取路径参数和请求参数",
+            "link": "#_1-get-请求获取路径参数和请求参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) POST 请求获取请求体中的参数",
+            "slug": "_2-post-请求获取请求体中的参数",
+            "link": "#_2-post-请求获取请求体中的参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 文件的接收与返回",
+            "slug": "_3-文件的接收与返回",
+            "link": "#_3-文件的接收与返回",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、路由分组与中间件",
+        "slug": "_3、路由分组与中间件",
+        "link": "#_3、路由分组与中间件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、GORM",
+        "slug": "_4、gorm",
+        "link": "#_4、gorm",
         "children": []
       }
     ],
-    "path": "/dev/front_end/vue/0-%E9%99%84%E5%BD%95%E4%B8%8E%E8%A1%A5%E5%85%85.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "一、前端工程化与 webpack",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、前端工程化",
-        "slug": "_1、前端工程化",
-        "link": "#_1、前端工程化",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、webpack 基本使用",
-        "slug": "_2、webpack-基本使用",
-        "link": "#_2、webpack-基本使用",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) webpack 介绍",
-            "slug": "_1-webpack-介绍",
-            "link": "#_1-webpack-介绍",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 列表隔行变色项目",
-            "slug": "_2-列表隔行变色项目",
-            "link": "#_2-列表隔行变色项目",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、webpack 相关配置",
-        "slug": "_3、webpack-相关配置",
-        "link": "#_3、webpack-相关配置",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 可选模式",
-            "slug": "_1-可选模式",
-            "link": "#_1-可选模式",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) webpack.config.js的作用",
-            "slug": "_2-webpack-config-js的作用",
-            "link": "#_2-webpack-config-js的作用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) webpack 默认约定",
-            "slug": "_3-webpack-默认约定",
-            "link": "#_3-webpack-默认约定",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 自定义打包的入口与出口",
-            "slug": "_4-自定义打包的入口与出口",
-            "link": "#_4-自定义打包的入口与出口",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 打包完成后自动打开浏览器",
-            "slug": "_5-打包完成后自动打开浏览器",
-            "link": "#_5-打包完成后自动打开浏览器",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、webpack 插件",
-        "slug": "_4、webpack-插件",
-        "link": "#_4、webpack-插件",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 插件的作用",
-            "slug": "_1-插件的作用",
-            "link": "#_1-插件的作用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) webpack-dev-server",
-            "slug": "_2-webpack-dev-server",
-            "link": "#_2-webpack-dev-server",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) html-webpack-plugin",
-            "slug": "_3-html-webpack-plugin",
-            "link": "#_3-html-webpack-plugin",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "5、webpack loader",
-        "slug": "_5、webpack-loader",
-        "link": "#_5、webpack-loader",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) webpack loader 概述",
-            "slug": "_1-webpack-loader-概述",
-            "link": "#_1-webpack-loader-概述",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 打包处理 css 文件",
-            "slug": "_2-打包处理-css-文件",
-            "link": "#_2-打包处理-css-文件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 打包处理 less 文件",
-            "slug": "_3-打包处理-less-文件",
-            "link": "#_3-打包处理-less-文件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4)  打包处理样式表中与 url 路径相关的文件",
-            "slug": "_4-打包处理样式表中与-url-路径相关的文件",
-            "link": "#_4-打包处理样式表中与-url-路径相关的文件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 打包处理 js 文件中的高级语法",
-            "slug": "_5-打包处理-js-文件中的高级语法",
-            "link": "#_5-打包处理-js-文件中的高级语法",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "6、打包发布",
-        "slug": "_6、打包发布",
-        "link": "#_6、打包发布",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、Source Map",
-        "slug": "_7、source-map",
-        "link": "#_7、source-map",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) Source Map 简介",
-            "slug": "_1-source-map-简介",
-            "link": "#_1-source-map-简介",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 开发环境",
-            "slug": "_2-开发环境",
-            "link": "#_2-开发环境",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 生产环境",
-            "slug": "_3-生产环境",
-            "link": "#_3-生产环境",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 最佳实践",
-            "slug": "_4-最佳实践",
-            "link": "#_4-最佳实践",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "8、webpack 尾声",
-        "slug": "_8、webpack-尾声",
-        "link": "#_8、webpack-尾声",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 拓展一：**@**表示 src 目录",
-            "slug": "_1-拓展一-表示-src-目录",
-            "link": "#_1-拓展一-表示-src-目录",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 拓展二：在谷歌浏览器安装 vue-devtools 工具",
-            "slug": "_2-拓展二-在谷歌浏览器安装-vue-devtools-工具",
-            "link": "#_2-拓展二-在谷歌浏览器安装-vue-devtools-工具",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/front_end/vue/1-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8Ewebpack.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "二、Vue 基础1",
-    "headers": [
-      {
-        "level": 3,
-        "title": "1、 Vue 简介",
-        "slug": "_1、-vue-简介",
-        "link": "#_1、-vue-简介",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、基本使用",
-        "slug": "_2、基本使用",
-        "link": "#_2、基本使用",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 初体验案例",
-            "slug": "_1-初体验案例",
-            "link": "#_1-初体验案例",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) MVVM",
-            "slug": "_2-mvvm-1",
-            "link": "#_2-mvvm-1",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、Vue 调试工具",
-        "slug": "_3、vue-调试工具",
-        "link": "#_3、vue-调试工具",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、Vue 语法",
-        "slug": "_4、vue-语法",
-        "link": "#_4、vue-语法",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 指令",
-            "slug": "_1-指令",
-            "link": "#_1-指令",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 过滤器",
-            "slug": "_2-过滤器",
-            "link": "#_2-过滤器",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/front_end/vue/2-Vue%E5%9F%BA%E7%A1%801.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "三、Vue 基础2",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、侦听器 watch",
-        "slug": "_1、侦听器-watch",
-        "link": "#_1、侦听器-watch",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 基本使用：方法格式侦听器",
-            "slug": "_1-基本使用-方法格式侦听器",
-            "link": "#_1-基本使用-方法格式侦听器",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 使用案例：检测用户名是否可用",
-            "slug": "_2-使用案例-检测用户名是否可用",
-            "link": "#_2-使用案例-检测用户名是否可用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) immediate选项",
-            "slug": "_3-immediate选项",
-            "link": "#_3-immediate选项",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) deep选项",
-            "slug": "_4-deep选项",
-            "link": "#_4-deep选项",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2、计算属性",
-        "slug": "_2、计算属性",
-        "link": "#_2、计算属性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、Axios",
-        "slug": "_3、axios",
-        "link": "#_3、axios",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 基本使用",
-            "slug": "_1-基本使用",
-            "link": "#_1-基本使用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) axios GET 和 POST",
-            "slug": "_2-axios-get-和-post",
-            "link": "#_2-axios-get-和-post",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、vue-cli",
-        "slug": "_4、vue-cli",
-        "link": "#_4、vue-cli",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 单页面应用程序",
-            "slug": "_1-单页面应用程序",
-            "link": "#_1-单页面应用程序",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) vue-cli 简介",
-            "slug": "_2-vue-cli-简介",
-            "link": "#_2-vue-cli-简介",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 安装与使用",
-            "slug": "_3-安装与使用",
-            "link": "#_3-安装与使用",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) vue-cli 创建的项目的目录结构",
-            "slug": "_4-vue-cli-创建的项目的目录结构",
-            "link": "#_4-vue-cli-创建的项目的目录结构",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) Vue 项目运行流程",
-            "slug": "_5-vue-项目运行流程",
-            "link": "#_5-vue-项目运行流程",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "5、Vue 组件",
-        "slug": "_5、vue-组件",
-        "link": "#_5、vue-组件",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 组件化开发",
-            "slug": "_1-组件化开发",
-            "link": "#_1-组件化开发",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 组件之间的父子关系",
-            "slug": "_2-组件之间的父子关系",
-            "link": "#_2-组件之间的父子关系",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 使用组件步骤——私有组件",
-            "slug": "_3-使用组件步骤——私有组件",
-            "link": "#_3-使用组件步骤——私有组件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 注册全局组件",
-            "slug": "_4-注册全局组件",
-            "link": "#_4-注册全局组件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 组件的 props",
-            "slug": "_5-组件的-props",
-            "link": "#_5-组件的-props",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 组件之间的样式冲突",
-            "slug": "_6-组件之间的样式冲突",
-            "link": "#_6-组件之间的样式冲突",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/front_end/vue/3-Vue%E5%9F%BA%E7%A1%802.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "四、生命周期&数据共享",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、组件的声明周期",
-        "slug": "_1、组件的声明周期",
-        "link": "#_1、组件的声明周期",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 生命周期与生命周期函数",
-            "slug": "_1-生命周期与生命周期函数",
-            "link": "#_1-生命周期与生命周期函数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 生命周期函数分类",
-            "slug": "_2-生命周期函数分类",
-            "link": "#_2-生命周期函数分类",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2、组件之间的数据共享",
-        "slug": "_2、组件之间的数据共享",
-        "link": "#_2、组件之间的数据共享",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 组件之间的关系",
-            "slug": "_1-组件之间的关系",
-            "link": "#_1-组件之间的关系",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 父子组件之间数据共享",
-            "slug": "_2-父子组件之间数据共享",
-            "link": "#_2-父子组件之间数据共享",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 兄弟组件之间的数据共享",
-            "slug": "_3-兄弟组件之间的数据共享",
-            "link": "#_3-兄弟组件之间的数据共享",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、ref 引用",
-        "slug": "_3、ref-引用",
-        "link": "#_3、ref-引用",
-        "children": [
-          {
-            "level": 3,
-            "title": "3.1 操作 DOM 元素",
-            "slug": "_3-1-操作-dom-元素",
-            "link": "#_3-1-操作-dom-元素",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3.2 操作组件实例",
-            "slug": "_3-2-操作组件实例",
-            "link": "#_3-2-操作组件实例",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "3.3 $nextTick()方法",
-            "slug": "_3-3-nexttick-方法",
-            "link": "#_3-3-nexttick-方法",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、补充——数组方法",
-        "slug": "_4、补充——数组方法",
-        "link": "#_4、补充——数组方法",
-        "children": []
-      }
-    ],
-    "path": "/dev/front_end/vue/4-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "分布式搜索",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、ElasticSearch 介绍",
-        "slug": "_1、elasticsearch-介绍",
-        "link": "#_1、elasticsearch-介绍",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) ES 和 ELK",
-            "slug": "_1-es-和-elk",
-            "link": "#_1-es-和-elk",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 倒排索引",
-            "slug": "_2-倒排索引",
-            "link": "#_2-倒排索引",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) MySQL 与 ES",
-            "slug": "_3-mysql-与-es",
-            "link": "#_3-mysql-与-es",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 安装 ES、kibana",
-            "slug": "_4-安装-es、kibana",
-            "link": "#_4-安装-es、kibana",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) IK 分词器配置",
-            "slug": "_5-ik-分词器配置",
-            "link": "#_5-ik-分词器配置",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2、索引库(表)操作",
-        "slug": "_2、索引库-表-操作",
-        "link": "#_2、索引库-表-操作",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) Mapping",
-            "slug": "_1-mapping",
-            "link": "#_1-mapping",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 增删改查",
-            "slug": "_2-增删改查",
-            "link": "#_2-增删改查",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、文档(记录)操作",
-        "slug": "_3、文档-记录-操作",
-        "link": "#_3、文档-记录-操作",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 增删改查",
-            "slug": "_1-增删改查",
-            "link": "#_1-增删改查",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、RestClient 操作索引库",
-        "slug": "_4、restclient-操作索引库",
-        "link": "#_4、restclient-操作索引库",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 依赖引入与测试代码",
-            "slug": "_1-依赖引入与测试代码",
-            "link": "#_1-依赖引入与测试代码",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 创建索引库",
-            "slug": "_2-创建索引库",
-            "link": "#_2-创建索引库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 删除索引库",
-            "slug": "_3-删除索引库",
-            "link": "#_3-删除索引库",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 判断索引库是否存在",
-            "slug": "_4-判断索引库是否存在",
-            "link": "#_4-判断索引库是否存在",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "5、RestClient 操作文档",
-        "slug": "_5、restclient-操作文档",
-        "link": "#_5、restclient-操作文档",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 新建文档",
-            "slug": "_1-新建文档",
-            "link": "#_1-新建文档",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 查询文档",
-            "slug": "_2-查询文档",
-            "link": "#_2-查询文档",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 更新文档",
-            "slug": "_3-更新文档",
-            "link": "#_3-更新文档",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 删除文档",
-            "slug": "_4-删除文档",
-            "link": "#_4-删除文档",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 批量导入文档",
-            "slug": "_5-批量导入文档",
-            "link": "#_5-批量导入文档",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "6、DSL 查询文档",
-        "slug": "_6、dsl-查询文档",
-        "link": "#_6、dsl-查询文档",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) DSL 查询分类",
-            "slug": "_1-dsl-查询分类",
-            "link": "#_1-dsl-查询分类",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 全文检索查询",
-            "slug": "_2-全文检索查询",
-            "link": "#_2-全文检索查询",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 精确查询",
-            "slug": "_3-精确查询",
-            "link": "#_3-精确查询",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 地理查询",
-            "slug": "_4-地理查询",
-            "link": "#_4-地理查询",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 复合查询",
-            "slug": "_5-复合查询",
-            "link": "#_5-复合查询",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 排序",
-            "slug": "_6-排序",
-            "link": "#_6-排序",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(7) 分页",
-            "slug": "_7-分页",
-            "link": "#_7-分页",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(8) 高亮",
-            "slug": "_8-高亮",
-            "link": "#_8-高亮",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "7、RestClient 查询文档",
-        "slug": "_7、restclient-查询文档",
-        "link": "#_7、restclient-查询文档",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 入门案例：查询所有",
-            "slug": "_1-入门案例-查询所有",
-            "link": "#_1-入门案例-查询所有",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 全文检索查询",
-            "slug": "_2-全文检索查询-1",
-            "link": "#_2-全文检索查询-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 精确查询",
-            "slug": "_3-精确查询-1",
-            "link": "#_3-精确查询-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 复合查询——布尔查询",
-            "slug": "_4-复合查询——布尔查询",
-            "link": "#_4-复合查询——布尔查询",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 排序、分页",
-            "slug": "_5-排序、分页",
-            "link": "#_5-排序、分页",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 高亮",
-            "slug": "_6-高亮",
-            "link": "#_6-高亮",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "8、ES 提高",
-        "slug": "_8、es-提高",
-        "link": "#_8、es-提高",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 数据聚合",
-            "slug": "_1-数据聚合",
-            "link": "#_1-数据聚合",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 自动补全",
-            "slug": "_2-自动补全",
-            "link": "#_2-自动补全",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/middleware/es/1-es.html",
+    "path": "/dev/go/gin/Gin%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1957,6 +2347,1401 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "分布式搜索",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、ElasticSearch 介绍",
+        "slug": "_1、elasticsearch-介绍",
+        "link": "#_1、elasticsearch-介绍",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) ES 和 ELK",
+            "slug": "_1-es-和-elk",
+            "link": "#_1-es-和-elk",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 倒排索引",
+            "slug": "_2-倒排索引",
+            "link": "#_2-倒排索引",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) MySQL 与 ES",
+            "slug": "_3-mysql-与-es",
+            "link": "#_3-mysql-与-es",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 安装 ES、kibana",
+            "slug": "_4-安装-es、kibana",
+            "link": "#_4-安装-es、kibana",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) IK 分词器配置",
+            "slug": "_5-ik-分词器配置",
+            "link": "#_5-ik-分词器配置",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、索引库(表)操作",
+        "slug": "_2、索引库-表-操作",
+        "link": "#_2、索引库-表-操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Mapping",
+            "slug": "_1-mapping",
+            "link": "#_1-mapping",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 增删改查",
+            "slug": "_2-增删改查",
+            "link": "#_2-增删改查",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、文档(记录)操作",
+        "slug": "_3、文档-记录-操作",
+        "link": "#_3、文档-记录-操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 增删改查",
+            "slug": "_1-增删改查",
+            "link": "#_1-增删改查",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、RestClient 操作索引库",
+        "slug": "_4、restclient-操作索引库",
+        "link": "#_4、restclient-操作索引库",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 依赖引入与测试代码",
+            "slug": "_1-依赖引入与测试代码",
+            "link": "#_1-依赖引入与测试代码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 创建索引库",
+            "slug": "_2-创建索引库",
+            "link": "#_2-创建索引库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 删除索引库",
+            "slug": "_3-删除索引库",
+            "link": "#_3-删除索引库",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 判断索引库是否存在",
+            "slug": "_4-判断索引库是否存在",
+            "link": "#_4-判断索引库是否存在",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、RestClient 操作文档",
+        "slug": "_5、restclient-操作文档",
+        "link": "#_5、restclient-操作文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 新建文档",
+            "slug": "_1-新建文档",
+            "link": "#_1-新建文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查询文档",
+            "slug": "_2-查询文档",
+            "link": "#_2-查询文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 更新文档",
+            "slug": "_3-更新文档",
+            "link": "#_3-更新文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 删除文档",
+            "slug": "_4-删除文档",
+            "link": "#_4-删除文档",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 批量导入文档",
+            "slug": "_5-批量导入文档",
+            "link": "#_5-批量导入文档",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、DSL 查询文档",
+        "slug": "_6、dsl-查询文档",
+        "link": "#_6、dsl-查询文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) DSL 查询分类",
+            "slug": "_1-dsl-查询分类",
+            "link": "#_1-dsl-查询分类",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 全文检索查询",
+            "slug": "_2-全文检索查询",
+            "link": "#_2-全文检索查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 精确查询",
+            "slug": "_3-精确查询",
+            "link": "#_3-精确查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 地理查询",
+            "slug": "_4-地理查询",
+            "link": "#_4-地理查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 复合查询",
+            "slug": "_5-复合查询",
+            "link": "#_5-复合查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 排序",
+            "slug": "_6-排序",
+            "link": "#_6-排序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(7) 分页",
+            "slug": "_7-分页",
+            "link": "#_7-分页",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(8) 高亮",
+            "slug": "_8-高亮",
+            "link": "#_8-高亮",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、RestClient 查询文档",
+        "slug": "_7、restclient-查询文档",
+        "link": "#_7、restclient-查询文档",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 入门案例：查询所有",
+            "slug": "_1-入门案例-查询所有",
+            "link": "#_1-入门案例-查询所有",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 全文检索查询",
+            "slug": "_2-全文检索查询-1",
+            "link": "#_2-全文检索查询-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 精确查询",
+            "slug": "_3-精确查询-1",
+            "link": "#_3-精确查询-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 复合查询——布尔查询",
+            "slug": "_4-复合查询——布尔查询",
+            "link": "#_4-复合查询——布尔查询",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 排序、分页",
+            "slug": "_5-排序、分页",
+            "link": "#_5-排序、分页",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 高亮",
+            "slug": "_6-高亮",
+            "link": "#_6-高亮",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、ES 提高",
+        "slug": "_8、es-提高",
+        "link": "#_8、es-提高",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 数据聚合",
+            "slug": "_1-数据聚合",
+            "link": "#_1-数据聚合",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 自动补全",
+            "slug": "_2-自动补全",
+            "link": "#_2-自动补全",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/middleware/es/1-es.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "零、附录与补充",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、在 webstorm 中使用 Emmet 语法",
+        "slug": "_1、在-webstorm-中使用-emmet-语法",
+        "link": "#_1、在-webstorm-中使用-emmet-语法",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/0-%E9%99%84%E5%BD%95%E4%B8%8E%E8%A1%A5%E5%85%85.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、前端工程化与 webpack",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、前端工程化",
+        "slug": "_1、前端工程化",
+        "link": "#_1、前端工程化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、webpack 基本使用",
+        "slug": "_2、webpack-基本使用",
+        "link": "#_2、webpack-基本使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) webpack 介绍",
+            "slug": "_1-webpack-介绍",
+            "link": "#_1-webpack-介绍",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 列表隔行变色项目",
+            "slug": "_2-列表隔行变色项目",
+            "link": "#_2-列表隔行变色项目",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、webpack 相关配置",
+        "slug": "_3、webpack-相关配置",
+        "link": "#_3、webpack-相关配置",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 可选模式",
+            "slug": "_1-可选模式",
+            "link": "#_1-可选模式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) webpack.config.js的作用",
+            "slug": "_2-webpack-config-js的作用",
+            "link": "#_2-webpack-config-js的作用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) webpack 默认约定",
+            "slug": "_3-webpack-默认约定",
+            "link": "#_3-webpack-默认约定",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 自定义打包的入口与出口",
+            "slug": "_4-自定义打包的入口与出口",
+            "link": "#_4-自定义打包的入口与出口",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 打包完成后自动打开浏览器",
+            "slug": "_5-打包完成后自动打开浏览器",
+            "link": "#_5-打包完成后自动打开浏览器",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、webpack 插件",
+        "slug": "_4、webpack-插件",
+        "link": "#_4、webpack-插件",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 插件的作用",
+            "slug": "_1-插件的作用",
+            "link": "#_1-插件的作用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) webpack-dev-server",
+            "slug": "_2-webpack-dev-server",
+            "link": "#_2-webpack-dev-server",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) html-webpack-plugin",
+            "slug": "_3-html-webpack-plugin",
+            "link": "#_3-html-webpack-plugin",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、webpack loader",
+        "slug": "_5、webpack-loader",
+        "link": "#_5、webpack-loader",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) webpack loader 概述",
+            "slug": "_1-webpack-loader-概述",
+            "link": "#_1-webpack-loader-概述",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 打包处理 css 文件",
+            "slug": "_2-打包处理-css-文件",
+            "link": "#_2-打包处理-css-文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 打包处理 less 文件",
+            "slug": "_3-打包处理-less-文件",
+            "link": "#_3-打包处理-less-文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4)  打包处理样式表中与 url 路径相关的文件",
+            "slug": "_4-打包处理样式表中与-url-路径相关的文件",
+            "link": "#_4-打包处理样式表中与-url-路径相关的文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 打包处理 js 文件中的高级语法",
+            "slug": "_5-打包处理-js-文件中的高级语法",
+            "link": "#_5-打包处理-js-文件中的高级语法",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、打包发布",
+        "slug": "_6、打包发布",
+        "link": "#_6、打包发布",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、Source Map",
+        "slug": "_7、source-map",
+        "link": "#_7、source-map",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Source Map 简介",
+            "slug": "_1-source-map-简介",
+            "link": "#_1-source-map-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 开发环境",
+            "slug": "_2-开发环境",
+            "link": "#_2-开发环境",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 生产环境",
+            "slug": "_3-生产环境",
+            "link": "#_3-生产环境",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 最佳实践",
+            "slug": "_4-最佳实践",
+            "link": "#_4-最佳实践",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、webpack 尾声",
+        "slug": "_8、webpack-尾声",
+        "link": "#_8、webpack-尾声",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 拓展一：**@**表示 src 目录",
+            "slug": "_1-拓展一-表示-src-目录",
+            "link": "#_1-拓展一-表示-src-目录",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 拓展二：在谷歌浏览器安装 vue-devtools 工具",
+            "slug": "_2-拓展二-在谷歌浏览器安装-vue-devtools-工具",
+            "link": "#_2-拓展二-在谷歌浏览器安装-vue-devtools-工具",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/front_end/vue/1-%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8Ewebpack.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "十、Vue3",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Vue3 优势",
+        "slug": "_1、vue3-优势",
+        "link": "#_1、vue3-优势",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 组合式 API 与选项式 API",
+            "slug": "_1-组合式-api-与选项式-api",
+            "link": "#_1-组合式-api-与选项式-api",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、create-vue 搭建 vue3 项目",
+        "slug": "_2、create-vue-搭建-vue3-项目",
+        "link": "#_2、create-vue-搭建-vue3-项目",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 创建步骤",
+            "slug": "_1-创建步骤",
+            "link": "#_1-创建步骤",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 目录结构",
+            "slug": "_2-目录结构",
+            "link": "#_2-目录结构",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、组合式 API-setup选项",
+        "slug": "_3、组合式-api-setup选项",
+        "link": "#_3、组合式-api-setup选项",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、组合式 API-reactive和ref函数",
+        "slug": "_4、组合式-api-reactive和ref函数",
+        "link": "#_4、组合式-api-reactive和ref函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) reactive",
+            "slug": "_1-reactive",
+            "link": "#_1-reactive",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) ref",
+            "slug": "_2-ref",
+            "link": "#_2-ref",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、组合式 API-computed",
+        "slug": "_5、组合式-api-computed",
+        "link": "#_5、组合式-api-computed",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 使用步骤",
+            "slug": "_1-使用步骤",
+            "link": "#_1-使用步骤",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用案例",
+            "slug": "_2-使用案例",
+            "link": "#_2-使用案例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、组合式 API-watch",
+        "slug": "_6、组合式-api-watch",
+        "link": "#_6、组合式-api-watch",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 使用步骤",
+            "slug": "_1-使用步骤-1",
+            "link": "#_1-使用步骤-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用案例",
+            "slug": "_2-使用案例-1",
+            "link": "#_2-使用案例-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) immediate和deep",
+            "slug": "_3-immediate和deep",
+            "link": "#_3-immediate和deep",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、组合式 API-生命周期函数",
+        "slug": "_7、组合式-api-生命周期函数",
+        "link": "#_7、组合式-api-生命周期函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8、组合式 API-父子通信",
+        "slug": "_8、组合式-api-父子通信",
+        "link": "#_8、组合式-api-父子通信",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 父->子",
+            "slug": "_1-父-子",
+            "link": "#_1-父-子",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 子->父",
+            "slug": "_2-子-父",
+            "link": "#_2-子-父",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9、组合式 API-模板引用",
+        "slug": "_9、组合式-api-模板引用",
+        "link": "#_9、组合式-api-模板引用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 模板引用",
+            "slug": "_1-模板引用",
+            "link": "#_1-模板引用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) defineExpose()",
+            "slug": "_2-defineexpose",
+            "link": "#_2-defineexpose",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "10、组合式 API-provide/inject",
+        "slug": "_10、组合式-api-provide-inject",
+        "link": "#_10、组合式-api-provide-inject",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "11、vue 3.3 新特性-defineOptions",
+        "slug": "_11、vue-3-3-新特性-defineoptions",
+        "link": "#_11、vue-3-3-新特性-defineoptions",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/10-Vue3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Vue 基础1",
+    "headers": [
+      {
+        "level": 3,
+        "title": "1、 Vue 简介",
+        "slug": "_1、-vue-简介",
+        "link": "#_1、-vue-简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、基本使用",
+        "slug": "_2、基本使用",
+        "link": "#_2、基本使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 初体验案例",
+            "slug": "_1-初体验案例",
+            "link": "#_1-初体验案例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) MVVM",
+            "slug": "_2-mvvm-1",
+            "link": "#_2-mvvm-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、Vue 调试工具",
+        "slug": "_3、vue-调试工具",
+        "link": "#_3、vue-调试工具",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、Vue 语法",
+        "slug": "_4、vue-语法",
+        "link": "#_4、vue-语法",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 指令",
+            "slug": "_1-指令",
+            "link": "#_1-指令",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 过滤器",
+            "slug": "_2-过滤器",
+            "link": "#_2-过滤器",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/front_end/vue/2-Vue%E5%9F%BA%E7%A1%801.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Vue 基础2",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、侦听器 watch",
+        "slug": "_1、侦听器-watch",
+        "link": "#_1、侦听器-watch",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本使用：方法格式侦听器",
+            "slug": "_1-基本使用-方法格式侦听器",
+            "link": "#_1-基本使用-方法格式侦听器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用案例：检测用户名是否可用",
+            "slug": "_2-使用案例-检测用户名是否可用",
+            "link": "#_2-使用案例-检测用户名是否可用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) immediate选项",
+            "slug": "_3-immediate选项",
+            "link": "#_3-immediate选项",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) deep选项",
+            "slug": "_4-deep选项",
+            "link": "#_4-deep选项",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、计算属性",
+        "slug": "_2、计算属性",
+        "link": "#_2、计算属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、Axios",
+        "slug": "_3、axios",
+        "link": "#_3、axios",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基本使用",
+            "slug": "_1-基本使用",
+            "link": "#_1-基本使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) axios GET 和 POST",
+            "slug": "_2-axios-get-和-post",
+            "link": "#_2-axios-get-和-post",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、vue-cli",
+        "slug": "_4、vue-cli",
+        "link": "#_4、vue-cli",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 单页面应用程序",
+            "slug": "_1-单页面应用程序",
+            "link": "#_1-单页面应用程序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) vue-cli 简介",
+            "slug": "_2-vue-cli-简介",
+            "link": "#_2-vue-cli-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 安装与使用",
+            "slug": "_3-安装与使用",
+            "link": "#_3-安装与使用",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) vue-cli 创建的项目的目录结构",
+            "slug": "_4-vue-cli-创建的项目的目录结构",
+            "link": "#_4-vue-cli-创建的项目的目录结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) Vue 项目运行流程",
+            "slug": "_5-vue-项目运行流程",
+            "link": "#_5-vue-项目运行流程",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、Vue 组件",
+        "slug": "_5、vue-组件",
+        "link": "#_5、vue-组件",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 组件化开发",
+            "slug": "_1-组件化开发",
+            "link": "#_1-组件化开发",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 组件之间的父子关系",
+            "slug": "_2-组件之间的父子关系",
+            "link": "#_2-组件之间的父子关系",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 使用组件步骤——私有组件",
+            "slug": "_3-使用组件步骤——私有组件",
+            "link": "#_3-使用组件步骤——私有组件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 注册全局组件",
+            "slug": "_4-注册全局组件",
+            "link": "#_4-注册全局组件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 组件的 props",
+            "slug": "_5-组件的-props",
+            "link": "#_5-组件的-props",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 组件之间的样式冲突",
+            "slug": "_6-组件之间的样式冲突",
+            "link": "#_6-组件之间的样式冲突",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/front_end/vue/3-Vue%E5%9F%BA%E7%A1%802.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "四、生命周期&数据共享",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、组件的声明周期",
+        "slug": "_1、组件的声明周期",
+        "link": "#_1、组件的声明周期",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 生命周期与生命周期函数",
+            "slug": "_1-生命周期与生命周期函数",
+            "link": "#_1-生命周期与生命周期函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 生命周期函数分类",
+            "slug": "_2-生命周期函数分类",
+            "link": "#_2-生命周期函数分类",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、组件之间的数据共享",
+        "slug": "_2、组件之间的数据共享",
+        "link": "#_2、组件之间的数据共享",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 组件之间的关系",
+            "slug": "_1-组件之间的关系",
+            "link": "#_1-组件之间的关系",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 父子组件之间数据共享",
+            "slug": "_2-父子组件之间数据共享",
+            "link": "#_2-父子组件之间数据共享",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 兄弟组件之间的数据共享",
+            "slug": "_3-兄弟组件之间的数据共享",
+            "link": "#_3-兄弟组件之间的数据共享",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、ref 引用",
+        "slug": "_3、ref-引用",
+        "link": "#_3、ref-引用",
+        "children": [
+          {
+            "level": 3,
+            "title": "3.1 操作 DOM 元素",
+            "slug": "_3-1-操作-dom-元素",
+            "link": "#_3-1-操作-dom-元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.2 操作组件实例",
+            "slug": "_3-2-操作组件实例",
+            "link": "#_3-2-操作组件实例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3.3 $nextTick()方法",
+            "slug": "_3-3-nexttick-方法",
+            "link": "#_3-3-nexttick-方法",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、补充——数组方法",
+        "slug": "_4、补充——数组方法",
+        "link": "#_4、补充——数组方法",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/4-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%85%B1%E4%BA%AB.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "五、动态组件、插槽和自定义指令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、动态组件",
+        "slug": "_1、动态组件",
+        "link": "#_1、动态组件",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 动态组件简介",
+            "slug": "_1-动态组件简介",
+            "link": "#_1-动态组件简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) keep-alive 标签",
+            "slug": "_2-keep-alive-标签",
+            "link": "#_2-keep-alive-标签",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、插槽",
+        "slug": "_2、插槽",
+        "link": "#_2、插槽",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 插槽简介",
+            "slug": "_1-插槽简介",
+            "link": "#_1-插槽简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 具名插槽",
+            "slug": "_2-具名插槽",
+            "link": "#_2-具名插槽",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 作用域插槽",
+            "slug": "_3-作用域插槽",
+            "link": "#_3-作用域插槽",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、自定义指令",
+        "slug": "_3、自定义指令",
+        "link": "#_3、自定义指令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 简介",
+            "slug": "_1-简介",
+            "link": "#_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 全局自定义指令",
+            "slug": "_2-全局自定义指令",
+            "link": "#_2-全局自定义指令",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/front_end/vue/5-%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6%E3%80%81%E6%8F%92%E6%A7%BD%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "六、ESLint",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、创建带有 ESLint 的项目",
+        "slug": "_1、创建带有-eslint-的项目",
+        "link": "#_1、创建带有-eslint-的项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、ESLint 规则",
+        "slug": "_2、eslint-规则",
+        "link": "#_2、eslint-规则",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、标准模式下的约束",
+        "slug": "_3、标准模式下的约束",
+        "link": "#_3、标准模式下的约束",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/6-ESLint.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "七、路由",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、前端路由简介",
+        "slug": "_1、前端路由简介",
+        "link": "#_1、前端路由简介",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 概念",
+            "slug": "_1-概念",
+            "link": "#_1-概念",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 工作方式",
+            "slug": "_2-工作方式",
+            "link": "#_2-工作方式",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、vue-router 基本使用",
+        "slug": "_2、vue-router-基本使用",
+        "link": "#_2、vue-router-基本使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) vue-router 的安装与配置",
+            "slug": "_1-vue-router-的安装与配置",
+            "link": "#_1-vue-router-的安装与配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用小案例",
+            "slug": "_2-使用小案例",
+            "link": "#_2-使用小案例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、路由重定向",
+        "slug": "_3、路由重定向",
+        "link": "#_3、路由重定向",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、嵌套路由",
+        "slug": "_4、嵌套路由",
+        "link": "#_4、嵌套路由",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、动态路由",
+        "slug": "_5、动态路由",
+        "link": "#_5、动态路由",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、声明式导航&编程式导航",
+        "slug": "_6、声明式导航-编程式导航",
+        "link": "#_6、声明式导航-编程式导航",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) vue-router 中的编程式导航 API",
+            "slug": "_1-vue-router-中的编程式导航-api",
+            "link": "#_1-vue-router-中的编程式导航-api",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、导航守卫",
+        "slug": "_7、导航守卫",
+        "link": "#_7、导航守卫",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 全局前置守卫",
+            "slug": "_1-全局前置守卫",
+            "link": "#_1-全局前置守卫",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/front_end/vue/7-%E8%B7%AF%E7%94%B1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "八、其他",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、ES6 模块化",
+        "slug": "_1、es6-模块化",
+        "link": "#_1、es6-模块化",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 默认导入与导出",
+            "slug": "_1-默认导入与导出",
+            "link": "#_1-默认导入与导出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 按需导入与导出",
+            "slug": "_2-按需导入与导出",
+            "link": "#_2-按需导入与导出",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 直接导入并执行模块中的代码",
+            "slug": "_3-直接导入并执行模块中的代码",
+            "link": "#_3-直接导入并执行模块中的代码",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、Promise",
+        "slug": "_2、promise",
+        "link": "#_2、promise",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、async和await",
+        "slug": "_3、async和await",
+        "link": "#_3、async和await",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、EventLoop",
+        "slug": "_4、eventloop",
+        "link": "#_4、eventloop",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、宏任务与微任务",
+        "slug": "_5、宏任务与微任务",
+        "link": "#_5、宏任务与微任务",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/8-%E5%85%B6%E4%BB%96.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "五、Vuex",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、介绍",
+        "slug": "_1、介绍",
+        "link": "#_1、介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、state：数据/状态",
+        "slug": "_2、state-数据-状态",
+        "link": "#_2、state-数据-状态",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 数据定义",
+            "slug": "_1-数据定义",
+            "link": "#_1-数据定义",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 数据使用",
+            "slug": "_2-数据使用",
+            "link": "#_2-数据使用",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、mutations数据/状态转变",
+        "slug": "_3、mutations数据-状态转变",
+        "link": "#_3、mutations数据-状态转变",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、actions：异步操作",
+        "slug": "_4、actions-异步操作",
+        "link": "#_4、actions-异步操作",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、getters：vuex 中的计算属性",
+        "slug": "_5、getters-vuex-中的计算属性",
+        "link": "#_5、getters-vuex-中的计算属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、模块化",
+        "slug": "_6、模块化",
+        "link": "#_6、模块化",
+        "children": []
+      }
+    ],
+    "path": "/dev/front_end/vue/9-VueX.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "一、MongoDB 基础",
     "headers": [
       {
@@ -2286,63 +4071,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一、基本概念",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、采集量(Metric)",
-        "slug": "_1、采集量-metric",
-        "link": "#_1、采集量-metric",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、标签(Tag)",
-        "slug": "_2、标签-tag",
-        "link": "#_2、标签-tag",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、数据采集点(Data Collection Point)",
-        "slug": "_3、数据采集点-data-collection-point",
-        "link": "#_3、数据采集点-data-collection-point",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、表",
-        "slug": "_4、表",
-        "link": "#_4、表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、超级表(STable)",
-        "slug": "_5、超级表-stable",
-        "link": "#_5、超级表-stable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6、子表(Subtable)",
-        "slug": "_6、子表-subtable",
-        "link": "#_6、子表-subtable",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、库(Database)",
-        "slug": "_7、库-database",
-        "link": "#_7、库-database",
-        "children": []
-      }
-    ],
-    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "一、简介与入门",
     "headers": [
       {
@@ -2492,6 +4220,63 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/middleware/redis/3-RedisJava.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、基本概念",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、采集量(Metric)",
+        "slug": "_1、采集量-metric",
+        "link": "#_1、采集量-metric",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、标签(Tag)",
+        "slug": "_2、标签-tag",
+        "link": "#_2、标签-tag",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、数据采集点(Data Collection Point)",
+        "slug": "_3、数据采集点-data-collection-point",
+        "link": "#_3、数据采集点-data-collection-point",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、表",
+        "slug": "_4、表",
+        "link": "#_4、表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、超级表(STable)",
+        "slug": "_5、超级表-stable",
+        "link": "#_5、超级表-stable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、子表(Subtable)",
+        "slug": "_6、子表-subtable",
+        "link": "#_6、子表-subtable",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、库(Database)",
+        "slug": "_7、库-database",
+        "link": "#_7、库-database",
+        "children": []
+      }
+    ],
+    "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3061,6 +4846,775 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/java/tool/1-Feign.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "零、常用命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、netstat -lnp",
+        "slug": "_1、netstat-lnp",
+        "link": "#_1、netstat-lnp",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、telnet ip port",
+        "slug": "_2、telnet-ip-port",
+        "link": "#_2、telnet-ip-port",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、ps aux | grep nginx",
+        "slug": "_3、ps-aux-grep-nginx",
+        "link": "#_3、ps-aux-grep-nginx",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、curl url",
+        "slug": "_4、curl-url",
+        "link": "#_4、curl-url",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、wget",
+        "slug": "_5、wget",
+        "link": "#_5、wget",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/0-%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Linux 简介",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 发行版",
+        "slug": "_1、linux-发行版",
+        "link": "#_1、linux-发行版",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、FinalShell",
+        "slug": "_2、finalshell",
+        "link": "#_2、finalshell",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、WSL",
+        "slug": "_3、wsl",
+        "link": "#_3、wsl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、虚拟机快照",
+        "slug": "_4、虚拟机快照",
+        "link": "#_4、虚拟机快照",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/1-Linux%E7%AE%80%E4%BB%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Linux 基础命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 目录结构",
+        "slug": "_1、linux-目录结构",
+        "link": "#_1、linux-目录结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Linux 命令入门",
+        "slug": "_2、linux-命令入门",
+        "link": "#_2、linux-命令入门",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Linux 命令基础格式",
+            "slug": "_1-linux-命令基础格式",
+            "link": "#_1-linux-命令基础格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) ls",
+            "slug": "_2-ls",
+            "link": "#_2-ls",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、目录切换命令：cd/pwd",
+        "slug": "_3、目录切换命令-cd-pwd",
+        "link": "#_3、目录切换命令-cd-pwd",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) cd",
+            "slug": "_1-cd",
+            "link": "#_1-cd",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) pwd",
+            "slug": "_2-pwd",
+            "link": "#_2-pwd",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、创建目录指令：mkdir",
+        "slug": "_4、创建目录指令-mkdir",
+        "link": "#_4、创建目录指令-mkdir",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、文件操作命令",
+        "slug": "_5、文件操作命令",
+        "link": "#_5、文件操作命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 创建文件：touch",
+            "slug": "_1-创建文件-touch",
+            "link": "#_1-创建文件-touch",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查看文件：cat",
+            "slug": "_2-查看文件-cat",
+            "link": "#_2-查看文件-cat",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 查看文件：more",
+            "slug": "_3-查看文件-more",
+            "link": "#_3-查看文件-more",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 复制文件：cp",
+            "slug": "_4-复制文件-cp",
+            "link": "#_4-复制文件-cp",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 移动文件/文件夹：mv",
+            "slug": "_5-移动文件-文件夹-mv",
+            "link": "#_5-移动文件-文件夹-mv",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 删除文件/文件夹：rm",
+            "slug": "_6-删除文件-文件夹-rm",
+            "link": "#_6-删除文件-文件夹-rm",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、查找命令",
+        "slug": "_6、查找命令",
+        "link": "#_6、查找命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 查找命令：which",
+            "slug": "_1-查找命令-which",
+            "link": "#_1-查找命令-which",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查找文件：find",
+            "slug": "_2-查找文件-find",
+            "link": "#_2-查找文件-find",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、grep、wc 和管道符",
+        "slug": "_7、grep、wc-和管道符",
+        "link": "#_7、grep、wc-和管道符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) grep",
+            "slug": "_1-grep",
+            "link": "#_1-grep",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) wc",
+            "slug": "_2-wc",
+            "link": "#_2-wc",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 管道符",
+            "slug": "_3-管道符",
+            "link": "#_3-管道符",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、echo、tail 和重定向符",
+        "slug": "_8、echo、tail-和重定向符",
+        "link": "#_8、echo、tail-和重定向符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) echo",
+            "slug": "_1-echo",
+            "link": "#_1-echo",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 重定向符",
+            "slug": "_2-重定向符",
+            "link": "#_2-重定向符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) tail",
+            "slug": "_3-tail",
+            "link": "#_3-tail",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9、vi/vim 编辑器",
+        "slug": "_9、vi-vim-编辑器",
+        "link": "#_9、vi-vim-编辑器",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 简介",
+            "slug": "_1-简介",
+            "link": "#_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用",
+            "slug": "_2-使用",
+            "link": "#_2-使用",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/2-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Linux 权限",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、切换用户与返回：su和 exit",
+        "slug": "_1、切换用户与返回-su和-exit",
+        "link": "#_1、切换用户与返回-su和-exit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、临时切换 root 执行某条命令：sudo",
+        "slug": "_2、临时切换-root-执行某条命令-sudo",
+        "link": "#_2、临时切换-root-执行某条命令-sudo",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、用户与用户组",
+        "slug": "_3、用户与用户组",
+        "link": "#_3、用户与用户组",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 用户组管理",
+            "slug": "_1-用户组管理",
+            "link": "#_1-用户组管理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 用户管理",
+            "slug": "_2-用户管理",
+            "link": "#_2-用户管理",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、权限控制信息",
+        "slug": "_4、权限控制信息",
+        "link": "#_4、权限控制信息",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、修改权限控制：chmod/chown",
+        "slug": "_5、修改权限控制-chmod-chown",
+        "link": "#_5、修改权限控制-chmod-chown",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) chomod",
+            "slug": "_1-chomod",
+            "link": "#_1-chomod",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) chown",
+            "slug": "_2-chown",
+            "link": "#_2-chown",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/3-Linux%E6%9D%83%E9%99%90.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Web 自动化入门",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、自动化测试",
+        "slug": "_1、自动化测试",
+        "link": "#_1、自动化测试",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Web 自动化测试",
+        "slug": "_2、web-自动化测试",
+        "link": "#_2、web-自动化测试",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、Web 自动化测试工具选择",
+        "slug": "_3、web-自动化测试工具选择",
+        "link": "#_3、web-自动化测试工具选择",
+        "children": []
+      }
+    ],
+    "path": "/dev/test/web_test/1-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%BB%8B%E7%BB%8D.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Selenium 安装",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Selenium 介绍",
+        "slug": "_1、selenium-介绍",
+        "link": "#_1、selenium-介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、环境搭建",
+        "slug": "_2、环境搭建",
+        "link": "#_2、环境搭建",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Python 开发环境",
+            "slug": "_1-python-开发环境",
+            "link": "#_1-python-开发环境",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 安装 selenium 包",
+            "slug": "_2-安装-selenium-包",
+            "link": "#_2-安装-selenium-包",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 安装浏览器",
+            "slug": "_3-安装浏览器",
+            "link": "#_3-安装浏览器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 安装浏览器驱动",
+            "slug": "_4-安装浏览器驱动",
+            "link": "#_4-安装浏览器驱动",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/test/web_test/2-Selenium%E5%AE%89%E8%A3%85.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Selenium-API",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、元素定位",
+        "slug": "_1、元素定位",
+        "link": "#_1、元素定位",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) id 定位",
+            "slug": "_1-id-定位",
+            "link": "#_1-id-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) name 定位",
+            "slug": "_2-name-定位",
+            "link": "#_2-name-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) class_name 定位",
+            "slug": "_3-class-name-定位",
+            "link": "#_3-class-name-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) tag_name 定位",
+            "slug": "_4-tag-name-定位",
+            "link": "#_4-tag-name-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) link_text 定位",
+            "slug": "_5-link-text-定位",
+            "link": "#_5-link-text-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) partial_link_text 定位",
+            "slug": "_6-partial-link-text-定位",
+            "link": "#_6-partial-link-text-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(7) 定位一组元素",
+            "slug": "_7-定位一组元素",
+            "link": "#_7-定位一组元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(8) Xpath 定位",
+            "slug": "_8-xpath-定位",
+            "link": "#_8-xpath-定位",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(9) css 定位",
+            "slug": "_9-css-定位",
+            "link": "#_9-css-定位",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、元素操作与浏览器操作",
+        "slug": "_2、元素操作与浏览器操作",
+        "link": "#_2、元素操作与浏览器操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 元素常用操作方法",
+            "slug": "_1-元素常用操作方法",
+            "link": "#_1-元素常用操作方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 浏览器操作",
+            "slug": "_2-浏览器操作",
+            "link": "#_2-浏览器操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 获取元素信息",
+            "slug": "_3-获取元素信息",
+            "link": "#_3-获取元素信息",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、鼠标和键盘操作",
+        "slug": "_3、鼠标和键盘操作",
+        "link": "#_3、鼠标和键盘操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 鼠标操作",
+            "slug": "_1-鼠标操作",
+            "link": "#_1-鼠标操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 键盘操作",
+            "slug": "_2-键盘操作",
+            "link": "#_2-键盘操作",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、元素等待",
+        "slug": "_4、元素等待",
+        "link": "#_4、元素等待",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 隐式等待",
+            "slug": "_1-隐式等待",
+            "link": "#_1-隐式等待",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 显式等待",
+            "slug": "_2-显式等待",
+            "link": "#_2-显式等待",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 显式等待和隐式等待区别",
+            "slug": "_3-显式等待和隐式等待区别",
+            "link": "#_3-显式等待和隐式等待区别",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "5、下拉选择框、弹出框和滚动条操作",
+        "slug": "_5、下拉选择框、弹出框和滚动条操作",
+        "link": "#_5、下拉选择框、弹出框和滚动条操作",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 下拉选择框",
+            "slug": "_1-下拉选择框",
+            "link": "#_1-下拉选择框",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 弹出框处理",
+            "slug": "_2-弹出框处理",
+            "link": "#_2-弹出框处理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 滚动条操作",
+            "slug": "_3-滚动条操作",
+            "link": "#_3-滚动条操作",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、frame 切换、多窗口切换",
+        "slug": "_6、frame-切换、多窗口切换",
+        "link": "#_6、frame-切换、多窗口切换",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) frame 切换",
+            "slug": "_1-frame-切换",
+            "link": "#_1-frame-切换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 多窗口切换",
+            "slug": "_2-多窗口切换",
+            "link": "#_2-多窗口切换",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、窗口截图、验证码处理",
+        "slug": "_7、窗口截图、验证码处理",
+        "link": "#_7、窗口截图、验证码处理",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 窗口截图",
+            "slug": "_1-窗口截图",
+            "link": "#_1-窗口截图",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 验证码处理",
+            "slug": "_2-验证码处理",
+            "link": "#_2-验证码处理",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/test/web_test/3-SeleniumApi.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "四、UnitTest 框架",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、UnitTest 基本使用",
+        "slug": "_1、unittest-基本使用",
+        "link": "#_1、unittest-基本使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) TestCase",
+            "slug": "_1-testcase",
+            "link": "#_1-testcase",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) TestSuite",
+            "slug": "_2-testsuite",
+            "link": "#_2-testsuite",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) TestLoader",
+            "slug": "_3-testloader",
+            "link": "#_3-testloader",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、Fixture",
+        "slug": "_2、fixture",
+        "link": "#_2、fixture",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 方法级别",
+            "slug": "_1-方法级别",
+            "link": "#_1-方法级别",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 类级别",
+            "slug": "_2-类级别",
+            "link": "#_2-类级别",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、断言",
+        "slug": "_3、断言",
+        "link": "#_3、断言",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、综合案例",
+        "slug": "_4、综合案例",
+        "link": "#_4、综合案例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、参数化",
+        "slug": "_5、参数化",
+        "link": "#_5、参数化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6、跳过",
+        "slug": "_6、跳过",
+        "link": "#_6、跳过",
+        "children": []
+      }
+    ],
+    "path": "/dev/test/web_test/4-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html",
     "pathLocale": "/",
     "extraFields": []
   },

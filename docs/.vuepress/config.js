@@ -2,7 +2,7 @@ import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress/cli'
 import {viteBundler} from '@vuepress/bundler-vite'
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { searchPlugin } from '@vuepress/plugin-search'
+import {searchPlugin} from '@vuepress/plugin-search'
 
 export default defineUserConfig({
     lang: 'zh-CN',
@@ -26,16 +26,16 @@ export default defineUserConfig({
                 text: '机器学习',
                 link: '/ml/',
             },
-            {
-                text: '算法',
-                link: '/al/',
-            },
+            // {
+            //     text: '关于我',
+            //     link: '/al/',
+            // },
         ],
         // 侧边栏
         sidebar: {
-            '/al/': [
+            '/me/': [
                 {
-                    text: 'Algorithm',
+                    text: '关于我',
                     path: '/al/',
                     children: [
                         '/al/' // 该目录下的 README.md
@@ -47,6 +47,17 @@ export default defineUserConfig({
                     text: 'Web 应用开发',
                     path: '/dev/',
                     children: [
+                        {
+                            text: '深入学习',
+                            collapsible: true,
+                            children: [
+                                '/dev/principle/1-操作系统',
+                                '/dev/principle/2-java',
+                                '/dev/principle/3-mysql',
+                                '/dev/principle/4-Redis',
+                                '/dev/principle/5-计算机网络',
+                            ]
+                        },
                         {
                             text: '工具',
                             collapsible: true,
@@ -160,6 +171,12 @@ export default defineUserConfig({
                                         '/dev/front_end/vue/2-Vue基础1',
                                         '/dev/front_end/vue/3-Vue基础2',
                                         '/dev/front_end/vue/4-生命周期与数据共享',
+                                        '/dev/front_end/vue/5-动态组件、插槽和自定义指令',
+                                        '/dev/front_end/vue/6-ESLint',
+                                        '/dev/front_end/vue/7-路由',
+                                        '/dev/front_end/vue/8-其他',
+                                        '/dev/front_end/vue/9-VueX',
+                                        '/dev/front_end/vue/10-Vue3',
                                     ]
                                 }
                             ]
@@ -231,6 +248,38 @@ export default defineUserConfig({
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            text: '测试技术',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'Web 自动化测试',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/test/web_test/1-自动化测试介绍',
+                                        '/dev/test/web_test/2-Selenium安装',
+                                        '/dev/test/web_test/3-SeleniumApi',
+                                        '/dev/test/web_test/4-单元测试',
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            text: '其他',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'Linux',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/other/linux/0-命令大全',
+                                        '/dev/other/linux/1-Linux简介',
+                                        '/dev/other/linux/2-常用命令',
+                                        '/dev/other/linux/3-Linux权限',
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -240,9 +289,22 @@ export default defineUserConfig({
                     text: '机器学习',
                     path: '/ml/',
                     children: [
-                        '/machine_learning/',
-                        '/machine_learning/123',
-                        '/machine_learning/one'
+                        {
+                            text: '传统机器学习',
+                            collapsible: true,
+                            children: [
+                                '/ml/traditional_ml/0-Python包使用',
+                                '/ml/traditional_ml/1-K近邻算法',
+                                '/ml/traditional_ml/2-决策树',
+                                '/ml/traditional_ml/3-朴素贝叶斯',
+                                '/ml/traditional_ml/4-逻辑回归',
+                                '/ml/traditional_ml/5-SVM',
+                                '/ml/traditional_ml/6-集成学习',
+                                '/ml/traditional_ml/7-线性回归',
+                                '/ml/traditional_ml/8-树回归',
+                                '/ml/traditional_ml/9-KMeans',
+                            ]
+                        },
                     ]
                 }
             ]
