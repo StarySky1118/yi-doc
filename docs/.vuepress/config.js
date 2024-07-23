@@ -141,6 +141,30 @@ export default defineUserConfig({
                             ]
                         },
                         {
+                            text: '前端',
+                            collapsible: true,
+                            children: [
+                                {
+                                    text: 'CSS',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/front_end/css/1-CSS布局'
+                                    ]
+                                },
+                                {
+                                    text: 'Vue',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/front_end/vue/0-附录与补充',
+                                        '/dev/front_end/vue/1-前端工程化与webpack',
+                                        '/dev/front_end/vue/2-Vue基础1',
+                                        '/dev/front_end/vue/3-Vue基础2',
+                                        '/dev/front_end/vue/4-生命周期与数据共享',
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             text: '中间件',
                             collapsible: true,
                             children: [
