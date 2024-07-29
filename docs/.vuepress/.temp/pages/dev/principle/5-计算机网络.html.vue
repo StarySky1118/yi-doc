@@ -1,4 +1,6 @@
 <template><div><h1 id="计算机网络" tabindex="-1"><a class="header-anchor" href="#计算机网络"><span>计算机网络</span></a></h1>
+<h2 id="什么是-tcp-中的连接" tabindex="-1"><a class="header-anchor" href="#什么是-tcp-中的连接"><span>什么是 TCP 中的连接</span></a></h2>
+<p>连接是一种状态，一种已经准备好收发信息的状态。</p>
 <h2 id="https-中间人攻击" tabindex="-1"><a class="header-anchor" href="#https-中间人攻击"><span>HTTPS 中间人攻击</span></a></h2>
 <p>HTTPS 中间人攻击是指在客户端与服务端之间，出现了一个中间人，他通过伪造证书冒充服务端，与客户端建立加密连接，同时与服务端建立加密连接，进行恶意操作。</p>
 <p>为防止 HTTPS 中间人攻击，要保证证书是可信任的证书颁发机构颁发的。还可以对应用层数据作进一步加密。</p>
