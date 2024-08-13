@@ -56,6 +56,15 @@ export default defineUserConfig({
                                 '/dev/principle/3-mysql',
                                 '/dev/principle/4-Redis',
                                 '/dev/principle/5-计算机网络',
+                                {
+                                    text: 'MySQL',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/principle/mysql/',
+                                        '/dev/principle/mysql/1-索引篇',
+                                        '/dev/principle/mysql/2-事务篇',
+                                    ]
+                                }
                             ]
                         },
                         {
