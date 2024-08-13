@@ -49,6 +49,9 @@
 <p>索引优化是指在频繁查询的列上创建索引、使用覆盖索引减小回表；
 查询优化包括避免使用 Select *，只选择必要的列，减少数据传输、合理使用多表联查、减少子查询等；
 配置优化包括根据硬件条件和工作负载，调整数据库连接池、日志等配置。</p>
+<h2 id="jdbc-executeupdate" tabindex="-1"><a class="header-anchor" href="#jdbc-executeupdate"><span>JDBC <code v-pre>executeUpdate()</code></span></a></h2>
+<p>执行 <code v-pre>ps.executeUpdate()</code> 方法的返回值是一个 <code v-pre>int</code> 类型的值，表示受影响的行数，即成功插入或更新的记录数量。
+在这种情况下，如果一切顺利且没有异常，返回值将是插入成功的记录数，通常是 1（因为一次插入一条数据）。</p>
 </div></template>
 
 

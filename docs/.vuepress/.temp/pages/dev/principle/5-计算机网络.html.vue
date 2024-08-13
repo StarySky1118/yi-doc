@@ -89,6 +89,10 @@ URL 解析完毕，浏览器就可以根据这些信息生成 HTTP 请求。</p>
 <p>第三，可靠。TCP 协议通过序列号、确认号、超时重传、流量控制保证来保证数据的可靠传输。</p>
 <p>第四，无私。TCP 会使用拥塞窗口机制避免网络拥塞。</p>
 <p>第五，全双工。数据传输方向：双，全：能够同时进行。</p>
+<h2 id="证书验证" tabindex="-1"><a class="header-anchor" href="#证书验证"><span>证书验证</span></a></h2>
+<p>如果希望用 CA 证书验证证书签名，则需要（require x509）选项。</p>
+<h2 id="arp-协议" tabindex="-1"><a class="header-anchor" href="#arp-协议"><span>ARP 协议</span></a></h2>
+<p>ARP 协议用于将 IP 地址转换为 MAC 地址，它是广播请求，单播响应。</p>
 </div></template>
 
 

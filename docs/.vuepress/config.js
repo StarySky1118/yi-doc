@@ -26,10 +26,10 @@ export default defineUserConfig({
                 text: '机器学习',
                 link: '/ml/',
             },
-            // {
-            //     text: '关于我',
-            //     link: '/al/',
-            // },
+            {
+                text: '算法',
+                link: '/algo/',
+            },
         ],
         // 侧边栏
         sidebar: {
@@ -307,7 +307,23 @@ export default defineUserConfig({
                         },
                     ]
                 }
-            ]
+            ],
+            '/algo/': [
+                {
+                    text: '算法与数据结构',
+                    path: '/algo/',
+                    children: [
+                        {
+                            text: '排序算法',
+                            collapsible: true,
+                            children: [
+                                '/algo/sort/1-排序概述',
+                                '/algo/sort/2-快速排序',
+                            ]
+                        },
+                    ]
+                }
+            ],
         }
     }),
 
