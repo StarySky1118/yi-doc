@@ -30,6 +30,10 @@ export default defineUserConfig({
                 text: '算法',
                 link: '/algo/',
             },
+            {
+                text: 'AI 应用探索',
+                link: '/ai_application/',
+            }
         ],
         // 侧边栏
         sidebar: {
@@ -63,6 +67,7 @@ export default defineUserConfig({
                                         '/dev/principle/mysql/',
                                         '/dev/principle/mysql/1-索引篇',
                                         '/dev/principle/mysql/2-事务篇',
+                                        '/dev/principle/mysql/3-使用篇',
                                     ]
                                 }
                             ]
@@ -328,6 +333,22 @@ export default defineUserConfig({
                             children: [
                                 '/algo/sort/1-排序概述',
                                 '/algo/sort/2-快速排序',
+                            ]
+                        },
+                    ]
+                }
+            ],
+            '/ai_application/': [
+                {
+                    text: 'AI 应用探索',
+                    path: '/ai_application/',
+                    children: [
+                        {
+                            text: 'Deep-Live-Cam',
+                            collapsible: true,
+                            children: [
+                                '/ai_application/deep_live_cam/概述.md',
+                                '/ai_application/deep_live_cam/1-快速开始.md',
                             ]
                         },
                     ]

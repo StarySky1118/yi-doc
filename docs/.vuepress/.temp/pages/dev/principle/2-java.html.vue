@@ -1,30 +1,39 @@
 <template><div><h1 id="java" tabindex="-1"><a class="header-anchor" href="#java"><span>Java</span></a></h1>
 <h2 id="java-创建线程有哪几种方式" tabindex="-1"><a class="header-anchor" href="#java-创建线程有哪几种方式"><span>Java 创建线程有哪几种方式？</span></a></h2>
-<p>Java 创建线程有两类方式：直接创建和利用线程池创建。
-在直接创建中，首先，需要创建一个类，这个类继承 <code v-pre>Thread</code>类，重写 <code v-pre>run()</code>方法或者实现 <code v-pre>Runnable</code>接口，重写 <code v-pre>run()</code>方法实现。然后，创建这个类的实例，调用 <code v-pre>start()</code>方法，就可以创建线程。
-在利用线程池创建中，首先需要创建线程池，然后向线程池提交任务，线程池会启动线程执行任务。</p>
+<p>Java 创建线程有两类方式：直接创建和利用线程池创建。</p>
+<p>在直接创建中，首先，需要创建一个类，这个类继承 <code v-pre>Thread</code>类，重写 <code v-pre>run()</code>方法或者实现 <code v-pre>Runnable</code>接口，实现 <code v-pre>run()</code>方法。然后，创建这个类的实例，调用 <code v-pre>start()</code>方法，就可以创建线程。</p>
+<p>在利用线程池创建中，首先需要创建线程池，然后向线程池提交任务，线程池会在恰当时机启动线程执行任务。</p>
 <h2 id="java-线程池有哪几个参数" tabindex="-1"><a class="header-anchor" href="#java-线程池有哪几个参数"><span>Java 线程池有哪几个参数</span></a></h2>
-<p>Java 线程池主要有 <code v-pre>corePoolSize</code>核心线程数、<code v-pre>maximumPoolSize</code>最大线程数、<code v-pre>keepAliveTime</code>线程存活时间、<code v-pre>workQueue</code>工作队列、<code v-pre>threadFactory</code>线程工厂和 <code v-pre>handler</code>饱和策略。
-核心线程数是线程池中始终保持活跃的线程数，这些线程即使空闲也不会被回收。
-最大线程数是线程池允许的最大线程数。当队列已满，线程池允许创建超过核心线程数的线程，直到达到最大线程数。
-线程存活时间是超过核心线程数的多余存活的时间。超过这个时间，多余线程将被回收。
-工作队列是搭配线程池使用的存放任务的队列。可以根据需求，选择不同特性的工作队列，例如有无界、有无优先级。
-线程工厂可以指定新线程创建的逻辑。
-饱和策略是指当队列已满并且线程数量到达最大线程数时，采用的策略，例如抛出异常、调用线程执行、抛弃最新的任务、抛弃最老的任务等。</p>
+<p>Java 线程池主要有 6 个参数，分别对线程池、工作队列等进行配置。包括 <code v-pre>corePoolSize</code>核心线程数、<code v-pre>maximumPoolSize</code>最大线程数、<code v-pre>keepAliveTime</code>线程存活时间、<code v-pre>workQueue</code>工作队列、<code v-pre>threadFactory</code>线程工厂和 <code v-pre>handler</code>饱和策略。</p>
+<p>核心线程数是线程池中始终保持活跃的线程数，这些线程即使空闲也不会被回收。</p>
+<p>最大线程数是线程池允许的最大线程数。当队列已满，线程池允许创建超过核心线程数的线程，直到达到最大线程数。</p>
+<p>线程存活时间是超过核心线程数的多余线程的存活时间。超过这个时间，多余线程将被回收。</p>
+<p>工作队列是搭配线程池使用的存放任务的队列。可以根据需求，选择不同特性的工作队列，例如有无界、有无优先级。</p>
+<p>线程工厂可以指定新线程创建的逻辑。</p>
+<p>饱和策略是指当队列已满并且线程数量到达最大线程数时，采用的策略，例如抛出异常、使用调用者线程执行、抛弃最新的任务、抛弃最老的任务等。</p>
 <h2 id="线程池的实现方式" tabindex="-1"><a class="header-anchor" href="#线程池的实现方式"><span>线程池的实现方式</span></a></h2>
-<p>Java 中线程池实现包括两部分：阻塞队列和线程池。核心线程数 <code v-pre>corePoolSize</code>、最大线程数 <code v-pre>maxPoolSize</code>和阻塞队列。向线程池提交任务后，首先查看当前线程数是否小于核心线程数，是则创建新线程完成任务并交由线程池管理，若当前线程数大于等于核心线程数，将任务提交到阻塞队列，若阻塞队列已满，查看当前线程数是否小于最大线程数，若小于，则创建线程执行该任务并交由线程池管理，若当前线程数已达到了最大线程数，就执行饱和策略。</p>
+<p>Java 中线程池实现包括两部分：阻塞队列和线程池。
+向线程池提交任务后，首先查看当前线程数是否小于核心线程数，是则创建新线程完成任务；
+若当前线程数大于等于核心线程数，将任务提交到阻塞队列；
+若阻塞队列已满，查看当前线程数是否小于最大线程数，若小于，则创建线程执行该任务；
+若当前线程数已达到了最大线程数，就执行饱和策略。</p>
 <h2 id="线程池核心线程数如何设置" tabindex="-1"><a class="header-anchor" href="#线程池核心线程数如何设置"><span>线程池核心线程数如何设置</span></a></h2>
+<p>可以根据任务性质设置核心线程数。</p>
 <p>记 CPU 核心数为 <code v-pre>N</code>。</p>
 <p>对于计算密集型任务，可将核心线程数设置为 <code v-pre>N+1</code>。</p>
 <p>对于 IO 密集型任务，可将核心线程数设置为 <code v-pre>2N</code>。</p>
 <p>核心线程数设置过小，大量任务堆积在阻塞队列导致 OOM；核心线程数设置过大，导致大量线程并发，增大切换开销。</p>
 <h2 id="springboot-自动装配" tabindex="-1"><a class="header-anchor" href="#springboot-自动装配"><span>SpringBoot 自动装配</span></a></h2>
+<p>是什么？怎么实现的？如何使用？</p>
 <p>SpringBoot 自动装配简单而言就是自动将第三方组件的 Bean 装配到容器中，而无需手动进行配置。</p>
 <p>SpringBoot 在启动时，会扫描第三方 jar 包中的 <code v-pre>META-INF/spring.factories</code>，这个文件中包含了很多个类，根据类定义将 bean 添加到容器中。</p>
 <p>SpringBoot 自动装配是默认开启的，在 SpringBoot 启动类，通常有 <code v-pre>@SpringBootApplication</code>注解，这个注解由三个注解组合而成：<code v-pre>@Configuration</code>、<code v-pre>@ComponentScan</code>和 <code v-pre>@EnableAutoConfiguration</code>，第三个注解就是启用自动装配。</p>
 <h2 id="java-中的引用类型" tabindex="-1"><a class="header-anchor" href="#java-中的引用类型"><span>Java 中的引用类型</span></a></h2>
-<p>Java 中对象的引用类型包括强引用、软引用、弱引用和虚引用，引用类型决定了在垃圾回收过程中，如何处理对象。</p>
-<p>强引用是最常使用的引用类型，垃圾回收过程不会回收强引用指向的对象；对于软引用指向的对象，当内存空间不足时会进行回收，软引用可以用于实现缓存；对于弱引用指向的对象，无论内存空间充足与否，都会被回收；虚引用是最弱的一种引用，无法通过虚引用获取对象，虚引用的作用是标记对象被回收的过程。</p>
+<p>Java 中对象的引用类型包括强引用、软引用、弱引用和虚引用，垃圾回收过程针对不同引用类型，会有不同行为。</p>
+<p>强引用是最常使用的引用类型，指向的对象不会被回收；
+对于软引用指向的对象，当内存空间不足时会进行回收，软引用可以用于实现缓存；
+对于弱引用指向的对象，无论内存空间充足与否，都会被回收；
+虚引用是最弱的一种引用，无法通过虚引用获取对象，虚引用的作用是标记对象被回收的过程。</p>
 <h2 id="arraylist和-linkedlist有什么区别" tabindex="-1"><a class="header-anchor" href="#arraylist和-linkedlist有什么区别"><span><code v-pre>ArrayList</code>和 <code v-pre>LinkedList</code>有什么区别？</span></a></h2>
 <p><code v-pre>ArrayList</code>底层使用数组存储元素，<code v-pre>LinkedList</code>底层使用双向链表存储元素。因此，<code v-pre>ArrayList</code>支持高效随机访问，<code v-pre>LinkedList</code>随机访问效率较低；<code v-pre>ArrayList</code>在中间插入、删除元素效率较低，<code v-pre>LinkedList</code>在任何地方插入、删除元素效率都很高。总而言之，如果涉及频繁插入删除操作，使用 <code v-pre>LinkedList</code>；如果设计频繁随机访问，可以使用 <code v-pre>ArrayList</code>。</p>
 <h2 id="说一说-concurrenthashmap的实现原理" tabindex="-1"><a class="header-anchor" href="#说一说-concurrenthashmap的实现原理"><span>说一说 <code v-pre>ConcurrentHashMap</code>的实现原理</span></a></h2>
@@ -37,14 +46,20 @@
 <p>初始化阶段属性注入完毕，可以实现 <code v-pre>InitializingBean</code>接口，或使用 <code v-pre>@PostContruct</code>注解在初始化时执行自己的逻辑。</p>
 <p>销毁阶段，可以实现 <code v-pre>DisposableBean</code>或 <code v-pre>@PreDestory</code>注解在销毁前执行自己的逻辑。</p>
 <h2 id="spring-aop" tabindex="-1"><a class="header-anchor" href="#spring-aop"><span>Spring AOP</span></a></h2>
+<p>是什么？如何使用？原理是什么？</p>
 <p>AOP 是 Spring 的核心概念之一。 AOP 是面向切面编程，它的作用是将与业务流程无关、但被大量业务流程共享的非业务模块（例如事务管理、日志输出、权限控制）提取出来，降低程序耦合度。</p>
 <p>Spring AOP 使用方式是定义一个切面，并选择方法作为切点，对切点织入通知，实现功能增强。</p>
-<p>Spring AOP 是基于动态代理的，所谓动态代理，是指代理类并不是在编写代码阶段显式写出，而是在编译时，动态生成代理类的字节码，包括 JDK 动态代理和 CGLIB 动态代理。JDK 动态代理基于反射机制，适用于实现了接口的被代理类。CGLIB 动态代理基于字节码操作，通过生成业务类的子类进行代理。</p>
+<p>Spring AOP 是基于动态代理的，所谓动态代理，是指代理类并不是在编写代码阶段显式写出，而是在编译时，动态生成代理类的字节码，包括 JDK 动态代理和 CGLIB 动态代理。
+JDK 动态代理基于反射机制，适用于实现了接口的被代理类。
+CGLIB 动态代理基于字节码操作，通过生成被代理类的子类进行代理。</p>
 <p>Spring AOP 已经集成了 AspectJ，这是基于字节码操作的、最完整的 AOP 框架。</p>
 <h2 id="spring-ioc" tabindex="-1"><a class="header-anchor" href="#spring-ioc"><span>Spring IoC</span></a></h2>
-<p>Spring IoC 是 Spring 的核心概念之一，通过控制反转和依赖注入的方式管理对象之间的依赖和对象的生命周期。在 Spring IoC 中，对象的创建、销毁、依赖关系的管理都由容器负责，而不是由程序员手动管理，这种方式降低了对象之间的耦合度、提高了代码的可维护性。在使用 Spring 时，只需要进行配置，容器就可以实例化对象、注入依赖、管理对象的生命周期。</p>
+<p>是什么？怎么使用？原理是什么？</p>
+<p>Spring IoC 是 Spring 的核心概念之一，IoC 是控制反转，对象之间的依赖和对象的生命周期都由容器管理，而不是由程序员手动管理，这种方式降低了对象之间的耦合度、提高了代码的可维护性。
+Spring 通过依赖注入的方式实现控制反转。
+在使用 Spring 时，只需要进行配置，容器就可以管理对象之间的依赖与对象的生命周期。</p>
 <h2 id="spring-常用的注解" tabindex="-1"><a class="header-anchor" href="#spring-常用的注解"><span>Spring 常用的注解</span></a></h2>
-<p>Spring 常用的注解包括：</p>
+<p>使用 SpringBoot 构建 Web 后端，常用的注解包括：</p>
 <p><code v-pre>@RequestMapping</code>定义了如何处理 HTTP 请求。</p>
 <p><code v-pre>@RestController</code>结合了 <code v-pre>@Controller</code>和 <code v-pre>@ResponseBody</code>，用于定义 RESTful 风格的控制器。</p>
 <p><code v-pre>@Autowire</code>和 <code v-pre>@Resource</code>注解用于依赖注入。</p>
@@ -65,6 +80,7 @@
 <li>如果数据库不支持事务，注解也会失效</li>
 </ol>
 <h2 id="堆和栈的区别" tabindex="-1"><a class="header-anchor" href="#堆和栈的区别"><span>堆和栈的区别</span></a></h2>
+<p>堆和栈是针对内存的不同使用需求开辟的具有不同特性的内存空间。</p>
 <p>在 Java 中，堆用于存放对象实例，是线程间共享的区域；栈用于管理方法的调用，每次进行方法调用，都会产生栈帧压栈，是线程私有的区域。堆内存的分配是动态的，每当我们使用 <code v-pre>new</code>关键字创建对象，都会在堆中分配内存存储对象，堆内存的回收由 Java 垃圾回收机制负责。栈内存空间在编译时就静态确定了，不需要动态调整。</p>
 <h2 id="java-内存结构是怎样的" tabindex="-1"><a class="header-anchor" href="#java-内存结构是怎样的"><span>Java 内存结构是怎样的？</span></a></h2>
 <p>由于 Java 支持多线程， JVM 在运行 Java 程序时会将其管理的内存划分为若干区域。包括线程共享区域和线程私有区域。</p>
