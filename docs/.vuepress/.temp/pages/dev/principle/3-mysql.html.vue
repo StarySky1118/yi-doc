@@ -25,7 +25,7 @@
 </ol>
 <h2 id="mysql-中的三大日志及作用" tabindex="-1"><a class="header-anchor" href="#mysql-中的三大日志及作用"><span>MySQL 中的三大日志及作用</span></a></h2>
 <p>MySQL 中的三大日志包括 Undo Log、Redo Log 和 binlog。</p>
-<p>Undo Log 存储了记录修改之前的状态，用于事务的回滚操作和多版本并发控制机制。</p>
+<p>Undo Log 存储了记录修改之前的状态，该日志对实现事务的原子性和隔离性起到了重要作用。</p>
 <p>Redo Log 记录了数据页的修改操作，通过 Redo Log 可以将修改数据写入磁盘，实现持久性。</p>
 <p>binlog 是一种逻辑日志，记录了 SQL 语句的内容，可以使用 binlog 实现数据备份、主从复制和数据恢复。</p>
 <h2 id="常见索引失效场景" tabindex="-1"><a class="header-anchor" href="#常见索引失效场景"><span>常见索引失效场景</span></a></h2>
