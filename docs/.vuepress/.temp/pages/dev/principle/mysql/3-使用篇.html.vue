@@ -36,6 +36,42 @@
 <p>库表设计优化包括合理使用索引、分库分表等。</p>
 <p><strong>配置优化</strong></p>
 <p>配置优化是指根据硬件条件与工作负载合理设置配置参数，例如连接池、日志参数等。</p>
+<h2 id="innodb-存储引擎和-myisam-存储引擎有什么区别" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎和-myisam-存储引擎有什么区别"><span>InnoDB 存储引擎和 MyISAM 存储引擎有什么区别？</span></a></h2>
+<p>二者主要区别在事务和索引方面，其中最大的区别在事务方面。</p>
+<p>InnoDB 存储引擎支持四种隔离级别的事务，而 MyISAM 存储引擎不支持事务。
+因此不具备回滚能力、数据一致性保证能力、并发隔离能力和故障恢复能力。</p>
+<p>InnoDB 聚簇索引叶子结点存放真实记录，而 MyISAM 聚簇索引叶子节点不存放真实数据，真实数据统一存放在别处。</p>
+<h2 id="如何实现数据库不停服迁移" tabindex="-1"><a class="header-anchor" href="#如何实现数据库不停服迁移"><span>如何实现数据库不停服迁移？</span></a></h2>
+<p>不停服迁移可以使用双写策略。</p>
+<p>首先将新库作为旧库的从库，进行数据同步；
+然后在业务代码中编写双写逻辑，即既写主库又写从库，双写操作要求能够使用配置实时开关；
+数据同步完成后，在业务低峰期，开启双写；
+持续进行数据核对；
+确认双写代码无误，进入灰度切流状态，例如先将 1% 的读请求切到从库，逐步扩大，直到 100%；
+继续保留双写，确保新库没有问题，关闭双写。</p>
+<h2 id="mysql-中-wal-技术的实现" tabindex="-1"><a class="header-anchor" href="#mysql-中-wal-技术的实现"><span>MySQL 中 WAL 技术的实现？</span></a></h2>
+<p>WAL 是一种数据库日志管理技术，它的原理是在数据真正落盘之前，首先记录数据修改日志，这样一来，即使系统崩溃，
+数据库仍能通过这个日志进行数据恢复。</p>
+<p>MySQL 中 Redo Log 就是对 WAL 技术的一种实现，其工作流程是，数据修改落盘之前，先通过<strong>顺序写</strong>的方式在 Redo Log 中记录数据修改；
+再经过<strong>随机写</strong>落盘。只要能够保证 Redo Log 成功落盘，该次数据修改就具备了崩溃恢复能力。</p>
+<h2 id="varchar-n-中的-n-指什么" tabindex="-1"><a class="header-anchor" href="#varchar-n-中的-n-指什么"><span><code v-pre>varchar(n)</code> 中的 <code v-pre>n</code> 指什么？</span></a></h2>
+<p>字符数目上限。</p>
+<h2 id="数据库三大范式是什么" tabindex="-1"><a class="header-anchor" href="#数据库三大范式是什么"><span>数据库三大范式是什么？</span></a></h2>
+<p>数据库第一范式确保字段都是原子值。该范式在实际业务开发中是遵守的。
+第二范式在第一范式基础上，消除部分依赖。实际业务开发中表主键只有一个，该范式也是遵守的。
+第三范式在第二范式基础上，消除传递依赖。在实际开发中，通常会采用冗余的方式减少多表联查，通常不会遵守该范式。</p>
+<h2 id="datetime-和-timestamp-类型有什么区别" tabindex="-1"><a class="header-anchor" href="#datetime-和-timestamp-类型有什么区别"><span>DATETIME 和 TIMESTAMP 类型有什么区别？</span></a></h2>
+<p>DATETIME 是日期时间，只是单纯存储日期时间；
+TIMESTAMP 是时间戳，表示到 1970-1-1 0:0:0 的毫秒数，会根据时区显示不同的时间日期。</p>
+<h2 id="mysql-中如何解决深度分页问题" tabindex="-1"><a class="header-anchor" href="#mysql-中如何解决深度分页问题"><span>MySQL 中如何解决深度分页问题？</span></a></h2>
+<p>深度分页问题是指：当数据量非常大时，按分页访问后面的数据，需要首先跳过大量数据，然后只取小部分数据，查询速度显著变慢。</p>
+<p>为解决深度分页问题，可以首先使用主键索引快速定位起始记录，再获取该页数据。这种解决方案只适合自增主键。</p>
+<h2 id="mysql-中-inner-join、left-join-和-right-join-有什么区别" tabindex="-1"><a class="header-anchor" href="#mysql-中-inner-join、left-join-和-right-join-有什么区别"><span>MySQL 中 Inner join、Left join 和 right join 有什么区别？</span></a></h2>
+<p>Inner join 返回两表符合连接条件的交集。</p>
+<p>Left join 返回左表中的每条记录，并将右表中符合连接条件的记录填入；若无，相应字段为 null。</p>
+<p>Right join 返回右表中的每条记录，并将左表中符合连接条件的记录填入；若无，相应字段为 null。</p>
+<h2 id="drop、delete-和-truncate-有什么区别" tabindex="-1"><a class="header-anchor" href="#drop、delete-和-truncate-有什么区别"><span>drop、delete 和 truncate 有什么区别？</span></a></h2>
+<p>drop 删表、delete 删记录、truncate 删表中所有记录。</p>
 </div></template>
 
 
