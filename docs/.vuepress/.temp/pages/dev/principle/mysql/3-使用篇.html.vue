@@ -72,6 +72,13 @@ TIMESTAMP 是时间戳，表示到 1970-1-1 0:0:0 的毫秒数，会根据时区
 <p>Right join 返回右表中的每条记录，并将左表中符合连接条件的记录填入；若无，相应字段为 null。</p>
 <h2 id="drop、delete-和-truncate-有什么区别" tabindex="-1"><a class="header-anchor" href="#drop、delete-和-truncate-有什么区别"><span>drop、delete 和 truncate 有什么区别？</span></a></h2>
 <p>drop 删表、delete 删记录、truncate 删表中所有记录。</p>
+<h2 id="多表联查选择驱动表时-应选择小表还是大表" tabindex="-1"><a class="header-anchor" href="#多表联查选择驱动表时-应选择小表还是大表"><span>多表联查选择驱动表时，应选择小表还是大表？</span></a></h2>
+<p>应选择小表作为驱动表。</p>
+<p>由于驱动表需要全表扫描，被驱动表可以使用索引。因此将小表作为驱动表可以降低开销。</p>
+<h2 id="mysql-本身有缓存机制吗" tabindex="-1"><a class="header-anchor" href="#mysql-本身有缓存机制吗"><span>MySQL 本身有缓存机制吗？</span></a></h2>
+<p>MySQL 使用 Buffer Pool 作为缓存，缓存表和索引。</p>
+<p>读取数据时，首先读取 Buffer Pool 中的数据，缓存不命中再读取磁盘，并更新缓存；
+修改数据时，首先修改 Buffer Pool 中的数据，等待时机落盘。</p>
 </div></template>
 
 

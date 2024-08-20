@@ -50,9 +50,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开发",
+    "title": "关于我",
     "headers": [],
-    "path": "/dev/",
+    "path": "/al/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -64,9 +64,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "关于我",
+    "title": "开发",
     "headers": [],
-    "path": "/al/",
+    "path": "/dev/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -153,6 +153,56 @@ export const searchIndex = [
     "title": "Deep-Live-Cam 概述",
     "headers": [],
     "path": "/ai_application/deep_live_cam/%E6%A6%82%E8%BF%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 排序概述",
+    "headers": [],
+    "path": "/algo/sort/1-%E6%8E%92%E5%BA%8F%E6%A6%82%E8%BF%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 快速排序",
+    "headers": [],
+    "path": "/algo/sort/2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/dev/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "基本原理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "登录接口",
+        "slug": "登录接口",
+        "link": "#登录接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 Provider",
+        "slug": "自定义-provider",
+        "link": "#自定义-provider",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义 UserDetails和userDetailsService",
+        "slug": "自定义-userdetails和userdetailsservice",
+        "link": "#自定义-userdetails和userdetailsservice",
+        "children": []
+      }
+    ],
+    "path": "/dev/java/SpringSecurity.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -489,42 +539,6 @@ export const searchIndex = [
     "title": "开发 - Go",
     "headers": [],
     "path": "/dev/go/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/dev/java/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "基本原理",
-    "headers": [
-      {
-        "level": 2,
-        "title": "登录接口",
-        "slug": "登录接口",
-        "link": "#登录接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 Provider",
-        "slug": "自定义-provider",
-        "link": "#自定义-provider",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义 UserDetails和userDetailsService",
-        "slug": "自定义-userdetails和userdetailsservice",
-        "link": "#自定义-userdetails和userdetailsservice",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/SpringSecurity.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1124,20 +1138,6 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/principle/5-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 排序概述",
-    "headers": [],
-    "path": "/algo/sort/1-%E6%8E%92%E5%BA%8F%E6%A6%82%E8%BF%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 快速排序",
-    "headers": [],
-    "path": "/algo/sort/2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3097,483 +3097,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一、Gin 示例程序",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、搭建 Gin 服务器步骤",
-        "slug": "_1、搭建-gin-服务器步骤",
-        "link": "#_1、搭建-gin-服务器步骤",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、接口参数获取",
-        "slug": "_2、接口参数获取",
-        "link": "#_2、接口参数获取",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) GET 请求获取路径参数和请求参数",
-            "slug": "_1-get-请求获取路径参数和请求参数",
-            "link": "#_1-get-请求获取路径参数和请求参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) POST 请求获取请求体中的参数",
-            "slug": "_2-post-请求获取请求体中的参数",
-            "link": "#_2-post-请求获取请求体中的参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 文件的接收与返回",
-            "slug": "_3-文件的接收与返回",
-            "link": "#_3-文件的接收与返回",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、路由分组与中间件",
-        "slug": "_3、路由分组与中间件",
-        "link": "#_3、路由分组与中间件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、GORM",
-        "slug": "_4、gorm",
-        "link": "#_4、gorm",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/gin/Gin%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "一、环境安装",
-    "headers": [],
-    "path": "/dev/go/go_basic/1-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "二、基本结构和基本数据类型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、文件名、关键字与标识符",
-        "slug": "_1、文件名、关键字与标识符",
-        "link": "#_1、文件名、关键字与标识符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、Go 程序的基本结构和要素",
-        "slug": "_2、go-程序的基本结构和要素",
-        "link": "#_2、go-程序的基本结构和要素",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 包的概念、导入与可见性",
-            "slug": "_1-包的概念、导入与可见性",
-            "link": "#_1-包的概念、导入与可见性",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 函数",
-            "slug": "_2-函数",
-            "link": "#_2-函数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 注释",
-            "slug": "_3-注释",
-            "link": "#_3-注释",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 类型",
-            "slug": "_4-类型",
-            "link": "#_4-类型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) Go 程序的一般结构",
-            "slug": "_5-go-程序的一般结构",
-            "link": "#_5-go-程序的一般结构",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 类型转换",
-            "slug": "_6-类型转换",
-            "link": "#_6-类型转换",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(7) Go 命名规范",
-            "slug": "_7-go-命名规范",
-            "link": "#_7-go-命名规范",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、常量",
-        "slug": "_3、常量",
-        "link": "#_3、常量",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、变量",
-        "slug": "_4、变量",
-        "link": "#_4、变量",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、基本类型与运算符",
-        "slug": "_5、基本类型与运算符",
-        "link": "#_5、基本类型与运算符",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 布尔类型bool",
-            "slug": "_1-布尔类型bool",
-            "link": "#_1-布尔类型bool",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 数字类型",
-            "slug": "_2-数字类型",
-            "link": "#_2-数字类型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 类型别名——type",
-            "slug": "_3-类型别名——type",
-            "link": "#_3-类型别名——type",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 字符类型",
-            "slug": "_4-字符类型",
-            "link": "#_4-字符类型",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "6、字符串",
-        "slug": "_6、字符串",
-        "link": "#_6、字符串",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7、strings和strconv包",
-        "slug": "_7、strings和strconv包",
-        "link": "#_7、strings和strconv包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8、时间和日期",
-        "slug": "_8、时间和日期",
-        "link": "#_8、时间和日期",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "9、指针",
-        "slug": "_9、指针",
-        "link": "#_9、指针",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/go_basic/2-%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "三、控制结构",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、if-else",
-        "slug": "_1、if-else",
-        "link": "#_1、if-else",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、switch",
-        "slug": "_2、switch",
-        "link": "#_2、switch",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、for",
-        "slug": "_3、for",
-        "link": "#_3、for",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 基于计数器的迭代",
-            "slug": "_1-基于计数器的迭代",
-            "link": "#_1-基于计数器的迭代",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 基于条件判断的迭代",
-            "slug": "_2-基于条件判断的迭代",
-            "link": "#_2-基于条件判断的迭代",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) for-range",
-            "slug": "_3-for-range",
-            "link": "#_3-for-range",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、标签与goto",
-        "slug": "_4、标签与goto",
-        "link": "#_4、标签与goto",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/go_basic/3-%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "四、函数",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、函数参数与返回值",
-        "slug": "_1、函数参数与返回值",
-        "link": "#_1、函数参数与返回值",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 值传递和引用传递",
-            "slug": "_1-值传递和引用传递",
-            "link": "#_1-值传递和引用传递",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 命名的返回值",
-            "slug": "_2-命名的返回值",
-            "link": "#_2-命名的返回值",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2、传递变长参数",
-        "slug": "_2、传递变长参数",
-        "link": "#_2、传递变长参数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、defer 和追踪",
-        "slug": "_3、defer-和追踪",
-        "link": "#_3、defer-和追踪",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、将函数作为参数传递",
-        "slug": "_4、将函数作为参数传递",
-        "link": "#_4、将函数作为参数传递",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、闭包",
-        "slug": "_5、闭包",
-        "link": "#_5、闭包",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/go_basic/4-%E5%87%BD%E6%95%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "五、数组与切片",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、数组声明与初始化",
-        "slug": "_1、数组声明与初始化",
-        "link": "#_1、数组声明与初始化",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、切片",
-        "slug": "_2、切片",
-        "link": "#_2、切片",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 将切片作为函数参数",
-            "slug": "_1-将切片作为函数参数",
-            "link": "#_1-将切片作为函数参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 使用make()创建切片",
-            "slug": "_2-使用make-创建切片",
-            "link": "#_2-使用make-创建切片",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/go/go_basic/5-%E6%95%B0%E7%BB%84%E4%B8%8E%E5%88%87%E7%89%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "六、Map",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、判断键是否存在与删除元素",
-        "slug": "_1、判断键是否存在与删除元素",
-        "link": "#_1、判断键是否存在与删除元素",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、for-range",
-        "slug": "_2、for-range",
-        "link": "#_2、for-range",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/go_basic/6-Map.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "七、结构体与方法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、结构体定义",
-        "slug": "_1、结构体定义",
-        "link": "#_1、结构体定义",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、使用工厂方法创建结构体实例",
-        "slug": "_2、使用工厂方法创建结构体实例",
-        "link": "#_2、使用工厂方法创建结构体实例",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、方法",
-        "slug": "_3、方法",
-        "link": "#_3、方法",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 概念",
-            "slug": "_1-概念",
-            "link": "#_1-概念",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) getter & setter",
-            "slug": "_2-getter-setter",
-            "link": "#_2-getter-setter",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 内嵌类型方法与继承",
-            "slug": "_3-内嵌类型方法与继承",
-            "link": "#_3-内嵌类型方法与继承",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/go/go_basic/7-%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%8E%E6%96%B9%E6%B3%95.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "八、接口与反射",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、接口",
-        "slug": "_1、接口",
-        "link": "#_1、接口",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、接口嵌套",
-        "slug": "_2、接口嵌套",
-        "link": "#_2、接口嵌套",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、运行时类型推断",
-        "slug": "_3、运行时类型推断",
-        "link": "#_3、运行时类型推断",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、空接口",
-        "slug": "_4、空接口",
-        "link": "#_4、空接口",
-        "children": []
-      }
-    ],
-    "path": "/dev/go/go_basic/8-%E6%8E%A5%E5%8F%A3%E4%B8%8E%E5%8F%8D%E5%B0%84.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "一、Mybatis-plus 入门案例",
     "headers": [
       {
@@ -4139,6 +3662,483 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/java/tool/1-Feign.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、环境安装",
+    "headers": [],
+    "path": "/dev/go/go_basic/1-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、基本结构和基本数据类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、文件名、关键字与标识符",
+        "slug": "_1、文件名、关键字与标识符",
+        "link": "#_1、文件名、关键字与标识符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Go 程序的基本结构和要素",
+        "slug": "_2、go-程序的基本结构和要素",
+        "link": "#_2、go-程序的基本结构和要素",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 包的概念、导入与可见性",
+            "slug": "_1-包的概念、导入与可见性",
+            "link": "#_1-包的概念、导入与可见性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 函数",
+            "slug": "_2-函数",
+            "link": "#_2-函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 注释",
+            "slug": "_3-注释",
+            "link": "#_3-注释",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 类型",
+            "slug": "_4-类型",
+            "link": "#_4-类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) Go 程序的一般结构",
+            "slug": "_5-go-程序的一般结构",
+            "link": "#_5-go-程序的一般结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 类型转换",
+            "slug": "_6-类型转换",
+            "link": "#_6-类型转换",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(7) Go 命名规范",
+            "slug": "_7-go-命名规范",
+            "link": "#_7-go-命名规范",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、常量",
+        "slug": "_3、常量",
+        "link": "#_3、常量",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、变量",
+        "slug": "_4、变量",
+        "link": "#_4、变量",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、基本类型与运算符",
+        "slug": "_5、基本类型与运算符",
+        "link": "#_5、基本类型与运算符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 布尔类型bool",
+            "slug": "_1-布尔类型bool",
+            "link": "#_1-布尔类型bool",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 数字类型",
+            "slug": "_2-数字类型",
+            "link": "#_2-数字类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 类型别名——type",
+            "slug": "_3-类型别名——type",
+            "link": "#_3-类型别名——type",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 字符类型",
+            "slug": "_4-字符类型",
+            "link": "#_4-字符类型",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、字符串",
+        "slug": "_6、字符串",
+        "link": "#_6、字符串",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7、strings和strconv包",
+        "slug": "_7、strings和strconv包",
+        "link": "#_7、strings和strconv包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8、时间和日期",
+        "slug": "_8、时间和日期",
+        "link": "#_8、时间和日期",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "9、指针",
+        "slug": "_9、指针",
+        "link": "#_9、指针",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/go_basic/2-%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、控制结构",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、if-else",
+        "slug": "_1、if-else",
+        "link": "#_1、if-else",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、switch",
+        "slug": "_2、switch",
+        "link": "#_2、switch",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、for",
+        "slug": "_3、for",
+        "link": "#_3、for",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 基于计数器的迭代",
+            "slug": "_1-基于计数器的迭代",
+            "link": "#_1-基于计数器的迭代",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 基于条件判断的迭代",
+            "slug": "_2-基于条件判断的迭代",
+            "link": "#_2-基于条件判断的迭代",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) for-range",
+            "slug": "_3-for-range",
+            "link": "#_3-for-range",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、标签与goto",
+        "slug": "_4、标签与goto",
+        "link": "#_4、标签与goto",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/go_basic/3-%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "四、函数",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、函数参数与返回值",
+        "slug": "_1、函数参数与返回值",
+        "link": "#_1、函数参数与返回值",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 值传递和引用传递",
+            "slug": "_1-值传递和引用传递",
+            "link": "#_1-值传递和引用传递",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 命名的返回值",
+            "slug": "_2-命名的返回值",
+            "link": "#_2-命名的返回值",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2、传递变长参数",
+        "slug": "_2、传递变长参数",
+        "link": "#_2、传递变长参数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、defer 和追踪",
+        "slug": "_3、defer-和追踪",
+        "link": "#_3、defer-和追踪",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、将函数作为参数传递",
+        "slug": "_4、将函数作为参数传递",
+        "link": "#_4、将函数作为参数传递",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、闭包",
+        "slug": "_5、闭包",
+        "link": "#_5、闭包",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/go_basic/4-%E5%87%BD%E6%95%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "五、数组与切片",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、数组声明与初始化",
+        "slug": "_1、数组声明与初始化",
+        "link": "#_1、数组声明与初始化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、切片",
+        "slug": "_2、切片",
+        "link": "#_2、切片",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 将切片作为函数参数",
+            "slug": "_1-将切片作为函数参数",
+            "link": "#_1-将切片作为函数参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用make()创建切片",
+            "slug": "_2-使用make-创建切片",
+            "link": "#_2-使用make-创建切片",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/go/go_basic/5-%E6%95%B0%E7%BB%84%E4%B8%8E%E5%88%87%E7%89%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "六、Map",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、判断键是否存在与删除元素",
+        "slug": "_1、判断键是否存在与删除元素",
+        "link": "#_1、判断键是否存在与删除元素",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、for-range",
+        "slug": "_2、for-range",
+        "link": "#_2、for-range",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/go_basic/6-Map.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "七、结构体与方法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、结构体定义",
+        "slug": "_1、结构体定义",
+        "link": "#_1、结构体定义",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、使用工厂方法创建结构体实例",
+        "slug": "_2、使用工厂方法创建结构体实例",
+        "link": "#_2、使用工厂方法创建结构体实例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、方法",
+        "slug": "_3、方法",
+        "link": "#_3、方法",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 概念",
+            "slug": "_1-概念",
+            "link": "#_1-概念",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) getter & setter",
+            "slug": "_2-getter-setter",
+            "link": "#_2-getter-setter",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 内嵌类型方法与继承",
+            "slug": "_3-内嵌类型方法与继承",
+            "link": "#_3-内嵌类型方法与继承",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/go/go_basic/7-%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%8E%E6%96%B9%E6%B3%95.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "八、接口与反射",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、接口",
+        "slug": "_1、接口",
+        "link": "#_1、接口",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、接口嵌套",
+        "slug": "_2、接口嵌套",
+        "link": "#_2、接口嵌套",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、运行时类型推断",
+        "slug": "_3、运行时类型推断",
+        "link": "#_3、运行时类型推断",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、空接口",
+        "slug": "_4、空接口",
+        "link": "#_4、空接口",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/go_basic/8-%E6%8E%A5%E5%8F%A3%E4%B8%8E%E5%8F%8D%E5%B0%84.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Gin 示例程序",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、搭建 Gin 服务器步骤",
+        "slug": "_1、搭建-gin-服务器步骤",
+        "link": "#_1、搭建-gin-服务器步骤",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、接口参数获取",
+        "slug": "_2、接口参数获取",
+        "link": "#_2、接口参数获取",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) GET 请求获取路径参数和请求参数",
+            "slug": "_1-get-请求获取路径参数和请求参数",
+            "link": "#_1-get-请求获取路径参数和请求参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) POST 请求获取请求体中的参数",
+            "slug": "_2-post-请求获取请求体中的参数",
+            "link": "#_2-post-请求获取请求体中的参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 文件的接收与返回",
+            "slug": "_3-文件的接收与返回",
+            "link": "#_3-文件的接收与返回",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、路由分组与中间件",
+        "slug": "_3、路由分组与中间件",
+        "link": "#_3、路由分组与中间件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、GORM",
+        "slug": "_4、gorm",
+        "link": "#_4、gorm",
+        "children": []
+      }
+    ],
+    "path": "/dev/go/gin/Gin%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -5234,9 +5234,81 @@ export const searchIndex = [
         "slug": "drop、delete-和-truncate-有什么区别",
         "link": "#drop、delete-和-truncate-有什么区别",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "多表联查选择驱动表时，应选择小表还是大表？",
+        "slug": "多表联查选择驱动表时-应选择小表还是大表",
+        "link": "#多表联查选择驱动表时-应选择小表还是大表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 本身有缓存机制吗？",
+        "slug": "mysql-本身有缓存机制吗",
+        "link": "#mysql-本身有缓存机制吗",
+        "children": []
       }
     ],
     "path": "/dev/principle/mysql/3-%E4%BD%BF%E7%94%A8%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 分库分表",
+    "headers": [
+      {
+        "level": 2,
+        "title": "什么是分库分表",
+        "slug": "什么是分库分表",
+        "link": "#什么是分库分表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分库分表有哪些策略？",
+        "slug": "分库分表有哪些策略",
+        "link": "#分库分表有哪些策略",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分库分表有哪些问题？",
+        "slug": "分库分表有哪些问题",
+        "link": "#分库分表有哪些问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/4-%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "5. 集群篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MySQL 如何避免单点故障？",
+        "slug": "mysql-如何避免单点故障",
+        "link": "#mysql-如何避免单点故障",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如何实现读写分离？",
+        "slug": "如何实现读写分离",
+        "link": "#如何实现读写分离",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "主从同步是如何实现的？",
+        "slug": "主从同步是如何实现的",
+        "link": "#主从同步是如何实现的",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/5-%E9%9B%86%E7%BE%A4.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -5259,6 +5331,199 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/principle/mysql/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. IoC",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring IoC 是使用依赖注入实现的，什么是依赖注入？",
+        "slug": "spring-ioc-是使用依赖注入实现的-什么是依赖注入",
+        "link": "#spring-ioc-是使用依赖注入实现的-什么是依赖注入",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 Spring Bean？",
+        "slug": "什么是-spring-bean",
+        "link": "#什么是-spring-bean",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "BeanFactory 是什么？",
+        "slug": "beanfactory-是什么",
+        "link": "#beanfactory-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring ApplicationContext 是什么？",
+        "slug": "spring-applicationcontext-是什么",
+        "link": "#spring-applicationcontext-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 有哪些作用域？",
+        "slug": "spring-bean-有哪些作用域",
+        "link": "#spring-bean-有哪些作用域",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 有哪些注入方式？",
+        "slug": "spring-bean-有哪些注入方式",
+        "link": "#spring-bean-有哪些注入方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 生命周期是怎样的？",
+        "slug": "spring-bean-生命周期是怎样的",
+        "link": "#spring-bean-生命周期是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring IoC 容器初始化过程是怎样的？",
+        "slug": "spring-ioc-容器初始化过程是怎样的",
+        "link": "#spring-ioc-容器初始化过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 注册到容器中有哪几种方式？",
+        "slug": "spring-bean-注册到容器中有哪几种方式",
+        "link": "#spring-bean-注册到容器中有哪几种方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring 装配方式有哪些？",
+        "slug": "spring-装配方式有哪些",
+        "link": "#spring-装配方式有哪些",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如果 byType 装配方式出现多个符合条件的 Bean，如何消除歧义？",
+        "slug": "如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
+        "link": "#如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 是否有并发安全问题？如果有，如何保证？",
+        "slug": "spring-bean-是否有并发安全问题-如果有-如何保证",
+        "link": "#spring-bean-是否有并发安全问题-如果有-如何保证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring @value 注解有何作用？",
+        "slug": "spring-value-注解有何作用",
+        "link": "#spring-value-注解有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是循环依赖？如何解决？",
+        "slug": "什么是循环依赖-如何解决",
+        "link": "#什么是循环依赖-如何解决",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/1-Ioc.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. AOP",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring AOP 是如何实现的？",
+        "slug": "spring-aop-是如何实现的",
+        "link": "#spring-aop-是如何实现的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring 事务有哪些传播行为？传播行为有什么用？",
+        "slug": "spring-事务有哪些传播行为-传播行为有什么用",
+        "link": "#spring-事务有哪些传播行为-传播行为有什么用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@Transactional 注解在什么场景下会失效？",
+        "slug": "transactional-注解在什么场景下会失效",
+        "link": "#transactional-注解在什么场景下会失效",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/2-aop.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. Spring MVC",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring MVC 是如何处理请求的？",
+        "slug": "spring-mvc-是如何处理请求的",
+        "link": "#spring-mvc-是如何处理请求的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@RequestBody 和 @ResponseBody 各有什么作用？",
+        "slug": "requestbody-和-responsebody-各有什么作用",
+        "link": "#requestbody-和-responsebody-各有什么作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@PathVariable 注解有何作用？",
+        "slug": "pathvariable-注解有何作用",
+        "link": "#pathvariable-注解有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring MVC 如何进行全局异常处理？",
+        "slug": "spring-mvc-如何进行全局异常处理",
+        "link": "#spring-mvc-如何进行全局异常处理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 Restful 风格的接口？",
+        "slug": "什么是-restful-风格的接口",
+        "link": "#什么是-restful-风格的接口",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/3-MVC.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring 用到了那些设计模式？",
+        "slug": "spring-用到了那些设计模式",
+        "link": "#spring-用到了那些设计模式",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/",
     "pathLocale": "/",
     "extraFields": []
   },
