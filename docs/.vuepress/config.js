@@ -81,6 +81,14 @@ export default defineUserConfig({
                                         '/dev/principle/spring/2-aop',
                                         '/dev/principle/spring/3-MVC'
                                     ]
+                                },
+                                {
+                                    text: 'java',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/principle/java/',
+                                        '/dev/principle/java/1-基础篇'
+                                    ]
                                 }
                             ]
                         },
