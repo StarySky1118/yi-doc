@@ -61,6 +61,15 @@ export default defineUserConfig({
                                 '/dev/principle/4-Redis',
                                 '/dev/principle/5-计算机网络',
                                 {
+                                    text: '计算机网络',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/principle/network/',
+                                        '/dev/principle/network/1-网络模型',
+                                        '/dev/principle/network/2-应用层'
+                                    ]
+                                },
+                                {
                                     text: 'MySQL',
                                     collapsible: true,
                                     children: [
