@@ -10,7 +10,6 @@
 <p><strong>4. 持久性（D）</strong></p>
 <p>事务提交后，对数据的修改是永久的，不会因为故障消失。</p>
 <h2 id="mysql-如何实现事务" tabindex="-1"><a class="header-anchor" href="#mysql-如何实现事务"><span>MySQL 如何实现事务</span></a></h2>
-<p>MySQL 作为关系型数据库必定也会实现事务。</p>
 <p>实现事务的关键在于事务的 ACID 特性。</p>
 <ol>
 <li>
@@ -25,14 +24,16 @@
 <li>使用 <strong>redo log</strong> 实现事务的持久性。</li>
 </ol>
 <h2 id="undo-log" tabindex="-1"><a class="header-anchor" href="#undo-log"><span>Undo Log</span></a></h2>
-<p>Undo Log 记录数据记录的历史数据，通过指针形成版本链，用以实现事务的回滚。</p>
+<p>Undo Log 记录数据记录的历史数据，通过指针形成版本链，用以实现事务的回滚和记录的可见性。</p>
 <h2 id="mvcc" tabindex="-1"><a class="header-anchor" href="#mvcc"><span>MVCC</span></a></h2>
 <p>MVCC 即多版本并发控制，它使用 ReadView 和 Undo Log 实现快照读的隔离性。</p>
 <p>具体的实现方式是：根据不同的隔离级别，会在事务的不同阶段生成 ReadView。
 这个 ReadView 是当前事务情况的快照，包括已提交事务、当前正在活跃的事务和将来可开启的事务。
-在查询记录时，会查看记录的 <code v-pre>trx_id</code> 字段，若事务是正在活跃的事务或将来可开启事务，则该条记录不可见，沿版本链 Undo Log
-寻找可见的记录。</p>
-<p>若事务隔离级别是读已提交，则在每次执行 SQL 语句前生成 ReadView；若隔离级别是可重复读，则在开启事务时生成 ReadView。</p>
+在查询记录时，会查看记录的 <code v-pre>trx_id</code> 字段，若 <code v-pre>trx_id</code> 代表的事务是正在活跃的事务或将来可开启事务，则该条记录不可见，沿版本链 Undo Log
+寻找可见的记录；
+若 <code v-pre>trx_id</code> 代表的事务属于已经提交的事务，则该条记录可见。</p>
+<p>若事务隔离级别是读已提交，则在每次执行 SQL 语句前生成 ReadView；
+若隔离级别是可重复读，则在开启事务时生成 ReadView，在事务执行期间一直使用这个 ReadView。</p>
 <h2 id="mysql-事务隔离级别" tabindex="-1"><a class="header-anchor" href="#mysql-事务隔离级别"><span>MySQL 事务隔离级别</span></a></h2>
 <p>MySQL 实现了四种事务隔离级别。</p>
 <p><strong>1. 读未提交</strong></p>

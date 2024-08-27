@@ -19,14 +19,14 @@
 <p>接口遵循的是一种<strong>自上而下</strong>的设计原则，它规定了一组<strong>行为规范</strong>；</p>
 <p>抽象类遵循的是一种<strong>自下而上</strong>的设计原则，它提取了类的<strong>公共行为</strong>。</p>
 <h2 id="java-中的不可变类是什么-如何实现一个不可变类" tabindex="-1"><a class="header-anchor" href="#java-中的不可变类是什么-如何实现一个不可变类"><span>Java 中的不可变类是什么？如何实现一个不可变类？</span></a></h2>
-<p>不可变类的对象，一旦被创建，其内部属性便无法被修改。</p>
+<p>不可变类的对象，一旦被创建，其<strong>内部属性</strong>便无法被修改。</p>
 <p>要实现一个不可变类，需要将类添加 <code v-pre>final</code> 修饰，私有化属性，不对外暴露 <code v-pre>set</code> 方法。</p>
 <h2 id="java-异常体系是怎样的" tabindex="-1"><a class="header-anchor" href="#java-异常体系是怎样的"><span>Java 异常体系是怎样的？</span></a></h2>
 <p>Java 中的异常包括 Exception 和 Error。
 Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch</code> 捕获；Error 是那些程序无法处理的错误，当出现 Error 时，虚拟机
 通常会将线程终止。</p>
 <p>Exception 分为受检异常和非受检异常。受检异常需要在代码中显式地使用 <code v-pre>try...catch</code> 处理，例如 IO 相关异常；
-非受检异常则不要求，<code v-pre>RuntimeException</code> 及其子类都是非首检异常。</p>
+非受检异常则不要求，<code v-pre>RuntimeException</code> 及其子类都是非受检异常。</p>
 <h2 id="面向对象和面向过程有什么区别" tabindex="-1"><a class="header-anchor" href="#面向对象和面向过程有什么区别"><span>面向对象和面向过程有什么区别？</span></a></h2>
 <p>面向对象将对象作为编程的基本单元，将程序视为对象之间的交互；
 面向过程将过程作为编程的基本单元。</p>
@@ -35,7 +35,7 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 <p>String 是不可变类，因此字符串拼接需要产生大量无用的中间对象。为解决这个问题，就出现了 StringBuffer 和 StringBuilder。
 二者均可以高效进行字符串拼接操作，不同之处在于 StringBuffer 是线程安全的，StringBuilder 不是。</p>
 <h2 id="java-为什么会有包装类" tabindex="-1"><a class="header-anchor" href="#java-为什么会有包装类"><span>Java 为什么会有包装类？</span></a></h2>
-<p>包装类让基本数据类型拥有了类的特性，添加属性和方法，丰富基本数据类型的操作。</p>
+<p>包装类让基本数据类型拥有了类的特性，可以添加特有的属性和方法，丰富基本数据类型的操作。</p>
 <h2 id="jre、jdk-有什么区别" tabindex="-1"><a class="header-anchor" href="#jre、jdk-有什么区别"><span>JRE、JDK 有什么区别？</span></a></h2>
 <p>JRE 是 Java 运行环境，包括 JVM、核心类库等。</p>
 <p>JDK 除了包含 JRE 外，还包括一些其他开发工具，例如编译工具 <code v-pre>javac</code>、生成堆转储工具 <code v-pre>jmap</code> 和生成栈追踪信息的 <code v-pre>jstack</code>。</p>
@@ -53,6 +53,33 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 准备就是为各种类变量分配默认值；
 解析阶段会将常量池的符号引用转换为直接引用。</p>
 <p>初始化阶段执行静态代码块，为类变量赋真实值。</p>
+<h2 id="介绍一下-java-中的类加载器" tabindex="-1"><a class="header-anchor" href="#介绍一下-java-中的类加载器"><span>介绍一下 Java 中的类加载器</span></a></h2>
+<p>Java 中使用类加载器进行类加载。</p>
+<p>类加载器在加载类时遵循双亲委派原则，即类加载器在自己进行类加载前，会首先委托父加载器执行，父加载器加载失败，才会自己进行加载。
+这种方式可以避免类的重复加载，保证 Java 核心 API 不被篡改。</p>
+<p>常见的类加载器包括 <code v-pre>BootstrapClassLoader</code>、<code v-pre>ExtensionClassLoader</code> 和 <code v-pre>AppClassLoader</code>。</p>
+<p><img src="@source/dev/principle/java/img.png" alt="img.png"></p>
+<h2 id="java-中的-bigdecimal-类有何作用" tabindex="-1"><a class="header-anchor" href="#java-中的-bigdecimal-类有何作用"><span>Java 中的 BigDecimal 类有何作用？</span></a></h2>
+<p><code v-pre>BigDecimal</code> 是用于高精度数学运算的类，适用于金融及高精度数学运算场景。</p>
+<h2 id="创建字符串对象的两种方式有何区别" tabindex="-1"><a class="header-anchor" href="#创建字符串对象的两种方式有何区别"><span>创建字符串对象的两种方式有何区别？</span></a></h2>
+<div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java" data-title="java"><pre v-pre><code><span class="line"><span class="token comment">// 方式 1</span></span>
+<span class="line"><span class="token class-name">String</span> str1 <span class="token operator">=</span> <span class="token string">"123"</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// 方式 2</span></span>
+<span class="line"><span class="token class-name">String</span> str2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>第一种方式引用直接指向字符串常量池中的字符串对象，第二种方式首先会在堆中创建字符串对象，堆中的字符串对象的 <code v-pre>value</code> 属性指向字符串常量池中的字符串对象。
+<img src="@source/dev/principle/java/img_1.png" alt="img_1.png"></p>
+<h2 id="java-final-关键字有何作用" tabindex="-1"><a class="header-anchor" href="#java-final-关键字有何作用"><span>Java <code v-pre>final</code> 关键字有何作用？</span></a></h2>
+<p><code v-pre>final</code> 表示不可变或不可继承，可以修饰类、方法或变量。</p>
+<p><code v-pre>final</code> 修饰的类不能被继承，<code v-pre>final</code> 修饰的方法不能被重写，<code v-pre>final</code> 修饰的变量一旦赋了初值，不能被修改。</p>
+<h2 id="java-线程的状态有哪些" tabindex="-1"><a class="header-anchor" href="#java-线程的状态有哪些"><span>Java 线程的状态有哪些？</span></a></h2>
+<p>线程的状态有：</p>
+<p>新建态(New)：线程对象创建后，还未调用 <code v-pre>start()</code> 方法。</p>
+<p>就绪态(Runnable)：调用 <code v-pre>start()</code> 方法后，等待 CPU 调度的状态。</p>
+<p>阻塞态(Blocked)：线程获取重量级锁失败时会进入阻塞态。</p>
+<p>等待态(Waiting)：线程等待某个条件满足或被其他线程唤醒。</p>
+<p>时间等待(Time Waiting)：具有等待时间的等待态，到达时间会被唤醒。</p>
+<p>终止态(Terminated)：线程执行完毕或异常退出。</p>
 </div></template>
 
 

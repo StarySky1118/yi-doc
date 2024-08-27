@@ -57,7 +57,7 @@ export default defineUserConfig({
                             children: [
                                 '/dev/principle/1-操作系统',
                                 '/dev/principle/2-java',
-                                // '/dev/principle/3-mysql',
+                                '/dev/principle/3-mysql',
                                 '/dev/principle/4-Redis',
                                 '/dev/principle/5-计算机网络',
                                 {
