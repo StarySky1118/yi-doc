@@ -55,12 +55,12 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 <p>初始化阶段执行静态代码块，为类变量赋真实值。</p>
 <h2 id="介绍一下-java-中的类加载器" tabindex="-1"><a class="header-anchor" href="#介绍一下-java-中的类加载器"><span>介绍一下 Java 中的类加载器</span></a></h2>
 <p>Java 中使用类加载器进行类加载。</p>
-<p>类加载器在加载类时遵循双亲委派原则，即类加载器在自己进行类加载前，会首先委托父加载器执行，父加载器加载失败，才会自己进行加载。
+<p>类加载器在加载类时遵循双亲委派原则，即类加载器在自己加载类前，会首先委托父加载器执行，父加载器加载失败，才会自己进行加载。
 这种方式可以避免类的重复加载，保证 Java 核心 API 不被篡改。</p>
 <p>常见的类加载器包括 <code v-pre>BootstrapClassLoader</code>、<code v-pre>ExtensionClassLoader</code> 和 <code v-pre>AppClassLoader</code>。</p>
 <p><img src="@source/dev/principle/java/img.png" alt="img.png"></p>
 <h2 id="java-中的-bigdecimal-类有何作用" tabindex="-1"><a class="header-anchor" href="#java-中的-bigdecimal-类有何作用"><span>Java 中的 BigDecimal 类有何作用？</span></a></h2>
-<p><code v-pre>BigDecimal</code> 是用于高精度数学运算的类，适用于金融及高精度数学运算场景。</p>
+<p><code v-pre>BigDecimal</code> 是用于高精度数学运算的类，适用于涉及金钱计算的场景。</p>
 <h2 id="创建字符串对象的两种方式有何区别" tabindex="-1"><a class="header-anchor" href="#创建字符串对象的两种方式有何区别"><span>创建字符串对象的两种方式有何区别？</span></a></h2>
 <div class="language-java line-numbers-mode" data-highlighter="prismjs" data-ext="java" data-title="java"><pre v-pre><code><span class="line"><span class="token comment">// 方式 1</span></span>
 <span class="line"><span class="token class-name">String</span> str1 <span class="token operator">=</span> <span class="token string">"123"</span><span class="token punctuation">;</span></span>

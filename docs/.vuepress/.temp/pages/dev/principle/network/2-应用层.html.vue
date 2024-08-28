@@ -1,6 +1,6 @@
 <template><div><h1 id="_2-应用层" tabindex="-1"><a class="header-anchor" href="#_2-应用层"><span>2. 应用层</span></a></h1>
 <h2 id="http-报文有哪些部分" tabindex="-1"><a class="header-anchor" href="#http-报文有哪些部分"><span>HTTP 报文有哪些部分？</span></a></h2>
-<p>HTTP 遵循请求-响应模型。</p>
+<p>HTTP 报文包括请求报文和响应报文。</p>
 <ol>
 <li>对于 HTTP 请求报文，主要包括请求行、请求头和请求体。</li>
 </ol>
@@ -11,7 +11,7 @@
 <li>对于 HTTP 响应报文，主要包括响应行、响应头和响应体。</li>
 </ol>
 <p>响应行包括 HTTP 协议版本、状态码与状态信息。</p>
-<p>响应头包含响应的附加信息，例如 Content-type。</p>
+<p>响应头包含响应的附加信息，例如 Content-Length。</p>
 <p>响应体包含响应的数据，例如服务器返回的 JSON。</p>
 <h2 id="http-有哪些状态码" tabindex="-1"><a class="header-anchor" href="#http-有哪些状态码"><span>HTTP 有哪些状态码？</span></a></h2>
 <p>HTTP 状态码分为五类，分别以 1~5 开头。</p>
@@ -63,7 +63,7 @@
 <p>首先，客户端向服务端发起加密连接请求，并生成一个随机数传输给服务端。</p>
 <p>然后，服务端接收到客户端加密连接请求后，生成一个随机数，连同证书一起发给客户端。</p>
 <p>客户端接收到数据后，首先进行证书校验。校验通过后，自己再生成一个随机数，称为 Pre-master。
-Pre-master 与前面两个随机数组合成为最终的加密密钥。
+Pre-master 与前面两个随机数组合成为最终密钥。
 客户端会使用服务端公钥加密 pre-master 传输给服务端。</p>
 <p>服务端接收到数据后，使用自己的私钥解密，获取 pre-master，组合成为最终加密密钥。</p>
 <p>这样一来，客户端和服务端就通过协商安全交换了对称加密密钥，后续可以使用该密钥进行对称加密通信。</p>
@@ -87,9 +87,25 @@ Pre-master 与前面两个随机数组合成为最终的加密密钥。
 <p>选用 UDP 是 DNS 查询的使用要求决定的。DNS 查询要求低延迟、并且数据交换量较少。
 因此选用 UDP 协议。</p>
 <h2 id="介绍一下-http-的无状态性" tabindex="-1"><a class="header-anchor" href="#介绍一下-http-的无状态性"><span>介绍一下 HTTP 的无状态性</span></a></h2>
-<p>HTTP 是一种无状态的协议，协议本身不会提供状态管理功能。
-因此，所有的请求需要包含所有必要的信息以便服务器处理。
-为了跟踪用户状态，可以使用 cookie、session 或 token。</p>
+<p>HTTP 的无状态性是指：HTTP 本身不提供状态管理功能。</p>
+<p>如果希望标识客户端，需要在请求中包含完整信息，服务端才能够处理。</p>
+<p>可以使用 cookie、session 等机制进行状态管理。</p>
+<h2 id="http-是无状态的-如何进行-http-状态管理" tabindex="-1"><a class="header-anchor" href="#http-是无状态的-如何进行-http-状态管理"><span>HTTP 是无状态的，如何进行 HTTP 状态管理？</span></a></h2>
+<p>Cookie、Session 和 JWT Token 都是支持 HTTP 进行状态管理的技术。</p>
+<p>Cookie 存储于客户端，包含一些客户端信息，当浏览器向服务器发起请求，会自动附带 Cookie 中的数据。</p>
+<p>Session 存储于服务端，它相当于将分散在各个客户端的状态信息进行统一管理。
+服务端给每个客户端分配一个唯一的 SessionId，这个 SessionId 通过 Cookie 或 URL 重写的方式发送给客户端，客户端后续请求附带这个 SessionId，
+服务端就可以利用这个 SessionId 查询 Session 数据。</p>
+<p>为了避免在两端存储数据，出现了 JWT Token 技术。
+JWT Token 是服务端向客户端颁发的令牌，JWT Token 由头部、载荷和签名三部分组成。
+头部和载荷都是 JSON 格式，并使用 Base64 编码。
+头部包含签名算法等信息；载荷包含客户端信息；签名可以验证前面两部分是否被修改。
+由于 JWT Token 中包含了全部信息，并且不会保存在服务端，因此非常适合分布式系统。</p>
+<h2 id="什么是跨域问题" tabindex="-1"><a class="header-anchor" href="#什么是跨域问题"><span>什么是跨域问题？</span></a></h2>
+<p>跨域问题是同源策略带来的问题。</p>
+<p>同源是指两个 URL 协议、主机名、端口号都相同，同源策略是指网页只能加载、操作同源的资源。
+同源策略是为了保证数据安全采取的一种策略。</p>
+<p>为解决跨域问题，服务器需要设置跨域资源共享来放宽同源策略的限制。</p>
 </div></template>
 
 
