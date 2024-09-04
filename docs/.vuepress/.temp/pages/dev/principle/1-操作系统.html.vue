@@ -1,16 +1,16 @@
 <template><div><h1 id="操作系统" tabindex="-1"><a class="header-anchor" href="#操作系统"><span>操作系统</span></a></h1>
 <h2 id="linux-零拷贝" tabindex="-1"><a class="header-anchor" href="#linux-零拷贝"><span>Linux 零拷贝</span></a></h2>
-<p>零拷贝是一种优化技术，旨在<strong>减少数据在内存中的拷贝次数</strong>，从而提高数据传输效率和系统性能。在 Linux 中，零拷贝通常用于网络传输和文件操作中。其原理是尽量<strong>避免用户态和内核态数据的重复拷贝</strong>。</p>
+<p>零拷贝是一种优化技术，旨在<strong>减少数据在内存中的拷贝次数</strong>。</p>
 <p>Linux 中常用的零拷贝技术是 <code v-pre>sendfile</code>，它使用网卡的 DMA，直接将内核缓冲区的数据拷贝到网卡，大幅减少了数据拷贝次数和系统调用次数。</p>
 <h2 id="在-linux-上定位磁盘已满、cpu-利用率过高的问题" tabindex="-1"><a class="header-anchor" href="#在-linux-上定位磁盘已满、cpu-利用率过高的问题"><span>在 Linux 上定位磁盘已满、CPU 利用率过高的问题</span></a></h2>
 <h3 id="磁盘情况" tabindex="-1"><a class="header-anchor" href="#磁盘情况"><span>磁盘情况</span></a></h3>
 <p>使用 <code v-pre>df -h</code>命令查看文件系统磁盘空间的使用情况。</p>
 <h3 id="cpu-使用情况" tabindex="-1"><a class="header-anchor" href="#cpu-使用情况"><span>CPU 使用情况</span></a></h3>
 <p>使用 <code v-pre>top</code>命令查看进程的 CPU 使用率、内存使用率等。使用数字 <code v-pre>1</code>键可以展开显示各个 CPU 核心的使用情况。</p>
-<p>如果一个 Java 进程的 CPU 使用率非常高，很可能是程序编码出现问题，需要查看 Java 线程的堆栈信息。步骤如下：</p>
+<p>如果一个 Java 进程的 CPU 使用率非常高，很可能是程序编码出现问题，需要查看 Java 线程的栈追踪信息。步骤如下：</p>
 <ol>
 <li>使用 <code v-pre>ps -ef | grep java</code>找出 Java 进程的 PID</li>
-<li>使用 <code v-pre>jstack pid &gt; thread_dump.txt</code>打印堆栈信息</li>
+<li>使用 <code v-pre>jstack pid &gt; thread_dump.txt</code>打印站追踪信息，查看是哪个类的哪个方法造成的。</li>
 </ol>
 <h2 id="乐观锁与悲观锁" tabindex="-1"><a class="header-anchor" href="#乐观锁与悲观锁"><span>乐观锁与悲观锁</span></a></h2>
 <p>乐观锁与悲观锁是处理互斥资源共享的两种策略。</p>

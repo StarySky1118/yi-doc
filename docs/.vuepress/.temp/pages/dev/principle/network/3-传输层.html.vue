@@ -1,0 +1,18 @@
+<template><div><h1 id="_3-传输层" tabindex="-1"><a class="header-anchor" href="#_3-传输层"><span>3. 传输层</span></a></h1>
+<h2 id="tcp-头部有哪些重要属性" tabindex="-1"><a class="header-anchor" href="#tcp-头部有哪些重要属性"><span>TCP 头部有哪些重要属性？</span></a></h2>
+<p>TCP 头部重要属性包括源端口号、目的端口号、序列号、确认号和标志位等。</p>
+<h2 id="tcp-三次握手过程是怎样的" tabindex="-1"><a class="header-anchor" href="#tcp-三次握手过程是怎样的"><span>TCP 三次握手过程是怎样的？</span></a></h2>
+<p>一开始，双端都处于连接关闭状态。</p>
+<p>然后，服务端主动监听某个端口，进入监听状态。</p>
+<p>接着，客户端主动发起连接请求，发送同步包给服务端，自身进入 Syn_sent 状态。</p>
+<p>服务端接收到同步包后，向客户端发送应答+同步包，自身进入 syn_recv 状态。</p>
+<p>客户端接收到应答+同步包后，向服务端发送应答包，自身进入 established 状态。</p>
+<p>服务端接收到应答包，自身进入 established 状态。</p>
+<p>自此，TCP 三次握手过程完成。</p>
+<h2 id="tcp-为什么需要三次握手过程" tabindex="-1"><a class="header-anchor" href="#tcp-为什么需要三次握手过程"><span>TCP 为什么需要三次握手过程？</span></a></h2>
+<p>TCP 使用三次握手过程建立连接主要原因有两点：防止历史连接初始化连接和保证连接双方都有收发能力。</p>
+<p>首先，使用三次握手过程，客户端可以及时发现错误的历史连接并主动关闭。</p>
+<p>其次，经过 TCP 握手过程，双方均成功收发了一次数据，保证了双方的收发能力，同步了序列号。</p>
+</div></template>
+
+

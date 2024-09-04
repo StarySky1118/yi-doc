@@ -24,7 +24,7 @@
 <li>使用 <strong>redo log</strong> 实现事务的持久性。</li>
 </ol>
 <h2 id="undo-log" tabindex="-1"><a class="header-anchor" href="#undo-log"><span>Undo Log</span></a></h2>
-<p>Undo Log 记录数据记录的历史数据，通过指针形成版本链，用以实现事务的回滚和记录的可见性。</p>
+<p>Undo Log 保存了记录的历史版本，通过指针形成版本链，用以实现事务的回滚和记录的可见性。</p>
 <h2 id="mvcc" tabindex="-1"><a class="header-anchor" href="#mvcc"><span>MVCC</span></a></h2>
 <p>MVCC 即多版本并发控制，它使用 ReadView 和 Undo Log 实现快照读的隔离性。</p>
 <p>具体的实现方式是：根据不同的隔离级别，会在事务的不同阶段生成 ReadView。
@@ -93,9 +93,9 @@
 </tr>
 </tbody>
 </table>
-<p>如果 <code v-pre>update</code> 没有加条件，就会锁<code v-pre>(-,1]、(1,2]、(2,3]、(3,+)</code>来防幻读。如果数据量非常大，就会使用间隙锁锁住了全表。</p>
+<p>如果 <code v-pre>update</code> 没有加条件，就会锁<code v-pre>(-,1]、(1,2]、(2,3]、(3,+)</code>来防幻读。因为 MySQL 假定，在更新之后就会读。</p>
 <h2 id="redo-log" tabindex="-1"><a class="header-anchor" href="#redo-log"><span>Redo Log</span></a></h2>
-<p>MySQL 使用 Redo Log 实现事务的持久化，内存中的脏页落盘前会先通过<strong>顺序写</strong>的方式写入 Redo Log，记录数据的变更信息，用于恢复数据。
+<p>MySQL 使用 Redo Log 实现事务的持久化，内存中的脏页落盘前会先通过<strong>顺序写</strong>的方式写入 Redo Log，若数据修改写入 Redo Log，该次修改就具备了故障恢复能力。
 之后才会使用<strong>随机写</strong>写入磁盘。</p>
 </div></template>
 

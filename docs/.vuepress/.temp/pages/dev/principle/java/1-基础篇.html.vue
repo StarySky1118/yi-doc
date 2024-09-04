@@ -9,7 +9,7 @@
 <p><strong>生态</strong></p>
 <p>Java 流行离不开成熟的生态，例如 Spring 相关框架大大简化了后端开发。</p>
 <h2 id="如何理解-java-中的多态特性" tabindex="-1"><a class="header-anchor" href="#如何理解-java-中的多态特性"><span>如何理解 Java 中的多态特性？</span></a></h2>
-<p>多态是多种形态，在 Java 中指同类或不同类的相同方法具有不同行为。</p>
+<p>多态是多种形态，在 Java 中指同类或不同类的相同名称的方法具有不同行为。</p>
 <p>多态分为编译时多态和运行时多态。</p>
 <p>编译时多态对应 Java 中的重载特性。如果同一个类中多个方法，方法名称相同，但参数不同（参数类型、数量不同），便构成了方法重载。
 方法重载可使同一方法传入不同参数时表现出不同的行为。</p>
@@ -35,7 +35,7 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 <p>String 是不可变类，因此字符串拼接需要产生大量无用的中间对象。为解决这个问题，就出现了 StringBuffer 和 StringBuilder。
 二者均可以高效进行字符串拼接操作，不同之处在于 StringBuffer 是线程安全的，StringBuilder 不是。</p>
 <h2 id="java-为什么会有包装类" tabindex="-1"><a class="header-anchor" href="#java-为什么会有包装类"><span>Java 为什么会有包装类？</span></a></h2>
-<p>包装类让基本数据类型拥有了类的特性，可以添加特有的属性和方法，丰富基本数据类型的操作。</p>
+<p>包装类让基本数据类型拥有了类的特性，可以添加特有的属性和方法。</p>
 <h2 id="jre、jdk-有什么区别" tabindex="-1"><a class="header-anchor" href="#jre、jdk-有什么区别"><span>JRE、JDK 有什么区别？</span></a></h2>
 <p>JRE 是 Java 运行环境，包括 JVM、核心类库等。</p>
 <p>JDK 除了包含 JRE 外，还包括一些其他开发工具，例如编译工具 <code v-pre>javac</code>、生成堆转储工具 <code v-pre>jmap</code> 和生成栈追踪信息的 <code v-pre>jstack</code>。</p>

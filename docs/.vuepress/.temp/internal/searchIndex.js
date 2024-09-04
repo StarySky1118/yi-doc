@@ -867,9 +867,9 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "Redis 常见数据类型应用场景",
-        "slug": "redis-常见数据类型应用场景",
-        "link": "#redis-常见数据类型应用场景",
+        "title": "介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？",
+        "slug": "介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
+        "link": "#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
         "children": [
           {
             "level": 3,
@@ -880,16 +880,16 @@ export const searchIndex = [
           },
           {
             "level": 3,
-            "title": "Set",
-            "slug": "set",
-            "link": "#set",
+            "title": "List",
+            "slug": "list",
+            "link": "#list",
             "children": []
           },
           {
             "level": 3,
-            "title": "List",
-            "slug": "list",
-            "link": "#list",
+            "title": "Set",
+            "slug": "set",
+            "link": "#set",
             "children": []
           },
           {
@@ -904,49 +904,6 @@ export const searchIndex = [
             "title": "ZSet",
             "slug": "zset",
             "link": "#zset",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Redis 数据类型底层数据结构",
-        "slug": "redis-数据类型底层数据结构",
-        "link": "#redis-数据类型底层数据结构",
-        "children": [
-          {
-            "level": 3,
-            "title": "String",
-            "slug": "string-1",
-            "link": "#string-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "List",
-            "slug": "list-1",
-            "link": "#list-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Set",
-            "slug": "set-1",
-            "link": "#set-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Hash",
-            "slug": "hash-1",
-            "link": "#hash-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ZSet",
-            "slug": "zset-1",
-            "link": "#zset-1",
             "children": []
           }
         ]
@@ -3947,79 +3904,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "单体项目",
-    "headers": [
-      {
-        "level": 2,
-        "title": "在resources目录下添加多个application.yml",
-        "slug": "在resources目录下添加多个application-yml",
-        "link": "#在resources目录下添加多个application-yml",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "在POM.xml中添加多个 Profile",
-        "slug": "在pom-xml中添加多个-profile",
-        "link": "#在pom-xml中添加多个-profile",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "打包时使用制定 Profile",
-        "slug": "打包时使用制定-profile",
-        "link": "#打包时使用制定-profile",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "高德地图接入",
-    "headers": [
-      {
-        "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "AWS S3",
-    "headers": [
-      {
-        "level": 2,
-        "title": "服务概述",
-        "slug": "服务概述",
-        "link": "#服务概述",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "接入流程",
-        "slug": "接入流程",
-        "link": "#接入流程",
-        "children": []
-      }
-    ],
-    "path": "/dev/java/third_party_in/2-AWS_S3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "基本原理",
     "headers": [],
     "path": "/dev/java/spring_security/1-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html",
@@ -4092,423 +3976,75 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "HTTP 客户端 Feign",
+    "title": "单体项目",
     "headers": [
       {
         "level": 2,
-        "title": "1、使用 Feign 客户端",
-        "slug": "_1、使用-feign-客户端",
-        "link": "#_1、使用-feign-客户端",
+        "title": "在resources目录下添加多个application.yml",
+        "slug": "在resources目录下添加多个application-yml",
+        "link": "#在resources目录下添加多个application-yml",
         "children": []
       },
       {
         "level": 2,
-        "title": "2、自定义 Feign 的配置",
-        "slug": "_2、自定义-feign-的配置",
-        "link": "#_2、自定义-feign-的配置",
+        "title": "在POM.xml中添加多个 Profile",
+        "slug": "在pom-xml中添加多个-profile",
+        "link": "#在pom-xml中添加多个-profile",
         "children": []
       },
       {
         "level": 2,
-        "title": "3、Feign 性能优化",
-        "slug": "_3、feign-性能优化",
-        "link": "#_3、feign-性能优化",
+        "title": "打包时使用制定 Profile",
+        "slug": "打包时使用制定-profile",
+        "link": "#打包时使用制定-profile",
         "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、Feign 最佳实践",
-        "slug": "_4、feign-最佳实践",
-        "link": "#_4、feign-最佳实践",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 最佳实践1[继承]",
-            "slug": "_1-最佳实践1-继承",
-            "link": "#_1-最佳实践1-继承",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 最佳实践2[抽取]",
-            "slug": "_2-最佳实践2-抽取",
-            "link": "#_2-最佳实践2-抽取",
-            "children": []
-          }
-        ]
       }
     ],
-    "path": "/dev/java/tool/1-Feign.html",
+    "path": "/dev/java/springboot_multi_env/1-%E5%8D%95%E4%BD%93%E9%A1%B9%E7%9B%AE.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "零、常用命令",
+    "title": "高德地图接入",
     "headers": [
       {
         "level": 2,
-        "title": "1、netstat -lnp",
-        "slug": "_1、netstat-lnp",
-        "link": "#_1、netstat-lnp",
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
         "children": []
       },
       {
         "level": 2,
-        "title": "2、telnet ip port",
-        "slug": "_2、telnet-ip-port",
-        "link": "#_2、telnet-ip-port",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、ps aux | grep nginx",
-        "slug": "_3、ps-aux-grep-nginx",
-        "link": "#_3、ps-aux-grep-nginx",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、curl url",
-        "slug": "_4、curl-url",
-        "link": "#_4、curl-url",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、wget",
-        "slug": "_5、wget",
-        "link": "#_5、wget",
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
         "children": []
       }
     ],
-    "path": "/dev/other/linux/0-%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html",
+    "path": "/dev/java/third_party_in/1-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8E%A5%E5%85%A5.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "一、Linux 简介",
+    "title": "AWS S3",
     "headers": [
       {
         "level": 2,
-        "title": "1、Linux 发行版",
-        "slug": "_1、linux-发行版",
-        "link": "#_1、linux-发行版",
+        "title": "服务概述",
+        "slug": "服务概述",
+        "link": "#服务概述",
         "children": []
       },
       {
         "level": 2,
-        "title": "2、FinalShell",
-        "slug": "_2、finalshell",
-        "link": "#_2、finalshell",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、WSL",
-        "slug": "_3、wsl",
-        "link": "#_3、wsl",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、虚拟机快照",
-        "slug": "_4、虚拟机快照",
-        "link": "#_4、虚拟机快照",
+        "title": "接入流程",
+        "slug": "接入流程",
+        "link": "#接入流程",
         "children": []
       }
     ],
-    "path": "/dev/other/linux/1-Linux%E7%AE%80%E4%BB%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "二、Linux 基础命令",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、Linux 目录结构",
-        "slug": "_1、linux-目录结构",
-        "link": "#_1、linux-目录结构",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、Linux 命令入门",
-        "slug": "_2、linux-命令入门",
-        "link": "#_2、linux-命令入门",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) Linux 命令基础格式",
-            "slug": "_1-linux-命令基础格式",
-            "link": "#_1-linux-命令基础格式",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) ls",
-            "slug": "_2-ls",
-            "link": "#_2-ls",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、目录切换命令：cd/pwd",
-        "slug": "_3、目录切换命令-cd-pwd",
-        "link": "#_3、目录切换命令-cd-pwd",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) cd",
-            "slug": "_1-cd",
-            "link": "#_1-cd",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) pwd",
-            "slug": "_2-pwd",
-            "link": "#_2-pwd",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、创建目录指令：mkdir",
-        "slug": "_4、创建目录指令-mkdir",
-        "link": "#_4、创建目录指令-mkdir",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、文件操作命令",
-        "slug": "_5、文件操作命令",
-        "link": "#_5、文件操作命令",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 创建文件：touch",
-            "slug": "_1-创建文件-touch",
-            "link": "#_1-创建文件-touch",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 查看文件：cat",
-            "slug": "_2-查看文件-cat",
-            "link": "#_2-查看文件-cat",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 查看文件：more",
-            "slug": "_3-查看文件-more",
-            "link": "#_3-查看文件-more",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 复制文件：cp",
-            "slug": "_4-复制文件-cp",
-            "link": "#_4-复制文件-cp",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 移动文件/文件夹：mv",
-            "slug": "_5-移动文件-文件夹-mv",
-            "link": "#_5-移动文件-文件夹-mv",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 删除文件/文件夹：rm",
-            "slug": "_6-删除文件-文件夹-rm",
-            "link": "#_6-删除文件-文件夹-rm",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "6、查找命令",
-        "slug": "_6、查找命令",
-        "link": "#_6、查找命令",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 查找命令：which",
-            "slug": "_1-查找命令-which",
-            "link": "#_1-查找命令-which",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 查找文件：find",
-            "slug": "_2-查找文件-find",
-            "link": "#_2-查找文件-find",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "7、grep、wc 和管道符",
-        "slug": "_7、grep、wc-和管道符",
-        "link": "#_7、grep、wc-和管道符",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) grep",
-            "slug": "_1-grep",
-            "link": "#_1-grep",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) wc",
-            "slug": "_2-wc",
-            "link": "#_2-wc",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 管道符",
-            "slug": "_3-管道符",
-            "link": "#_3-管道符",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "8、echo、tail 和重定向符",
-        "slug": "_8、echo、tail-和重定向符",
-        "link": "#_8、echo、tail-和重定向符",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) echo",
-            "slug": "_1-echo",
-            "link": "#_1-echo",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 重定向符",
-            "slug": "_2-重定向符",
-            "link": "#_2-重定向符",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) tail",
-            "slug": "_3-tail",
-            "link": "#_3-tail",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "9、vi/vim 编辑器",
-        "slug": "_9、vi-vim-编辑器",
-        "link": "#_9、vi-vim-编辑器",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 简介",
-            "slug": "_1-简介",
-            "link": "#_1-简介",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 使用",
-            "slug": "_2-使用",
-            "link": "#_2-使用",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/other/linux/2-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "三、Linux 权限",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、切换用户与返回：su和 exit",
-        "slug": "_1、切换用户与返回-su和-exit",
-        "link": "#_1、切换用户与返回-su和-exit",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、临时切换 root 执行某条命令：sudo",
-        "slug": "_2、临时切换-root-执行某条命令-sudo",
-        "link": "#_2、临时切换-root-执行某条命令-sudo",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、用户与用户组",
-        "slug": "_3、用户与用户组",
-        "link": "#_3、用户与用户组",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 用户组管理",
-            "slug": "_1-用户组管理",
-            "link": "#_1-用户组管理",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 用户管理",
-            "slug": "_2-用户管理",
-            "link": "#_2-用户管理",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、权限控制信息",
-        "slug": "_4、权限控制信息",
-        "link": "#_4、权限控制信息",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、修改权限控制：chmod/chown",
-        "slug": "_5、修改权限控制-chmod-chown",
-        "link": "#_5、修改权限控制-chmod-chown",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) chomod",
-            "slug": "_1-chomod",
-            "link": "#_1-chomod",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) chown",
-            "slug": "_2-chown",
-            "link": "#_2-chown",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/other/linux/3-Linux%E6%9D%83%E9%99%90.html",
+    "path": "/dev/java/third_party_in/2-AWS_S3.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4812,6 +4348,57 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/middleware/es/1-es.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "HTTP 客户端 Feign",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、使用 Feign 客户端",
+        "slug": "_1、使用-feign-客户端",
+        "link": "#_1、使用-feign-客户端",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、自定义 Feign 的配置",
+        "slug": "_2、自定义-feign-的配置",
+        "link": "#_2、自定义-feign-的配置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、Feign 性能优化",
+        "slug": "_3、feign-性能优化",
+        "link": "#_3、feign-性能优化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、Feign 最佳实践",
+        "slug": "_4、feign-最佳实践",
+        "link": "#_4、feign-最佳实践",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 最佳实践1[继承]",
+            "slug": "_1-最佳实践1-继承",
+            "link": "#_1-最佳实践1-继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 最佳实践2[抽取]",
+            "slug": "_2-最佳实践2-抽取",
+            "link": "#_2-最佳实践2-抽取",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/java/tool/1-Feign.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -5351,6 +4938,376 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "零、常用命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、netstat -lnp",
+        "slug": "_1、netstat-lnp",
+        "link": "#_1、netstat-lnp",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、telnet ip port",
+        "slug": "_2、telnet-ip-port",
+        "link": "#_2、telnet-ip-port",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、ps aux | grep nginx",
+        "slug": "_3、ps-aux-grep-nginx",
+        "link": "#_3、ps-aux-grep-nginx",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、curl url",
+        "slug": "_4、curl-url",
+        "link": "#_4、curl-url",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、wget",
+        "slug": "_5、wget",
+        "link": "#_5、wget",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/0-%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Linux 简介",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 发行版",
+        "slug": "_1、linux-发行版",
+        "link": "#_1、linux-发行版",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、FinalShell",
+        "slug": "_2、finalshell",
+        "link": "#_2、finalshell",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、WSL",
+        "slug": "_3、wsl",
+        "link": "#_3、wsl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、虚拟机快照",
+        "slug": "_4、虚拟机快照",
+        "link": "#_4、虚拟机快照",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/1-Linux%E7%AE%80%E4%BB%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Linux 基础命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 目录结构",
+        "slug": "_1、linux-目录结构",
+        "link": "#_1、linux-目录结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Linux 命令入门",
+        "slug": "_2、linux-命令入门",
+        "link": "#_2、linux-命令入门",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Linux 命令基础格式",
+            "slug": "_1-linux-命令基础格式",
+            "link": "#_1-linux-命令基础格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) ls",
+            "slug": "_2-ls",
+            "link": "#_2-ls",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、目录切换命令：cd/pwd",
+        "slug": "_3、目录切换命令-cd-pwd",
+        "link": "#_3、目录切换命令-cd-pwd",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) cd",
+            "slug": "_1-cd",
+            "link": "#_1-cd",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) pwd",
+            "slug": "_2-pwd",
+            "link": "#_2-pwd",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、创建目录指令：mkdir",
+        "slug": "_4、创建目录指令-mkdir",
+        "link": "#_4、创建目录指令-mkdir",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、文件操作命令",
+        "slug": "_5、文件操作命令",
+        "link": "#_5、文件操作命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 创建文件：touch",
+            "slug": "_1-创建文件-touch",
+            "link": "#_1-创建文件-touch",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查看文件：cat",
+            "slug": "_2-查看文件-cat",
+            "link": "#_2-查看文件-cat",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 查看文件：more",
+            "slug": "_3-查看文件-more",
+            "link": "#_3-查看文件-more",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 复制文件：cp",
+            "slug": "_4-复制文件-cp",
+            "link": "#_4-复制文件-cp",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 移动文件/文件夹：mv",
+            "slug": "_5-移动文件-文件夹-mv",
+            "link": "#_5-移动文件-文件夹-mv",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 删除文件/文件夹：rm",
+            "slug": "_6-删除文件-文件夹-rm",
+            "link": "#_6-删除文件-文件夹-rm",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、查找命令",
+        "slug": "_6、查找命令",
+        "link": "#_6、查找命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 查找命令：which",
+            "slug": "_1-查找命令-which",
+            "link": "#_1-查找命令-which",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查找文件：find",
+            "slug": "_2-查找文件-find",
+            "link": "#_2-查找文件-find",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、grep、wc 和管道符",
+        "slug": "_7、grep、wc-和管道符",
+        "link": "#_7、grep、wc-和管道符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) grep",
+            "slug": "_1-grep",
+            "link": "#_1-grep",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) wc",
+            "slug": "_2-wc",
+            "link": "#_2-wc",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 管道符",
+            "slug": "_3-管道符",
+            "link": "#_3-管道符",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、echo、tail 和重定向符",
+        "slug": "_8、echo、tail-和重定向符",
+        "link": "#_8、echo、tail-和重定向符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) echo",
+            "slug": "_1-echo",
+            "link": "#_1-echo",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 重定向符",
+            "slug": "_2-重定向符",
+            "link": "#_2-重定向符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) tail",
+            "slug": "_3-tail",
+            "link": "#_3-tail",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9、vi/vim 编辑器",
+        "slug": "_9、vi-vim-编辑器",
+        "link": "#_9、vi-vim-编辑器",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 简介",
+            "slug": "_1-简介",
+            "link": "#_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用",
+            "slug": "_2-使用",
+            "link": "#_2-使用",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/2-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Linux 权限",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、切换用户与返回：su和 exit",
+        "slug": "_1、切换用户与返回-su和-exit",
+        "link": "#_1、切换用户与返回-su和-exit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、临时切换 root 执行某条命令：sudo",
+        "slug": "_2、临时切换-root-执行某条命令-sudo",
+        "link": "#_2、临时切换-root-执行某条命令-sudo",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、用户与用户组",
+        "slug": "_3、用户与用户组",
+        "link": "#_3、用户与用户组",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 用户组管理",
+            "slug": "_1-用户组管理",
+            "link": "#_1-用户组管理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 用户管理",
+            "slug": "_2-用户管理",
+            "link": "#_2-用户管理",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、权限控制信息",
+        "slug": "_4、权限控制信息",
+        "link": "#_4、权限控制信息",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、修改权限控制：chmod/chown",
+        "slug": "_5、修改权限控制-chmod-chown",
+        "link": "#_5、修改权限控制-chmod-chown",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) chomod",
+            "slug": "_1-chomod",
+            "link": "#_1-chomod",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) chown",
+            "slug": "_2-chown",
+            "link": "#_2-chown",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/3-Linux%E6%9D%83%E9%99%90.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -5946,9 +5903,198 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "3. 传输层",
+    "headers": [
+      {
+        "level": 2,
+        "title": "TCP 头部有哪些重要属性？",
+        "slug": "tcp-头部有哪些重要属性",
+        "link": "#tcp-头部有哪些重要属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 三次握手过程是怎样的？",
+        "slug": "tcp-三次握手过程是怎样的",
+        "link": "#tcp-三次握手过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 为什么需要三次握手过程？",
+        "slug": "tcp-为什么需要三次握手过程",
+        "link": "#tcp-为什么需要三次握手过程",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/network/3-%E4%BC%A0%E8%BE%93%E5%B1%82.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "计算机网络概述",
     "headers": [],
     "path": "/dev/principle/network/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 数据类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？",
+        "slug": "介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
+        "link": "#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
+        "children": [
+          {
+            "level": 3,
+            "title": "String",
+            "slug": "string",
+            "link": "#string",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "List",
+            "slug": "list",
+            "link": "#list",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Set",
+            "slug": "set",
+            "link": "#set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Hash",
+            "slug": "hash",
+            "link": "#hash",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZSet",
+            "slug": "zset",
+            "link": "#zset",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/principle/redis/1-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 线程模型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Redis 为什么快？",
+        "slug": "redis-为什么快",
+        "link": "#redis-为什么快",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Redis 是单线程的吗？",
+        "slug": "redis-是单线程的吗",
+        "link": "#redis-是单线程的吗",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/2-%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 事务",
+    "headers": [
+      {
+        "level": 2,
+        "title": "原子性",
+        "slug": "原子性",
+        "link": "#原子性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "持久性",
+        "slug": "持久性",
+        "link": "#持久性",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/3-%E4%BA%8B%E5%8A%A1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 过期删除与内存淘汰",
+    "headers": [
+      {
+        "level": 2,
+        "title": "过期删除",
+        "slug": "过期删除",
+        "link": "#过期删除",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "淘汰策略",
+        "slug": "淘汰策略",
+        "link": "#淘汰策略",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/4-%E8%BF%87%E6%9C%9F%E5%88%A0%E9%99%A4%E4%B8%8E%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "5. 集群",
+    "headers": [
+      {
+        "level": 2,
+        "title": "主从复制",
+        "slug": "主从复制",
+        "link": "#主从复制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "哨兵集群",
+        "slug": "哨兵集群",
+        "link": "#哨兵集群",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分片集群",
+        "slug": "分片集群",
+        "link": "#分片集群",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/5-%E9%9B%86%E7%BE%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "6. 缓存",
+    "headers": [],
+    "path": "/dev/principle/redis/6-%E7%BC%93%E5%AD%98.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [],
+    "path": "/dev/principle/redis/",
     "pathLocale": "/",
     "extraFields": []
   },

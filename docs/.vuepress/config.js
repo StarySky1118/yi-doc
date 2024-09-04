@@ -66,7 +66,8 @@ export default defineUserConfig({
                                     children: [
                                         '/dev/principle/network/',
                                         '/dev/principle/network/1-网络模型',
-                                        '/dev/principle/network/2-应用层'
+                                        '/dev/principle/network/2-应用层',
+                                        '/dev/principle/network/3-传输层'
                                     ]
                                 },
                                 {
@@ -97,6 +98,18 @@ export default defineUserConfig({
                                     children: [
                                         '/dev/principle/java/',
                                         '/dev/principle/java/1-基础篇'
+                                    ]
+                                },
+                                {
+                                    text: 'redis',
+                                    collapsible: true,
+                                    children: [
+                                        '/dev/principle/redis/',
+                                        '/dev/principle/redis/1-数据类型',
+                                        '/dev/principle/redis/2-线程模型',
+                                        '/dev/principle/redis/3-事务',
+                                        '/dev/principle/redis/4-过期删除与内存淘汰',
+                                        '/dev/principle/redis/5-集群'
                                     ]
                                 }
                             ]

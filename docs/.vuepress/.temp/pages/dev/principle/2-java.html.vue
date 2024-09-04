@@ -35,7 +35,10 @@
 对于弱引用指向的对象，无论内存空间充足与否，都会被回收；
 虚引用是最弱的一种引用，无法通过虚引用获取对象，虚引用的作用是标记对象被回收的过程。</p>
 <h2 id="arraylist和-linkedlist有什么区别" tabindex="-1"><a class="header-anchor" href="#arraylist和-linkedlist有什么区别"><span><code v-pre>ArrayList</code>和 <code v-pre>LinkedList</code>有什么区别？</span></a></h2>
-<p><code v-pre>ArrayList</code>底层使用数组存储元素，<code v-pre>LinkedList</code>底层使用双向链表存储元素。因此，<code v-pre>ArrayList</code>支持高效随机访问，<code v-pre>LinkedList</code>随机访问效率较低；<code v-pre>ArrayList</code>在中间插入、删除元素效率较低，<code v-pre>LinkedList</code>在任何地方插入、删除元素效率都很高。总而言之，如果涉及频繁插入删除操作，使用 <code v-pre>LinkedList</code>；如果设计频繁随机访问，可以使用 <code v-pre>ArrayList</code>。</p>
+<p><code v-pre>ArrayList</code>底层使用数组存储元素，<code v-pre>LinkedList</code>底层使用双向链表存储元素。
+因此，<code v-pre>ArrayList</code>支持高效随机访问，<code v-pre>LinkedList</code>随机访问效率较低；
+<code v-pre>ArrayList</code>在中间插入、删除元素效率较低，<code v-pre>LinkedList</code>在任何地方插入、删除元素效率都很高。
+总而言之，如果涉及频繁插入删除操作，使用 <code v-pre>LinkedList</code>；如果涉及频繁随机访问，可以使用 <code v-pre>ArrayList</code>。</p>
 <h2 id="说一说-concurrenthashmap的实现原理" tabindex="-1"><a class="header-anchor" href="#说一说-concurrenthashmap的实现原理"><span>说一说 <code v-pre>ConcurrentHashMap</code>的实现原理</span></a></h2>
 <p><code v-pre>ConcurrentHashMap</code>是 Java 中线程安全的哈希表，JDK8 中实现原理包括插槽锁和 CAS 操作。</p>
 <p>JDK8 中会给每个哈希槽添加 CAS 锁，数据读取不加限制，数据修改使用 CAS 操作，先比较再修改，保证线程安全。</p>
@@ -81,7 +84,7 @@ Spring 通过依赖注入的方式实现控制反转。
 </ol>
 <h2 id="堆和栈的区别" tabindex="-1"><a class="header-anchor" href="#堆和栈的区别"><span>堆和栈的区别</span></a></h2>
 <p>堆和栈是针对内存的不同使用需求开辟的具有不同特性的内存空间。</p>
-<p>在 Java 中，堆用于存放对象实例，是线程间共享的区域；栈用于管理方法的调用，每次进行方法调用，都会产生栈帧压栈，是线程私有的区域。堆内存的分配是动态的，每当我们使用 <code v-pre>new</code>关键字创建对象，都会在堆中分配内存存储对象，堆内存的回收由 Java 垃圾回收机制负责。栈内存空间在编译时就静态确定了，不需要动态调整。</p>
+<p>堆内存存储对象实例，其分配是动态的；栈内存用于方法调用，其分配是静态的。</p>
 <h2 id="java-内存结构是怎样的" tabindex="-1"><a class="header-anchor" href="#java-内存结构是怎样的"><span>Java 内存结构是怎样的？</span></a></h2>
 <p>由于 Java 支持多线程， JVM 在运行 Java 程序时会将其管理的内存划分为若干区域。包括线程共享区域和线程私有区域。</p>
 <p><img src="@source/dev/principle/img.png" alt="img.png"></p>
@@ -94,8 +97,8 @@ Spring 通过依赖注入的方式实现控制反转。
 <ol start="2">
 <li>Java 虚拟机栈</li>
 </ol>
-<p>所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、动态链接、方法返回地址。
-线程公共区域包括堆和方法区。</p>
+<p>所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、动态链接、方法返回地址。</p>
+<p>线程公共区域包括堆和方法区。</p>
 <ol>
 <li>堆</li>
 </ol>
@@ -154,7 +157,7 @@ Spring 通过依赖注入的方式实现控制反转。
 <p>算法流程：首先暂停所有工作线程，拍摄堆快照，获取 GC ROOTS；同时运行工作线程和 GC 线程，进行可达性分析；再次暂停所有工作线程，拍摄堆快照，更新可达性；同时开启工作线程和 GC 线程，启动清除工作，这个清除工作，就是根据用户提供的预测时间，对回收价值最大的 Region 进行垃圾回收。</p>
 <p>G1 收集器不会产生内存碎片，它采用复制算法，将存活对象从一个区域复制到另一个区域。</p>
 <h2 id="java-内存泄漏" tabindex="-1"><a class="header-anchor" href="#java-内存泄漏"><span>Java 内存泄漏</span></a></h2>
-<p>Java 内存泄漏是指 Java 程序在运行过程中分配的内存空间没有被及时释放，导致内存使用量不断增大，最终内存耗尽。
+<p>Java 内存泄漏是指堆内存不断堆积，导致内存耗尽。
 虽然 Java 有垃圾回收机制，但垃圾回收机制针对的是不再被引用的对象，当对象已不再使用，但仍然被引用，这些对象最终就会导致内存泄漏。</p>
 <p>导致内存泄漏的原因包括：静态集合类、没有关闭资源、线程池等。一般而言，出现内存泄漏都是我们的代码逻辑出现了问题。</p>
 <p>避免内存泄漏的最佳实践包括：</p>

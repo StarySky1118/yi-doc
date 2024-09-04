@@ -26,8 +26,7 @@
 <p>最左前缀匹配原则是针对联合索引的一个原则，如果希望联合索引生效，那么查询条件必须符合联合索引的最左前缀。
 例如 <code v-pre>(name, age)</code> 联合索引，查询条件 <code v-pre>name=xxx</code> 或 <code v-pre>name=xxx and age=xxx</code> 均可生效。<code v-pre>age=xxx</code> 无法生效。</p>
 <h2 id="mysql-中索引下推是什么" tabindex="-1"><a class="header-anchor" href="#mysql-中索引下推是什么"><span>MySQL 中索引下推是什么？</span></a></h2>
-<p>MySQL 索引下推是一种通过减少回表提高查询效率的技术。该技术针对联合索引，如果符合最左前缀匹配规则并且查询条件字段均包含在索引字段中，
-就可以无需回表，直接在非聚簇索引中进行过滤。</p>
+<p>索引下推是指在使用非聚簇索引时，非聚簇索引包含了过滤所需的全部字段，无需回表即可完成过滤。</p>
 <h2 id="索引使用注意事项" tabindex="-1"><a class="header-anchor" href="#索引使用注意事项"><span>索引使用注意事项</span></a></h2>
 <p>何时使用？何时不使用？</p>
 <ol>
@@ -39,7 +38,7 @@
 <h2 id="如何查看索引是否生效" tabindex="-1"><a class="header-anchor" href="#如何查看索引是否生效"><span>如何查看索引是否生效？</span></a></h2>
 <p>在 MySQL 中可以使用 <code v-pre>explain</code> 命令查看查询的执行计划。</p>
 <p>结果中比较关键的字段是 <code v-pre>type</code>，常见值包括 <code v-pre>const</code>、<code v-pre>eq_ref</code>、<code v-pre>ref</code>、<code v-pre>range</code>、<code v-pre>index</code>、<code v-pre>ALL</code>。</p>
-<p>从主键索引唯一记录直至全表扫描。</p>
+<p>可以根据 <code v-pre>type</code> 判断是否使用了索引。</p>
 <h2 id="索引在什么情况下会失效" tabindex="-1"><a class="header-anchor" href="#索引在什么情况下会失效"><span>索引在什么情况下会失效？</span></a></h2>
 <ol>
 <li>对索引进行了运算或函数运算</li>

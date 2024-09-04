@@ -1,59 +1,39 @@
 <template><div><h1 id="redis" tabindex="-1"><a class="header-anchor" href="#redis"><span>Redis</span></a></h1>
-<h2 id="redis-常见数据类型应用场景" tabindex="-1"><a class="header-anchor" href="#redis-常见数据类型应用场景"><span>Redis 常见数据类型应用场景</span></a></h2>
+<h2 id="介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的" tabindex="-1"><a class="header-anchor" href="#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的"><span>介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？</span></a></h2>
+<p>Redis 中最常用的数据类型有五种：String、List、Set、Hash 和 ZSet。</p>
 <h3 id="string" tabindex="-1"><a class="header-anchor" href="#string"><span>String</span></a></h3>
-<p>String 类型可以存储字符串或数字。</p>
-<ol>
-<li>自增计数</li>
-</ol>
-<p>Redis 和 MySQL 均可以通过一条命令实现字段值的自增，Redis 命令的执行是单线程的，没有并发问题，MySQL InnoDB 引擎也可以通过行级锁保证多线程情况下自增操作的正确性。但显然 MySQL 有更大的开销，Redis 的单线程设计十分适合使用 String 作自增计数。</p>
-<ol start="2">
-<li>分布式锁</li>
-</ol>
-<p>Redis 的 <code v-pre>set</code>命令有个参数 <code v-pre>nx</code>，意为键不存在时插入，这个命令非常适合分布式锁的加锁操作。Redis 命令执行是单线程的，这样就只有一个线程可以获取到锁，value 是客户端的标识。
-解锁使用 Lua 脚本，首先判断锁是否属于客户端，若属于客户端再删除。</p>
-<h3 id="set" tabindex="-1"><a class="header-anchor" href="#set"><span>Set</span></a></h3>
-<p>Set 中的元素无序、不可重复、支持各种集合运算。</p>
-<ol>
-<li>唯一性操作</li>
-</ol>
-<p>Set 可进行自动去重，若我们希望操作只能进行一次，可以使用 Set 存储操作。例如点赞操作。</p>
-<ol start="2">
-<li>共同关注</li>
-</ol>
-<p>Set 支持集合运算，可用于实现共同关注。</p>
-<ol start="3">
-<li>抽奖活动</li>
-</ol>
-<p>Set 提供了随机获取元素和随机删除元素的命令，因此可以实现抽奖活动。</p>
+<p>String 可以存储字符串或数字。适用的场景有自增计数与分布式锁。</p>
+<p>Redis 是一种单线程设计，并且原生支持 INCR 命令进行自增，非常适合自增计数。</p>
+<p>Redis 的 set 命令有个 <code v-pre>NX</code> 选项，表示不存在时插入，该命令非常适合实现分布式锁。
+可以使用 <code v-pre>set</code> 命令附带 <code v-pre>nx</code> 选项实现加锁操作，value 可以存储客户端标识。
+解锁需要使用 lua 脚本，先判断锁属于自己，再删除。这样就可以避免，在判断与删除之间，锁过期，其他线程获取到锁导致的误删。</p>
+<p>String 底层是使用简单动态字符串实现的。
+相比 C 语言中的字符数组，它有维护自动长度属性、动态扩容的优势。</p>
 <h3 id="list" tabindex="-1"><a class="header-anchor" href="#list"><span>List</span></a></h3>
+<p>List 是列表，列表元素有序、可重复。</p>
+<p>List 底层是使用 quicklist 实现的。
+quicklist 是一个链表，链表的每个结点都是一个压缩列表。
+压缩列表使用连续的内存区域存储元素，利用遍历的方式操作，由于元素数量较少，遍历操作的方式开销反而是最小的。</p>
+<h3 id="set" tabindex="-1"><a class="header-anchor" href="#set"><span>Set</span></a></h3>
+<p>Set 是集合，集合元素无序、不可重复。</p>
+<p>Set 适用于实现唯一性操作、共同关注、抽奖活动等。</p>
+<p>Set 有随机获取元素的命令，可用于实现抽奖活动。</p>
+<p>Set 底层实现包括整数集合和 Hash。</p>
+<p>当元素数量比较少并且元素都为整数时，使用整数集合；当元素数量较多时，使用哈希表。
+整数集合使用连续的内存区域，并且支持整数类型升级。
+哈希表使用拉链法实现。使用数组表示哈希桶，当出现哈希冲突时，使用链表链接。
+当哈希冲突过于严重，链表会非常长，遍历性能不佳，因此 Redis 引入了 Rehash 机制。
+Redis 定义了 load factor，其定义为存储结点与数组长度的比值。比值越大，哈希冲突越严重。
+当 load factor 到达一定阈值，会进行 rehash，即将数据拷贝到长度更大的数组。</p>
 <h3 id="hash" tabindex="-1"><a class="header-anchor" href="#hash"><span>Hash</span></a></h3>
-<p>Hash 可以存储多个 KV，因此可用于缓存对象。</p>
+<p>Hash 可以存储多个键值对，适用于缓存对象。</p>
+<p>Hash 底层是使用压缩列表或哈希表实现的。
+当键值对数量较少，使用压缩列表实现，当键值对数量超过一定阈值，使用哈希表实现。</p>
 <h3 id="zset" tabindex="-1"><a class="header-anchor" href="#zset"><span>ZSet</span></a></h3>
-<p>ZSet 元素带有分数且自动维护顺序，非常适合实现排行榜。</p>
-<h2 id="redis-数据类型底层数据结构" tabindex="-1"><a class="header-anchor" href="#redis-数据类型底层数据结构"><span>Redis 数据类型底层数据结构</span></a></h2>
-<p>Redis 常用数据类型包括 String、Hash、ZSet、List、Set。
-String 底层数据结构为 SDS。List 底层数据结构为 quicklist。Set 底层数据结构为 hash 和整数集合。 Hash 底层数据结构为 listpack 和 hash。ZSet 底层数据结构为链表和跳表</p>
-<h3 id="string-1" tabindex="-1"><a class="header-anchor" href="#string-1"><span>String</span></a></h3>
-<p>Redis String 类型底层数据结构为 SDS(Simple Dynamic String)，简单动态字符串。与 C 语言字符数组相比，优势在于：</p>
-<ol>
-<li>维护字符串长度 <code v-pre>len</code> 属性，获取字符串长度时间复杂度为<img src="https://cdn.nlark.com/yuque/__latex/a2006f1ac61cb1902beacb3e29fff089.svg#card=math&amp;code=O(1)&amp;id=GaSSd" alt=""></li>
-<li>维护了 <code v-pre>len</code>属性，可以存储 <code v-pre>\0</code>，二进制安全</li>
-<li>修改字符串时，自动判断空间是否满足需求，不满足需求自动扩容</li>
-<li>采用专门编译优化，节省内存空间</li>
-</ol>
-<h3 id="list-1" tabindex="-1"><a class="header-anchor" href="#list-1"><span>List</span></a></h3>
-<p>Redis List 底层数据结构为 quicklist。quicklist 在 ziplist 基础上作了进一步划分，quicklist 的每个结点都指向了一个压缩列表。</p>
-<h3 id="set-1" tabindex="-1"><a class="header-anchor" href="#set-1"><span>Set</span></a></h3>
-<p>当 Set 中均为整数并且元素个数小于 512 个，使用整数集合数据结构；否则使用 Hash。
-整数集合本质上是数组，这个数组的类型并不是直接使用 64 位整数，而是根据插入的整数情况进行升级，这样可以节省内存空间。</p>
-<h3 id="hash-1" tabindex="-1"><a class="header-anchor" href="#hash-1"><span>Hash</span></a></h3>
-<p>Redis Hash 类型底层数据结构为压缩链表(ziplist)或哈希表。
-当元素个数较少、值较小时，使用压缩链表，否则使用哈希表。
-压缩链表是对普通链表的改进，普通链表是带虚拟头结点的双向链表，由于链表结点在内存空间中不连续，无法利用 CPU 缓存，因此出现了压缩链表。压缩链表是使用了连续内存空间的链表。
-Redis 哈希表的实现方式也是数组+拉链法，将 key 输入哈希函数获取下标，若出现哈希冲突使用链表链接。如果哈希冲突过于严重，会导致拉链过长，使用 rehash 解决这个问题，即将数据拷贝到长度更大的数组，减少哈希冲突。rehash 触发条件是达到负载因子 load factor 的阈值，负载因子即哈希表存储结点数量和数组长度的比值，当 load factor&gt;=1，在未进行持久化时会进行 rehash，当 load facotr&gt;5，强制进行 rehash。</p>
-<h3 id="zset-1" tabindex="-1"><a class="header-anchor" href="#zset-1"><span>ZSet</span></a></h3>
-<p>Redis ZSet 底层使用 listpack 和跳表。元素个数小于 128，每个元素小于 64 字节使用 listpack；否则使用跳表。
-跳表是一种多层级的双向链表，可以实现跨越式地遍历，添加、查找元素的时间复杂度为<img src="https://cdn.nlark.com/yuque/__latex/e8e0b4fcb6a9f3b41f64de387815a50b.svg#card=math&amp;code=log(n)&amp;id=rVArk" alt="">。</p>
+<p>ZSet 是具有排序属性的 Set，能够自动维护顺序。非常适合实现排行榜功能。</p>
+<p>ZSet 底层使用压缩列表或跳表实现。
+当元素数量较少时，使用压缩列表；否则使用跳表。
+跳表是一种多层有序链表，可以实现跨越式的遍历，将元素定位时间复杂度降为对数级。</p>
 <h2 id="为什么-lua-脚本可以保证原子性" tabindex="-1"><a class="header-anchor" href="#为什么-lua-脚本可以保证原子性"><span>为什么 Lua 脚本可以保证原子性</span></a></h2>
 <p>Redis 在执行命令时是单线程的，Redis 在接收到 Lua 脚本后，会持续执行脚本中的命令直至结束，期间不会执行其他命令，这样保证了 Lua 脚本命令的原子性。</p>
 <h2 id="mysql-和-redis-数据同步方式" tabindex="-1"><a class="header-anchor" href="#mysql-和-redis-数据同步方式"><span>MySQL 和 Redis 数据同步方式</span></a></h2>
