@@ -1,5 +1,5 @@
 import comp from "Z:/code3/yi-doc-doc/vuepress-starter/docs/.vuepress/.temp/pages/dev/principle/redis/6-缓存.html.vue"
-const data = JSON.parse("{\"path\":\"/dev/principle/redis/6-%E7%BC%93%E5%AD%98.html\",\"title\":\"6. 缓存\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"dev/principle/redis/6-缓存.md\"}")
+const data = JSON.parse("{\"path\":\"/dev/principle/redis/6-%E7%BC%93%E5%AD%98.html\",\"title\":\"6. 缓存\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1725412272000,\"contributors\":[{\"name\":\"ZhangZiYi\",\"email\":\"ecustzzy1@163.com\",\"commits\":1}]},\"filePathRelative\":\"dev/principle/redis/6-缓存.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

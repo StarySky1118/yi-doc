@@ -97,7 +97,8 @@ export default defineUserConfig({
                                     collapsible: true,
                                     children: [
                                         '/dev/principle/java/',
-                                        '/dev/principle/java/1-基础篇'
+                                        '/dev/principle/java/1-基础篇',
+                                        '/dev/principle/java/2-集合'
                                     ]
                                 },
                                 {
