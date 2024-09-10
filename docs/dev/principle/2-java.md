@@ -156,7 +156,7 @@ Spring 通过依赖注入的方式实现控制反转。
 
 2. Java 虚拟机栈
 
-所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、动态链接、方法返回地址。
+所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、方法返回地址等。
 
 线程公共区域包括堆和方法区。
 
@@ -169,10 +169,9 @@ Spring 通过依赖注入的方式实现控制反转。
 方法区主要用来存放 Class 对象。在 JDK8 中，方法区的实现是本地内存中的 MetaSpace。
 
 ## `synchronized`关键字底层原理
+`synchronized` 底层使用到了 Java 对象头和监视器锁。
 
-Java synchronized 关键字用以实现线程同步。他可以修饰方法或代码块，保证同一时间只能由一个线程执行同步方法或同步代码块。synchronized底层使用到了 Java 对象头和监视器锁。
-
-首先，Java 中的每个对象都有一个对象头，对象头保存了对象的运行时数据，例如锁状态、锁标识、hashcode、GC 信息等。对象头中有一个重要的部分 Mark word，他就存储了对象的锁信息。
+首先，Java 中的每个对象都有一个对象头，对象头保存了对象的运行时数据，例如锁状态、锁标识、hashcode、GC 信息等。对象头中有一个重要的部分 Mark word，该字段就存储了对象的锁信息。
 
 每一个对象都有一个监视器锁，当线程进入同步方法或同步代码块时，会首先尝试获取对象的监视器锁。如果锁已被其他线程持有，则会根据锁状态进入 CAS 自旋或阻塞状态，直至锁被释放。
 
@@ -189,8 +188,8 @@ Java synchronized 关键字用以实现线程同步。他可以修饰方法或�
 ## 垃圾回收机制
 
 ### 垃圾回收机制概述
-
-Java 垃圾回收机制是一种针对堆内存中的对象自动分配内存、回收内存的机制，Java 将堆内存分为了新生代和老年代，其中新生代包括 Eden 区和两个 Survivor 区。大多数对象在 Eden 区中分配，如果 Eden 区已满，则对新生代发起一次垃圾回收，回收新生代中已经死亡的对象，而对于存活的对象，Eden 区中的对象会晋升到 Survivor 区，而 Survivor 中的对象年龄会增加，当其年龄超过阈值，则进入老年代；而数组这种大对象直接存入老年代。
+Java 垃圾回收机制是一种针对堆内存中的对象自动分配内存、回收内存的机制。
+Java 将堆内存分为了新生代和老年代，其中新生代包括 Eden 区和两个 Survivor 区。大多数对象在 Eden 区中分配，如果 Eden 区已满，则对新生代发起一次垃圾回收，回收新生代中已经死亡的对象，而对于存活的对象，Eden 区中的对象会晋升到 Survivor 区，而 Survivor 中的对象年龄会增加，当其年龄超过阈值，则进入老年代；而数组这种大对象直接存入老年代。
 
 ### 对象死亡判断
 
@@ -264,7 +263,7 @@ G1 收集器中，将堆内存划分为了若干区域，并非给每一代都�
 
 算法流程：首先暂停所有工作线程，拍摄堆快照，获取 GC ROOTS；同时运行工作线程和 GC 线程，进行可达性分析；再次暂停所有工作线程，拍摄堆快照，更新可达性；同时开启工作线程和 GC 线程，启动清除工作，这个清除工作，就是根据用户提供的预测时间，对回收价值最大的 Region 进行垃圾回收。
 
-G1 收集器不会产生内存碎片，它采用复制算法，将存活对象从一个区域复制到另一个区域。
+G1 收集器使用复制算法，有效解决了内存碎片问题。
 
 ## Java 内存泄漏
 Java 内存泄漏是指堆内存不断堆积，导致内存耗尽。
@@ -288,5 +287,5 @@ ThreadLocal 类型的变量在每个线程中都有独特的副本。
 ## Java 异常体系
 
 Java 中异常包括 Exception 和 Error。Exception 指那些程序可以处理的异常，可以使用 `catch`进行捕获；Error 指那些程序无法处理的错误，例如 `StackOverFlowError`，出现这些错误时，JVM 一般会将线程终止。
-Exception 包括 Unchecked Exception 和 Checked Exception，Checked Exception 需要使用 `try catch`显式地进行处理，否则无法通过编译，IO 相关的异常就是 Checked Exception；Unchecked Exception 一般是运行阶段出现的异常，`RuntimeException`及其子类均为 Unchecked Exception，常见的包括空指针异常、`ArrayIndexOutOfBountException`等。
+Exception 包括 Unchecked Exception 和 Checked Exception，Checked Exception 需要使用 `try catch`显式地进行处理，否则无法通过编译，IO 相关的异常就是 Checked Exception；Unchecked Exception 一般是运行阶段出现的异常，`RuntimeException`及其子类均为 Unchecked Exception，常见的包括空指针异常、`ArrayIndexOutOfBoundException`等。
 

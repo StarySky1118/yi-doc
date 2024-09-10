@@ -93,12 +93,13 @@ export default defineUserConfig({
                                     ]
                                 },
                                 {
-                                    text: 'java',
+                                    text: 'Java',
                                     collapsible: true,
                                     children: [
                                         '/dev/principle/java/',
                                         '/dev/principle/java/1-基础篇',
-                                        '/dev/principle/java/2-集合'
+                                        '/dev/principle/java/2-集合',
+                                        '/dev/principle/java/3-并发'
                                     ]
                                 },
                                 {

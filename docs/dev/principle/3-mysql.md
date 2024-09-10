@@ -8,7 +8,7 @@ MySQL 慢查询是指查询时间超过阈值的查询语句。MySQL 提供了�
 
 可以使用 `type`判断索引是否对查询起到了优化作用。
 
-`extra`值有 `Using filesort`（无法使用索引排序，使用了排序算法进行排序）、`Using index`从二级索引中获取到了所需字段值无需回表、`Using Temporary`使用临时表存储中间结果。
+`extra`值有 `Using filesort`（无法使用索引排序，使用了排序算法进行排序）、`Using index`从使用了覆盖索引无需回表、`Using Temporary`使用临时表存储中间结果。
 
 ## MySQL 一张表能存放多少数据
 

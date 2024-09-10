@@ -3,7 +3,7 @@
 <p>MySQL 慢查询是指查询时间超过阈值的查询语句。MySQL 提供了慢查询日志记录这些超过阈值的查询。</p>
 <p>可以使用 <code v-pre>explain</code>命令查询语句的执行计划，比较重要的字段是 <code v-pre>type</code>和 <code v-pre>extra</code>。<code v-pre>type</code> 表示查询方式，常见值有 <code v-pre>ALL</code>（全表扫描）、<code v-pre>index</code>（对二级索引进行遍历）、<code v-pre>range</code>（索引范围）、<code v-pre>ref</code>（非唯一索引多个）、<code v-pre>eq_ref</code>（通常出现在多表联查，唯一索引）和 <code v-pre>const</code>（主键查、唯一索引查）。</p>
 <p>可以使用 <code v-pre>type</code>判断索引是否对查询起到了优化作用。</p>
-<p><code v-pre>extra</code>值有 <code v-pre>Using filesort</code>（无法使用索引排序，使用了排序算法进行排序）、<code v-pre>Using index</code>从二级索引中获取到了所需字段值无需回表、<code v-pre>Using Temporary</code>使用临时表存储中间结果。</p>
+<p><code v-pre>extra</code>值有 <code v-pre>Using filesort</code>（无法使用索引排序，使用了排序算法进行排序）、<code v-pre>Using index</code>从使用了覆盖索引无需回表、<code v-pre>Using Temporary</code>使用临时表存储中间结果。</p>
 <h2 id="mysql-一张表能存放多少数据" tabindex="-1"><a class="header-anchor" href="#mysql-一张表能存放多少数据"><span>MySQL 一张表能存放多少数据</span></a></h2>
 <p>MySQL InnoDB 引擎一条记录最大字节长度为 65535，即 64KB。若硬盘大小为 64G，则最多存储 100 万条记录。</p>
 <h2 id="说说-mysql-事务-幻读是什么-何时出现幻读" tabindex="-1"><a class="header-anchor" href="#说说-mysql-事务-幻读是什么-何时出现幻读"><span>说说 MySQL 事务？幻读是什么？何时出现幻读？</span></a></h2>
