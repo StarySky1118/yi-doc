@@ -10,9 +10,6 @@
 <p>MySQL InnoDB 存储引擎是支持事务的，默认隔离级别是可重复读，即在一个事务中，多次查询同一条记录得到的结果是一致的。</p>
 <p>幻读是指在事务中，符合条件的记录数改变了。</p>
 <p>当事务期间其他事务 <code v-pre>insert</code>，本事务 <code v-pre>update</code>时，本事务并不会根据 MVCC 的可见性判断记录是否可见，而是直接修改该记录，多出了一条自己修改的记录，导致幻读。</p>
-<h2 id="索引有哪些分类" tabindex="-1"><a class="header-anchor" href="#索引有哪些分类"><span>索引有哪些分类？</span></a></h2>
-<p>按照字段类型分类，可分为主键索引、唯一索引、普通索引、前缀索引。
-按照字段个数分类，可分为单列索引和联合索引。</p>
 <h2 id="索引有哪些优点或缺点" tabindex="-1"><a class="header-anchor" href="#索引有哪些优点或缺点"><span>索引有哪些优点或缺点？</span></a></h2>
 <p>索引优点：</p>
 <ol>
@@ -44,11 +41,6 @@
 <p>使用联合索引，没有遵循最左匹配原则，因为记录会根据联合索引中从左到右出现的每个字段进行排序</p>
 </li>
 </ol>
-<h2 id="常见的-sql-优化方案" tabindex="-1"><a class="header-anchor" href="#常见的-sql-优化方案"><span>常见的 SQL 优化方案</span></a></h2>
-<p>常见的 SQL 优化方案包括索引优化、查询优化、配置优化等。</p>
-<p>索引优化是指在频繁查询的列上创建索引、使用覆盖索引减小回表；
-查询优化包括避免使用 Select *，只选择必要的列，减少数据传输、合理使用多表联查、减少子查询等；
-配置优化包括根据硬件条件和工作负载，调整数据库连接池、日志等配置。</p>
 <h2 id="jdbc-executeupdate" tabindex="-1"><a class="header-anchor" href="#jdbc-executeupdate"><span>JDBC <code v-pre>executeUpdate()</code></span></a></h2>
 <p>执行 <code v-pre>ps.executeUpdate()</code> 方法的返回值是一个 <code v-pre>int</code> 类型的值，表示受影响的行数，即成功插入或更新的记录数量。
 在这种情况下，如果一切顺利且没有异常，返回值将是插入成功的记录数，通常是 1（因为一次插入一条数据）。</p>

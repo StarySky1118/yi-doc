@@ -39,9 +39,6 @@
 因此，<code v-pre>ArrayList</code>支持高效随机访问，<code v-pre>LinkedList</code>随机访问效率较低；
 <code v-pre>ArrayList</code>在中间插入、删除元素效率较低，<code v-pre>LinkedList</code>在任何地方插入、删除元素效率都很高。
 总而言之，如果涉及频繁插入删除操作，使用 <code v-pre>LinkedList</code>；如果涉及频繁随机访问，可以使用 <code v-pre>ArrayList</code>。</p>
-<h2 id="说一说-concurrenthashmap的实现原理" tabindex="-1"><a class="header-anchor" href="#说一说-concurrenthashmap的实现原理"><span>说一说 <code v-pre>ConcurrentHashMap</code>的实现原理</span></a></h2>
-<p><code v-pre>ConcurrentHashMap</code>是 Java 中线程安全的哈希表，JDK8 中实现原理包括插槽锁和 CAS 操作。</p>
-<p>JDK8 中会给每个哈希槽添加 CAS 锁，数据读取不加限制，数据修改使用 CAS 操作，先比较再修改，保证线程安全。</p>
 <h2 id="spring-bean-的生命周期" tabindex="-1"><a class="header-anchor" href="#spring-bean-的生命周期"><span>Spring Bean 的生命周期</span></a></h2>
 <p>Spring Bean 的生命周期主要分为五个阶段：实例化、属性设置、初始化、使用、销毁。</p>
 <p>实例化阶段使用无参构造方法创建这个 Bean 实例。</p>
@@ -84,7 +81,8 @@ Spring 通过依赖注入的方式实现控制反转。
 </ol>
 <h2 id="堆和栈的区别" tabindex="-1"><a class="header-anchor" href="#堆和栈的区别"><span>堆和栈的区别</span></a></h2>
 <p>堆和栈是针对内存的不同使用需求开辟的具有不同特性的内存空间。</p>
-<p>堆内存存储对象实例，其分配是动态的；栈内存用于方法调用，其分配是静态的。</p>
+<p>堆为了满足动态分配、动态回收的需求；
+栈为了满足方法调用的需求，调用方法时压栈，方法返回时弹栈。</p>
 <h2 id="java-内存结构是怎样的" tabindex="-1"><a class="header-anchor" href="#java-内存结构是怎样的"><span>Java 内存结构是怎样的？</span></a></h2>
 <p>由于 Java 支持多线程， JVM 在运行 Java 程序时会将其管理的内存划分为若干区域。包括线程共享区域和线程私有区域。</p>
 <p><img src="@source/dev/principle/img.png" alt="img.png"></p>
@@ -92,12 +90,14 @@ Spring 通过依赖注入的方式实现控制反转。
 <ol>
 <li>程序计数器</li>
 </ol>
-<p>简单来说，程序计数器 PC 指向字节码的某一行，字节码解释器通过程序计数器来依次读取指令，从而实现代码的流程控制。多线程情况下，PC 用于指向当前线程执行的位置，从而进行线程切换。
+<p>简单来说，程序计数器 PC 指向字节码的某一行，字节码解释器通过程序计数器来依次执行指令，对代码解释执行。
+多线程情况下，PC 用于指向当前线程执行的位置，从而进行线程切换。
 程序计数器随着线程创建而创建，随着线程结束而消亡。</p>
 <ol start="2">
 <li>Java 虚拟机栈</li>
 </ol>
-<p>所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、方法返回地址等。</p>
+<p>所有的 Java 方法调用都是通过 Java 虚拟机栈来实现的。
+每进行一次方法调用，都会生成一个栈帧压栈，栈帧包括局部变量表、操作数栈、方法返回地址等。</p>
 <p>线程公共区域包括堆和方法区。</p>
 <ol>
 <li>堆</li>
@@ -109,19 +109,22 @@ Spring 通过依赖注入的方式实现控制反转。
 <p>方法区主要用来存放 Class 对象。在 JDK8 中，方法区的实现是本地内存中的 MetaSpace。</p>
 <h2 id="synchronized关键字底层原理" tabindex="-1"><a class="header-anchor" href="#synchronized关键字底层原理"><span><code v-pre>synchronized</code>关键字底层原理</span></a></h2>
 <p><code v-pre>synchronized</code> 底层使用到了 Java 对象头和监视器锁。</p>
-<p>首先，Java 中的每个对象都有一个对象头，对象头保存了对象的运行时数据，例如锁状态、锁标识、hashcode、GC 信息等。对象头中有一个重要的部分 Mark word，该字段就存储了对象的锁信息。</p>
+<p>首先，Java 中的每个对象都有一个对象头，对象头保存了对象的运行时数据，例如锁信息、hashcode、GC 信息等。</p>
 <p>每一个对象都有一个监视器锁，当线程进入同步方法或同步代码块时，会首先尝试获取对象的监视器锁。如果锁已被其他线程持有，则会根据锁状态进入 CAS 自旋或阻塞状态，直至锁被释放。</p>
-<p>根据线程竞争的激烈程度，锁会升级。对象头中 Mark word包含了锁的状态，可以分为无锁、偏向锁、轻量级锁和重量级锁。无锁表示没有线程持有对象锁。偏向锁会偏向于第一次获取锁的线程，在这个线程再次获取锁时，可以直接得到，不需要进行 CAS 操作。当偏向锁被其他线程竞争时，会升级为轻量级锁，轻量级锁会使用 CAS 操作来获取锁。当轻量级锁竞争激烈时会升级为重量级锁，重量级锁使用操作系统的互斥锁实现，获取锁失败的线程进入阻塞状态。</p>
-<p>总而言之，synchronized关键字使用到对象头和监视器锁实现。</p>
-<h2 id="atomic原子类" tabindex="-1"><a class="header-anchor" href="#atomic原子类"><span><code v-pre>Atomic</code>原子类</span></a></h2>
-<p><code v-pre>Atomic</code>原子类是指具有原子操作特征的类，它可以保证多线程下的线程安全。</p>
-<p><code v-pre>Atomic</code>原子类的原理是使用 CAS 锁，CAS 锁是一种乐观锁，它的思想是在修改数据前首先进行比较，在当前值等于期望值时才会执行修改操作，来保证获取期望值和修改数据期间没有其他线程修改数据。</p>
+<p>根据线程竞争的激烈程度，锁会升级。
+可以分为无锁、偏向锁、轻量级锁和重量级锁。
+无锁表示没有线程持有对象锁。
+偏向锁会偏向于第一次获取锁的线程，在这个线程再次获取锁时，可以直接得到，不需要进行 CAS 操作。
+当偏向锁被其他线程竞争时，会升级为轻量级锁，轻量级锁会使用 CAS 操作来获取锁。
+当轻量级锁竞争激烈时会升级为重量级锁，重量级锁使用操作系统的互斥锁实现，获取锁失败的线程进入阻塞状态。</p>
+<p>总而言之，<code v-pre>synchronized</code> 关键字使用到对象头和监视器锁实现。</p>
 <h2 id="垃圾回收机制" tabindex="-1"><a class="header-anchor" href="#垃圾回收机制"><span>垃圾回收机制</span></a></h2>
 <h3 id="垃圾回收机制概述" tabindex="-1"><a class="header-anchor" href="#垃圾回收机制概述"><span>垃圾回收机制概述</span></a></h3>
 <p>Java 垃圾回收机制是一种针对堆内存中的对象自动分配内存、回收内存的机制。
 Java 将堆内存分为了新生代和老年代，其中新生代包括 Eden 区和两个 Survivor 区。大多数对象在 Eden 区中分配，如果 Eden 区已满，则对新生代发起一次垃圾回收，回收新生代中已经死亡的对象，而对于存活的对象，Eden 区中的对象会晋升到 Survivor 区，而 Survivor 中的对象年龄会增加，当其年龄超过阈值，则进入老年代；而数组这种大对象直接存入老年代。</p>
 <h3 id="对象死亡判断" tabindex="-1"><a class="header-anchor" href="#对象死亡判断"><span>对象死亡判断</span></a></h3>
-<p>对象是否死亡，使用可达性分析算法进行判断。这个算法的思想是通过一系列 GC ROOTS 作为起点，通过引用链搜索对象，通过这些引用链不可达的对象就是死亡对象。这些 GC ROOTS 是保证存活状态的对象，例如虚拟机栈引用的对象。</p>
+<p>对象是否死亡，使用可达性分析算法进行判断。这个算法的思想是通过一系列 GC ROOTS 作为起点，通过引用链搜索对象，通过这些引用链不可达的对象就是死亡对象。
+这些 GC ROOTS 是保证存活状态的对象，例如类静态字段指向的对象。</p>
 <h3 id="垃圾回收算法" tabindex="-1"><a class="header-anchor" href="#垃圾回收算法"><span>垃圾回收算法</span></a></h3>
 <p>Java 常见的垃圾回收算法包括：标记-清除、标记-整理、复制和分代收集算法。</p>
 <h4 id="标记-清除" tabindex="-1"><a class="header-anchor" href="#标记-清除"><span>标记-清除</span></a></h4>

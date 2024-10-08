@@ -21,12 +21,6 @@
 <h2 id="java-中的不可变类是什么-如何实现一个不可变类" tabindex="-1"><a class="header-anchor" href="#java-中的不可变类是什么-如何实现一个不可变类"><span>Java 中的不可变类是什么？如何实现一个不可变类？</span></a></h2>
 <p>不可变类的对象，一旦被创建，其<strong>内部属性</strong>便无法被修改。</p>
 <p>要实现一个不可变类，需要将类添加 <code v-pre>final</code> 修饰，私有化属性，不对外暴露 <code v-pre>set</code> 方法。</p>
-<h2 id="java-异常体系是怎样的" tabindex="-1"><a class="header-anchor" href="#java-异常体系是怎样的"><span>Java 异常体系是怎样的？</span></a></h2>
-<p>Java 中的异常包括 Exception 和 Error。
-Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch</code> 捕获；Error 是那些程序无法处理的错误，当出现 Error 时，虚拟机
-通常会将线程终止。</p>
-<p>Exception 分为受检异常和非受检异常。受检异常需要在代码中显式地使用 <code v-pre>try...catch</code> 处理，例如 IO 相关异常；
-非受检异常则不要求，<code v-pre>RuntimeException</code> 及其子类都是非受检异常。</p>
 <h2 id="面向对象和面向过程有什么区别" tabindex="-1"><a class="header-anchor" href="#面向对象和面向过程有什么区别"><span>面向对象和面向过程有什么区别？</span></a></h2>
 <p>面向对象将对象作为编程的基本单元，将程序视为对象之间的交互；
 面向过程将过程作为编程的基本单元。</p>
@@ -43,8 +37,7 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 <p>深拷贝不仅拷贝基本类型，引用类型指向的对象也会拷贝。</p>
 <p>浅拷贝只拷贝基本类型，引用类型指向的对象和源对象共享。</p>
 <h2 id="java-integer-缓存池是什么" tabindex="-1"><a class="header-anchor" href="#java-integer-缓存池是什么"><span>Java Integer 缓存池是什么？</span></a></h2>
-<p>Integer 缓存池中保存了指定数据范围内的 Integer 对象，当使用 <code v-pre>Integer.valueOf()</code> 方法获取对象时，若在指定数据范围内，
-直接使用缓存池中的对象。</p>
+<p>Integer 缓存池中保存了指定数据范围内的 Integer 对象，可以直接使用，无需重复创建。</p>
 <h2 id="java-类加载过程是怎样的" tabindex="-1"><a class="header-anchor" href="#java-类加载过程是怎样的"><span>Java 类加载过程是怎样的？</span></a></h2>
 <p>Java 类加载过程主要包括加载、连接、初始化三步。</p>
 <p>加载过程就是获取类的二进制字节流，并在方法区中生成类的 Class 对象。</p>
@@ -72,14 +65,6 @@ Exception 是那些程序可以处理的异常，可以使用 <code v-pre>catch<
 <h2 id="java-final-关键字有何作用" tabindex="-1"><a class="header-anchor" href="#java-final-关键字有何作用"><span>Java <code v-pre>final</code> 关键字有何作用？</span></a></h2>
 <p><code v-pre>final</code> 表示不可变或不可继承，可以修饰类、方法或变量。</p>
 <p><code v-pre>final</code> 修饰的类不能被继承，<code v-pre>final</code> 修饰的方法不能被重写，<code v-pre>final</code> 修饰的变量一旦赋了初值，不能被修改。</p>
-<h2 id="java-线程的状态有哪些" tabindex="-1"><a class="header-anchor" href="#java-线程的状态有哪些"><span>Java 线程的状态有哪些？</span></a></h2>
-<p>线程的状态有：</p>
-<p>新建态(New)：线程对象创建后，还未调用 <code v-pre>start()</code> 方法。</p>
-<p>就绪态(Runnable)：调用 <code v-pre>start()</code> 方法后，等待 CPU 调度的状态。</p>
-<p>阻塞态(Blocked)：线程获取重量级锁失败时会进入阻塞态。</p>
-<p>等待态(Waiting)：线程等待某个条件满足或被其他线程唤醒。</p>
-<p>时间等待(Time Waiting)：具有等待时间的等待态，到达时间会被唤醒。</p>
-<p>终止态(Terminated)：线程执行完毕或异常退出。</p>
 </div></template>
 
 

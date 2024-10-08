@@ -21,12 +21,12 @@
 <h2 id="mysql-中的回表是什么" tabindex="-1"><a class="header-anchor" href="#mysql-中的回表是什么"><span>MySQL 中的回表是什么</span></a></h2>
 <p>回表是指使用非聚簇索引进行查询时，由于非聚簇索引叶子结点仅存储了索引列和主键值，当需要获取其他字段的值，需要使用主键利用主键索引查询真实记录。</p>
 <h2 id="mysql-中覆盖索引是什么" tabindex="-1"><a class="header-anchor" href="#mysql-中覆盖索引是什么"><span>MySQL 中覆盖索引是什么</span></a></h2>
-<p>覆盖索引是指非聚簇索引包含了查询所需的所有字段，不需要回表即可完成查询。</p>
+<p>覆盖索引是指使用非聚簇索引进行查询时，非聚簇索引的叶子结点包含了查询所需的所有字段，无需回表即可完成查询。</p>
 <h2 id="最左前缀匹配原则" tabindex="-1"><a class="header-anchor" href="#最左前缀匹配原则"><span>最左前缀匹配原则</span></a></h2>
-<p>最左前缀匹配原则是针对联合索引的一个原则，如果希望联合索引生效，那么查询条件必须符合联合索引的最左前缀。
+<p>最左前缀匹配原则是针对联合索引的一个原则，如果希望联合索引生效，那么查询条件必须是联合索引的最左前缀。
 例如 <code v-pre>(name, age)</code> 联合索引，查询条件 <code v-pre>name=xxx</code> 或 <code v-pre>name=xxx and age=xxx</code> 均可生效。<code v-pre>age=xxx</code> 无法生效。</p>
 <h2 id="mysql-中索引下推是什么" tabindex="-1"><a class="header-anchor" href="#mysql-中索引下推是什么"><span>MySQL 中索引下推是什么？</span></a></h2>
-<p>索引下推是指在使用非聚簇索引时，非聚簇索引包含了过滤所需的全部字段，无需回表即可完成过滤。</p>
+<p>索引下推是指在使用非聚簇索引时，非聚簇索引的叶子结点包含了过滤所需的全部字段，无需回表即可完成过滤。</p>
 <h2 id="索引使用注意事项" tabindex="-1"><a class="header-anchor" href="#索引使用注意事项"><span>索引使用注意事项</span></a></h2>
 <p>何时使用？何时不使用？</p>
 <ol>

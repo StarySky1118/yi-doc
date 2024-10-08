@@ -2,7 +2,7 @@
 <h2 id="集合和数组有什么区别" tabindex="-1"><a class="header-anchor" href="#集合和数组有什么区别"><span>集合和数组有什么区别？</span></a></h2>
 <p>集合和数组的区别主要在于<strong>长度是否可变</strong>、<strong>存储的数据类型</strong>以及<strong>访问方式</strong>。</p>
 <p><strong>1. 长度是否可变</strong></p>
-<p>数组一旦创建，长度便不可变；集合创建后，可根据需要增删元素。</p>
+<p>数组一旦创建，长度便不可变；集合创建后，可按需扩容。</p>
 <p><strong>2. 存储的数据类型</strong></p>
 <p>数组能存储基本数据类型和对象，集合只能存储对象。</p>
 <p><strong>3. 访问方式</strong></p>

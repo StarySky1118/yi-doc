@@ -50,16 +50,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "开发",
+    "title": "算法与数据结构",
     "headers": [],
-    "path": "/dev/",
+    "path": "/algo/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "算法与数据结构",
+    "title": "开发",
     "headers": [],
-    "path": "/algo/",
+    "path": "/dev/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -153,6 +153,20 @@ export const searchIndex = [
     "title": "Deep-Live-Cam 概述",
     "headers": [],
     "path": "/ai_application/deep_live_cam/%E6%A6%82%E8%BF%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 排序概述",
+    "headers": [],
+    "path": "/algo/sort/1-%E6%8E%92%E5%BA%8F%E6%A6%82%E8%BF%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 快速排序",
+    "headers": [],
+    "path": "/algo/sort/2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -661,13 +675,6 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "说一说 ConcurrentHashMap的实现原理",
-        "slug": "说一说-concurrenthashmap的实现原理",
-        "link": "#说一说-concurrenthashmap的实现原理",
-        "children": []
-      },
-      {
-        "level": 2,
         "title": "Spring Bean 的生命周期",
         "slug": "spring-bean-的生命周期",
         "link": "#spring-bean-的生命周期",
@@ -720,13 +727,6 @@ export const searchIndex = [
         "title": "synchronized关键字底层原理",
         "slug": "synchronized关键字底层原理",
         "link": "#synchronized关键字底层原理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Atomic原子类",
-        "slug": "atomic原子类",
-        "link": "#atomic原子类",
         "children": []
       },
       {
@@ -817,13 +817,6 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "索引有哪些分类？",
-        "slug": "索引有哪些分类",
-        "link": "#索引有哪些分类",
-        "children": []
-      },
-      {
-        "level": 2,
         "title": "索引有哪些优点或缺点？",
         "slug": "索引有哪些优点或缺点",
         "link": "#索引有哪些优点或缺点",
@@ -845,13 +838,6 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "常见的 SQL 优化方案",
-        "slug": "常见的-sql-优化方案",
-        "link": "#常见的-sql-优化方案",
-        "children": []
-      },
-      {
-        "level": 2,
         "title": "JDBC executeUpdate()",
         "slug": "jdbc-executeupdate",
         "link": "#jdbc-executeupdate",
@@ -867,56 +853,6 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？",
-        "slug": "介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
-        "link": "#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
-        "children": [
-          {
-            "level": 3,
-            "title": "String",
-            "slug": "string",
-            "link": "#string",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "List",
-            "slug": "list",
-            "link": "#list",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Set",
-            "slug": "set",
-            "link": "#set",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Hash",
-            "slug": "hash",
-            "link": "#hash",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ZSet",
-            "slug": "zset",
-            "link": "#zset",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "为什么 Lua 脚本可以保证原子性",
-        "slug": "为什么-lua-脚本可以保证原子性",
-        "link": "#为什么-lua-脚本可以保证原子性",
-        "children": []
-      },
-      {
-        "level": 2,
         "title": "MySQL 和 Redis 数据同步方式",
         "slug": "mysql-和-redis-数据同步方式",
         "link": "#mysql-和-redis-数据同步方式",
@@ -927,13 +863,6 @@ export const searchIndex = [
         "title": "缓存雪崩、缓存击穿、缓存穿透",
         "slug": "缓存雪崩、缓存击穿、缓存穿透",
         "link": "#缓存雪崩、缓存击穿、缓存穿透",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Redis 有哪些过期策略？",
-        "slug": "redis-有哪些过期策略",
-        "link": "#redis-有哪些过期策略",
         "children": []
       },
       {
@@ -963,13 +892,6 @@ export const searchIndex = [
         "title": "HTTPS 中间人攻击",
         "slug": "https-中间人攻击",
         "link": "#https-中间人攻击",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 常见的状态码有哪些？",
-        "slug": "http-常见的状态码有哪些",
-        "link": "#http-常见的状态码有哪些",
         "children": []
       },
       {
@@ -1031,28 +953,6 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "TCP/IP 网络模型有哪几层，各自有什么作用？",
-        "slug": "tcp-ip-网络模型有哪几层-各自有什么作用",
-        "link": "#tcp-ip-网络模型有哪几层-各自有什么作用",
-        "children": [
-          {
-            "level": 3,
-            "title": "为什么要分层",
-            "slug": "为什么要分层",
-            "link": "#为什么要分层",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "各层的作用",
-            "slug": "各层的作用",
-            "link": "#各层的作用",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
         "title": "TCP 的流量控制和拥塞控制",
         "slug": "tcp-的流量控制和拥塞控制",
         "link": "#tcp-的流量控制和拥塞控制",
@@ -1067,13 +967,6 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "证书验证",
-        "slug": "证书验证",
-        "link": "#证书验证",
-        "children": []
-      },
-      {
-        "level": 2,
         "title": "ARP 协议",
         "slug": "arp-协议",
         "link": "#arp-协议",
@@ -1081,20 +974,6 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/principle/5-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 排序概述",
-    "headers": [],
-    "path": "/algo/sort/1-%E6%8E%92%E5%BA%8F%E6%A6%82%E8%BF%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 快速排序",
-    "headers": [],
-    "path": "/algo/sort/2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4100,6 +3979,1592 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "零、常用命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、netstat -lnp",
+        "slug": "_1、netstat-lnp",
+        "link": "#_1、netstat-lnp",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、telnet ip port",
+        "slug": "_2、telnet-ip-port",
+        "link": "#_2、telnet-ip-port",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、ps aux | grep nginx",
+        "slug": "_3、ps-aux-grep-nginx",
+        "link": "#_3、ps-aux-grep-nginx",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、curl url",
+        "slug": "_4、curl-url",
+        "link": "#_4、curl-url",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、wget",
+        "slug": "_5、wget",
+        "link": "#_5、wget",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/0-%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一、Linux 简介",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 发行版",
+        "slug": "_1、linux-发行版",
+        "link": "#_1、linux-发行版",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、FinalShell",
+        "slug": "_2、finalshell",
+        "link": "#_2、finalshell",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、WSL",
+        "slug": "_3、wsl",
+        "link": "#_3、wsl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4、虚拟机快照",
+        "slug": "_4、虚拟机快照",
+        "link": "#_4、虚拟机快照",
+        "children": []
+      }
+    ],
+    "path": "/dev/other/linux/1-Linux%E7%AE%80%E4%BB%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "二、Linux 基础命令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、Linux 目录结构",
+        "slug": "_1、linux-目录结构",
+        "link": "#_1、linux-目录结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、Linux 命令入门",
+        "slug": "_2、linux-命令入门",
+        "link": "#_2、linux-命令入门",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) Linux 命令基础格式",
+            "slug": "_1-linux-命令基础格式",
+            "link": "#_1-linux-命令基础格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) ls",
+            "slug": "_2-ls",
+            "link": "#_2-ls",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3、目录切换命令：cd/pwd",
+        "slug": "_3、目录切换命令-cd-pwd",
+        "link": "#_3、目录切换命令-cd-pwd",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) cd",
+            "slug": "_1-cd",
+            "link": "#_1-cd",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) pwd",
+            "slug": "_2-pwd",
+            "link": "#_2-pwd",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、创建目录指令：mkdir",
+        "slug": "_4、创建目录指令-mkdir",
+        "link": "#_4、创建目录指令-mkdir",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、文件操作命令",
+        "slug": "_5、文件操作命令",
+        "link": "#_5、文件操作命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 创建文件：touch",
+            "slug": "_1-创建文件-touch",
+            "link": "#_1-创建文件-touch",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查看文件：cat",
+            "slug": "_2-查看文件-cat",
+            "link": "#_2-查看文件-cat",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 查看文件：more",
+            "slug": "_3-查看文件-more",
+            "link": "#_3-查看文件-more",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(4) 复制文件：cp",
+            "slug": "_4-复制文件-cp",
+            "link": "#_4-复制文件-cp",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(5) 移动文件/文件夹：mv",
+            "slug": "_5-移动文件-文件夹-mv",
+            "link": "#_5-移动文件-文件夹-mv",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(6) 删除文件/文件夹：rm",
+            "slug": "_6-删除文件-文件夹-rm",
+            "link": "#_6-删除文件-文件夹-rm",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "6、查找命令",
+        "slug": "_6、查找命令",
+        "link": "#_6、查找命令",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 查找命令：which",
+            "slug": "_1-查找命令-which",
+            "link": "#_1-查找命令-which",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 查找文件：find",
+            "slug": "_2-查找文件-find",
+            "link": "#_2-查找文件-find",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "7、grep、wc 和管道符",
+        "slug": "_7、grep、wc-和管道符",
+        "link": "#_7、grep、wc-和管道符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) grep",
+            "slug": "_1-grep",
+            "link": "#_1-grep",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) wc",
+            "slug": "_2-wc",
+            "link": "#_2-wc",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) 管道符",
+            "slug": "_3-管道符",
+            "link": "#_3-管道符",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "8、echo、tail 和重定向符",
+        "slug": "_8、echo、tail-和重定向符",
+        "link": "#_8、echo、tail-和重定向符",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) echo",
+            "slug": "_1-echo",
+            "link": "#_1-echo",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 重定向符",
+            "slug": "_2-重定向符",
+            "link": "#_2-重定向符",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(3) tail",
+            "slug": "_3-tail",
+            "link": "#_3-tail",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "9、vi/vim 编辑器",
+        "slug": "_9、vi-vim-编辑器",
+        "link": "#_9、vi-vim-编辑器",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 简介",
+            "slug": "_1-简介",
+            "link": "#_1-简介",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 使用",
+            "slug": "_2-使用",
+            "link": "#_2-使用",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/2-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "三、Linux 权限",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1、切换用户与返回：su和 exit",
+        "slug": "_1、切换用户与返回-su和-exit",
+        "link": "#_1、切换用户与返回-su和-exit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2、临时切换 root 执行某条命令：sudo",
+        "slug": "_2、临时切换-root-执行某条命令-sudo",
+        "link": "#_2、临时切换-root-执行某条命令-sudo",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3、用户与用户组",
+        "slug": "_3、用户与用户组",
+        "link": "#_3、用户与用户组",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) 用户组管理",
+            "slug": "_1-用户组管理",
+            "link": "#_1-用户组管理",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) 用户管理",
+            "slug": "_2-用户管理",
+            "link": "#_2-用户管理",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "4、权限控制信息",
+        "slug": "_4、权限控制信息",
+        "link": "#_4、权限控制信息",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5、修改权限控制：chmod/chown",
+        "slug": "_5、修改权限控制-chmod-chown",
+        "link": "#_5、修改权限控制-chmod-chown",
+        "children": [
+          {
+            "level": 3,
+            "title": "(1) chomod",
+            "slug": "_1-chomod",
+            "link": "#_1-chomod",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "(2) chown",
+            "slug": "_2-chown",
+            "link": "#_2-chown",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/other/linux/3-Linux%E6%9D%83%E9%99%90.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 基础篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Java 语言有哪些优势？",
+        "slug": "java-语言有哪些优势",
+        "link": "#java-语言有哪些优势",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如何理解 Java 中的多态特性？",
+        "slug": "如何理解-java-中的多态特性",
+        "link": "#如何理解-java-中的多态特性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接口和抽象类有什么区别？",
+        "slug": "接口和抽象类有什么区别",
+        "link": "#接口和抽象类有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的不可变类是什么？如何实现一个不可变类？",
+        "slug": "java-中的不可变类是什么-如何实现一个不可变类",
+        "link": "#java-中的不可变类是什么-如何实现一个不可变类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "面向对象和面向过程有什么区别？",
+        "slug": "面向对象和面向过程有什么区别",
+        "link": "#面向对象和面向过程有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "String、StringBuffer 和 StringBuilder 有什么区别？",
+        "slug": "string、stringbuffer-和-stringbuilder-有什么区别",
+        "link": "#string、stringbuffer-和-stringbuilder-有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 为什么会有包装类？",
+        "slug": "java-为什么会有包装类",
+        "link": "#java-为什么会有包装类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JRE、JDK 有什么区别？",
+        "slug": "jre、jdk-有什么区别",
+        "link": "#jre、jdk-有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "深拷贝和浅拷贝各是什么？",
+        "slug": "深拷贝和浅拷贝各是什么",
+        "link": "#深拷贝和浅拷贝各是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java Integer 缓存池是什么？",
+        "slug": "java-integer-缓存池是什么",
+        "link": "#java-integer-缓存池是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 类加载过程是怎样的？",
+        "slug": "java-类加载过程是怎样的",
+        "link": "#java-类加载过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "介绍一下 Java 中的类加载器",
+        "slug": "介绍一下-java-中的类加载器",
+        "link": "#介绍一下-java-中的类加载器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的 BigDecimal 类有何作用？",
+        "slug": "java-中的-bigdecimal-类有何作用",
+        "link": "#java-中的-bigdecimal-类有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "创建字符串对象的两种方式有何区别？",
+        "slug": "创建字符串对象的两种方式有何区别",
+        "link": "#创建字符串对象的两种方式有何区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java final 关键字有何作用？",
+        "slug": "java-final-关键字有何作用",
+        "link": "#java-final-关键字有何作用",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/java/1-%E5%9F%BA%E7%A1%80%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 集合",
+    "headers": [
+      {
+        "level": 2,
+        "title": "集合和数组有什么区别？",
+        "slug": "集合和数组有什么区别",
+        "link": "#集合和数组有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中有哪些集合类？",
+        "slug": "java-中有哪些集合类",
+        "link": "#java-中有哪些集合类",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "介绍一下 HashMap 的实现原理",
+        "slug": "介绍一下-hashmap-的实现原理",
+        "link": "#介绍一下-hashmap-的实现原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HashMap put 和 get 方法过程是怎样的？",
+        "slug": "hashmap-put-和-get-方法过程是怎样的",
+        "link": "#hashmap-put-和-get-方法过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HashMap 一般使用什么作为 key？",
+        "slug": "hashmap-一般使用什么作为-key",
+        "link": "#hashmap-一般使用什么作为-key",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "ConcurrentHashMap 是如何实现的？",
+        "slug": "concurrenthashmap-是如何实现的",
+        "link": "#concurrenthashmap-是如何实现的",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/java/2-%E9%9B%86%E5%90%88.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 并发",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Java 线程和操作系统线程是怎样的对应关系？",
+        "slug": "java-线程和操作系统线程是怎样的对应关系",
+        "link": "#java-线程和操作系统线程是怎样的对应关系",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多线程下通常有哪些问题？",
+        "slug": "多线程下通常有哪些问题",
+        "link": "#多线程下通常有哪些问题",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 线程有哪些状态？",
+        "slug": "java-线程有哪些状态",
+        "link": "#java-线程有哪些状态",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分别介绍一下 synchrinized 关键字和 ReentrantLock",
+        "slug": "分别介绍一下-synchrinized-关键字和-reentrantlock",
+        "link": "#分别介绍一下-synchrinized-关键字和-reentrantlock",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是可重入锁？如何实现可重入锁？",
+        "slug": "什么是可重入锁-如何实现可重入锁",
+        "link": "#什么是可重入锁-如何实现可重入锁",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "voliatile 关键字有何作用？",
+        "slug": "voliatile-关键字有何作用",
+        "link": "#voliatile-关键字有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "指令重排序是什么？",
+        "slug": "指令重排序是什么",
+        "link": "#指令重排序是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "公平锁和非公平锁的区别是什么？",
+        "slug": "公平锁和非公平锁的区别是什么",
+        "link": "#公平锁和非公平锁的区别是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Thread.sleep() 和 Thread.wait() 有什么区别？",
+        "slug": "thread-sleep-和-thread-wait-有什么区别",
+        "link": "#thread-sleep-和-thread-wait-有什么区别",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/java/3-%E5%B9%B6%E5%8F%91.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 虚拟机",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍一下 JVM TLAB",
+        "slug": "介绍一下-jvm-tlab",
+        "link": "#介绍一下-jvm-tlab",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的 JIT 是什么？",
+        "slug": "java-中的-jit-是什么",
+        "link": "#java-中的-jit-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的 AOT 是什么？",
+        "slug": "java-中的-aot-是什么",
+        "link": "#java-中的-aot-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Java 中的逃逸分析是什么？",
+        "slug": "java-中的逃逸分析是什么",
+        "link": "#java-中的逃逸分析是什么",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/java/4-%E8%99%9A%E6%8B%9F%E6%9C%BA.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [],
+    "path": "/dev/principle/java/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 索引篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MySQL 索引是使用什么数据结构实现的？",
+        "slug": "mysql-索引是使用什么数据结构实现的",
+        "link": "#mysql-索引是使用什么数据结构实现的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "B+ 树查询数据的全过程是怎样的？",
+        "slug": "b-树查询数据的全过程是怎样的",
+        "link": "#b-树查询数据的全过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引的类型",
+        "slug": "索引的类型",
+        "link": "#索引的类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "聚簇索引和非聚簇索引有什么区别",
+        "slug": "聚簇索引和非聚簇索引有什么区别",
+        "link": "#聚簇索引和非聚簇索引有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中的回表是什么",
+        "slug": "mysql-中的回表是什么",
+        "link": "#mysql-中的回表是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中覆盖索引是什么",
+        "slug": "mysql-中覆盖索引是什么",
+        "link": "#mysql-中覆盖索引是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "最左前缀匹配原则",
+        "slug": "最左前缀匹配原则",
+        "link": "#最左前缀匹配原则",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中索引下推是什么？",
+        "slug": "mysql-中索引下推是什么",
+        "link": "#mysql-中索引下推是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引使用注意事项",
+        "slug": "索引使用注意事项",
+        "link": "#索引使用注意事项",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如何查看索引是否生效？",
+        "slug": "如何查看索引是否生效",
+        "link": "#如何查看索引是否生效",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "索引在什么情况下会失效？",
+        "slug": "索引在什么情况下会失效",
+        "link": "#索引在什么情况下会失效",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/1-%E7%B4%A2%E5%BC%95%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 事务篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "事务的特性",
+        "slug": "事务的特性",
+        "link": "#事务的特性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 如何实现事务",
+        "slug": "mysql-如何实现事务",
+        "link": "#mysql-如何实现事务",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Undo Log",
+        "slug": "undo-log",
+        "link": "#undo-log",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MVCC",
+        "slug": "mvcc",
+        "link": "#mvcc",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 事务隔离级别",
+        "slug": "mysql-事务隔离级别",
+        "link": "#mysql-事务隔离级别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "锁机制",
+        "slug": "锁机制",
+        "link": "#锁机制",
+        "children": [
+          {
+            "level": 3,
+            "title": "全局锁",
+            "slug": "全局锁",
+            "link": "#全局锁",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "表级锁",
+            "slug": "表级锁",
+            "link": "#表级锁",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "行级锁",
+            "slug": "行级锁",
+            "link": "#行级锁",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Redo Log",
+        "slug": "redo-log",
+        "link": "#redo-log",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/2-%E4%BA%8B%E5%8A%A1%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 使用篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "为什么不推荐使用外键？",
+        "slug": "为什么不推荐使用外键",
+        "link": "#为什么不推荐使用外键",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "为什么使用逻辑删除",
+        "slug": "为什么使用逻辑删除",
+        "link": "#为什么使用逻辑删除",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "有哪些常见的性能优化方案",
+        "slug": "有哪些常见的性能优化方案",
+        "link": "#有哪些常见的性能优化方案",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如何实现数据库不停服迁移？",
+        "slug": "如何实现数据库不停服迁移",
+        "link": "#如何实现数据库不停服迁移",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中 WAL 技术的实现？",
+        "slug": "mysql-中-wal-技术的实现",
+        "link": "#mysql-中-wal-技术的实现",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "varchar(n) 中的 n 指什么？",
+        "slug": "varchar-n-中的-n-指什么",
+        "link": "#varchar-n-中的-n-指什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据库三大范式是什么？",
+        "slug": "数据库三大范式是什么",
+        "link": "#数据库三大范式是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "DATETIME 和 TIMESTAMP 类型有什么区别？",
+        "slug": "datetime-和-timestamp-类型有什么区别",
+        "link": "#datetime-和-timestamp-类型有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中如何解决深度分页问题？",
+        "slug": "mysql-中如何解决深度分页问题",
+        "link": "#mysql-中如何解决深度分页问题",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 中 Inner join、Left join 和 right join 有什么区别？",
+        "slug": "mysql-中-inner-join、left-join-和-right-join-有什么区别",
+        "link": "#mysql-中-inner-join、left-join-和-right-join-有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "drop、delete 和 truncate 有什么区别？",
+        "slug": "drop、delete-和-truncate-有什么区别",
+        "link": "#drop、delete-和-truncate-有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多表联查选择驱动表时，应选择小表还是大表？",
+        "slug": "多表联查选择驱动表时-应选择小表还是大表",
+        "link": "#多表联查选择驱动表时-应选择小表还是大表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 本身有缓存机制吗？",
+        "slug": "mysql-本身有缓存机制吗",
+        "link": "#mysql-本身有缓存机制吗",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/3-%E4%BD%BF%E7%94%A8%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 分库分表",
+    "headers": [
+      {
+        "level": 2,
+        "title": "什么是分库分表",
+        "slug": "什么是分库分表",
+        "link": "#什么是分库分表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分库分表有哪些策略？",
+        "slug": "分库分表有哪些策略",
+        "link": "#分库分表有哪些策略",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分库分表有哪些问题？",
+        "slug": "分库分表有哪些问题",
+        "link": "#分库分表有哪些问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/4-%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%AF%87.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "5. 集群篇",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MySQL 如何避免单点故障？",
+        "slug": "mysql-如何避免单点故障",
+        "link": "#mysql-如何避免单点故障",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如何实现读写分离？",
+        "slug": "如何实现读写分离",
+        "link": "#如何实现读写分离",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "主从同步是如何实现的？",
+        "slug": "主从同步是如何实现的",
+        "link": "#主从同步是如何实现的",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/5-%E9%9B%86%E7%BE%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [
+      {
+        "level": 2,
+        "title": "InnoDB 存储引擎和 MyISAM 存储引擎有什么区别？",
+        "slug": "innodb-存储引擎和-myisam-存储引擎有什么区别",
+        "link": "#innodb-存储引擎和-myisam-存储引擎有什么区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "MySQL 是如何执行一条 SQL 语句的？",
+        "slug": "mysql-是如何执行一条-sql-语句的",
+        "link": "#mysql-是如何执行一条-sql-语句的",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/mysql/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 网络模型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍一下 OSI 七层网络模型和 TCP/IP 网络模型",
+        "slug": "介绍一下-osi-七层网络模型和-tcp-ip-网络模型",
+        "link": "#介绍一下-osi-七层网络模型和-tcp-ip-网络模型",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/network/1-%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 应用层",
+    "headers": [
+      {
+        "level": 2,
+        "title": "HTTP 报文有哪些部分？",
+        "slug": "http-报文有哪些部分",
+        "link": "#http-报文有哪些部分",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 有哪些状态码？",
+        "slug": "http-有哪些状态码",
+        "link": "#http-有哪些状态码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 长连接是什么？",
+        "slug": "http-长连接是什么",
+        "link": "#http-长连接是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 为什么不安全？",
+        "slug": "http-为什么不安全",
+        "link": "#http-为什么不安全",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTPS 与 HTTP 有什么区别？HTTPS 是如何工作的？",
+        "slug": "https-与-http-有什么区别-https-是如何工作的",
+        "link": "#https-与-http-有什么区别-https-是如何工作的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "客户端如何进行证书校验？",
+        "slug": "客户端如何进行证书校验",
+        "link": "#客户端如何进行证书校验",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 HTTPS 中间人攻击？如何防范？",
+        "slug": "什么是-https-中间人攻击-如何防范",
+        "link": "#什么是-https-中间人攻击-如何防范",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 2 相比 HTTP 1.1 有哪些改进？",
+        "slug": "http-2-相比-http-1-1-有哪些改进",
+        "link": "#http-2-相比-http-1-1-有哪些改进",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "DNS 的端口号是多少？",
+        "slug": "dns-的端口号是多少",
+        "link": "#dns-的端口号是多少",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "DNS 是基于什么协议实现的？",
+        "slug": "dns-是基于什么协议实现的",
+        "link": "#dns-是基于什么协议实现的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "介绍一下 HTTP 的无状态性",
+        "slug": "介绍一下-http-的无状态性",
+        "link": "#介绍一下-http-的无状态性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "HTTP 是无状态的，如何进行 HTTP 状态管理？",
+        "slug": "http-是无状态的-如何进行-http-状态管理",
+        "link": "#http-是无状态的-如何进行-http-状态管理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是跨域问题？",
+        "slug": "什么是跨域问题",
+        "link": "#什么是跨域问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/network/2-%E5%BA%94%E7%94%A8%E5%B1%82.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 传输层",
+    "headers": [
+      {
+        "level": 2,
+        "title": "TCP 头部有哪些重要属性？",
+        "slug": "tcp-头部有哪些重要属性",
+        "link": "#tcp-头部有哪些重要属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 三次握手过程是怎样的？",
+        "slug": "tcp-三次握手过程是怎样的",
+        "link": "#tcp-三次握手过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 为什么需要三次握手过程？",
+        "slug": "tcp-为什么需要三次握手过程",
+        "link": "#tcp-为什么需要三次握手过程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 三次握手，报文丢失会发生什么？",
+        "slug": "tcp-三次握手-报文丢失会发生什么",
+        "link": "#tcp-三次握手-报文丢失会发生什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 三次握手过程中，服务端收到 SYN 报文后，在回复 SYN+ACK 之前，做了什么事？",
+        "slug": "tcp-三次握手过程中-服务端收到-syn-报文后-在回复-syn-ack-之前-做了什么事",
+        "link": "#tcp-三次握手过程中-服务端收到-syn-报文后-在回复-syn-ack-之前-做了什么事",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "SYN 攻击是什么？",
+        "slug": "syn-攻击是什么",
+        "link": "#syn-攻击是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 四次挥手过程是怎样的？",
+        "slug": "tcp-四次挥手过程是怎样的",
+        "link": "#tcp-四次挥手过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "为什么 TIME_WAIT 状态时长是 2MSL？",
+        "slug": "为什么-time-wait-状态时长是-2msl",
+        "link": "#为什么-time-wait-状态时长是-2msl",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "服务端出现大量 TIME_WAIT 原因有哪些？",
+        "slug": "服务端出现大量-time-wait-原因有哪些",
+        "link": "#服务端出现大量-time-wait-原因有哪些",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TCP 为什么可靠？",
+        "slug": "tcp-为什么可靠",
+        "link": "#tcp-为什么可靠",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 TCP 粘包问题？",
+        "slug": "什么是-tcp-粘包问题",
+        "link": "#什么是-tcp-粘包问题",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/network/3-%E4%BC%A0%E8%BE%93%E5%B1%82.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MQTT 详解",
+    "headers": [
+      {
+        "level": 2,
+        "title": "发布-订阅模式",
+        "slug": "发布-订阅模式",
+        "link": "#发布-订阅模式",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/network/4-MQTT%E8%AF%A6%E8%A7%A3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算机网络概述",
+    "headers": [],
+    "path": "/dev/principle/network/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. 数据类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？",
+        "slug": "介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
+        "link": "#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
+        "children": [
+          {
+            "level": 3,
+            "title": "String",
+            "slug": "string",
+            "link": "#string",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "List",
+            "slug": "list",
+            "link": "#list",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Set",
+            "slug": "set",
+            "link": "#set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Hash",
+            "slug": "hash",
+            "link": "#hash",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZSet",
+            "slug": "zset",
+            "link": "#zset",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/dev/principle/redis/1-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 线程模型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Redis 为什么快？",
+        "slug": "redis-为什么快",
+        "link": "#redis-为什么快",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Redis 是单线程的吗？",
+        "slug": "redis-是单线程的吗",
+        "link": "#redis-是单线程的吗",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/2-%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 事务",
+    "headers": [
+      {
+        "level": 2,
+        "title": "原子性",
+        "slug": "原子性",
+        "link": "#原子性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "持久性",
+        "slug": "持久性",
+        "link": "#持久性",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/3-%E4%BA%8B%E5%8A%A1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 过期删除与内存淘汰",
+    "headers": [
+      {
+        "level": 2,
+        "title": "过期删除",
+        "slug": "过期删除",
+        "link": "#过期删除",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "淘汰策略",
+        "slug": "淘汰策略",
+        "link": "#淘汰策略",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/4-%E8%BF%87%E6%9C%9F%E5%88%A0%E9%99%A4%E4%B8%8E%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "5. 集群",
+    "headers": [
+      {
+        "level": 2,
+        "title": "主从复制",
+        "slug": "主从复制",
+        "link": "#主从复制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "哨兵集群",
+        "slug": "哨兵集群",
+        "link": "#哨兵集群",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分片集群",
+        "slug": "分片集群",
+        "link": "#分片集群",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/redis/5-%E9%9B%86%E7%BE%A4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "6. 缓存",
+    "headers": [],
+    "path": "/dev/principle/redis/6-%E7%BC%93%E5%AD%98.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [],
+    "path": "/dev/principle/redis/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. IoC",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring IoC 是使用依赖注入实现的，什么是依赖注入？",
+        "slug": "spring-ioc-是使用依赖注入实现的-什么是依赖注入",
+        "link": "#spring-ioc-是使用依赖注入实现的-什么是依赖注入",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 Spring Bean？",
+        "slug": "什么是-spring-bean",
+        "link": "#什么是-spring-bean",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "BeanFactory 是什么？",
+        "slug": "beanfactory-是什么",
+        "link": "#beanfactory-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring ApplicationContext 是什么？",
+        "slug": "spring-applicationcontext-是什么",
+        "link": "#spring-applicationcontext-是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 有哪些作用域？",
+        "slug": "spring-bean-有哪些作用域",
+        "link": "#spring-bean-有哪些作用域",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 有哪些注入方式？",
+        "slug": "spring-bean-有哪些注入方式",
+        "link": "#spring-bean-有哪些注入方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 生命周期是怎样的？",
+        "slug": "spring-bean-生命周期是怎样的",
+        "link": "#spring-bean-生命周期是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring IoC 容器初始化过程是怎样的？",
+        "slug": "spring-ioc-容器初始化过程是怎样的",
+        "link": "#spring-ioc-容器初始化过程是怎样的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 注册到容器中有哪几种方式？",
+        "slug": "spring-bean-注册到容器中有哪几种方式",
+        "link": "#spring-bean-注册到容器中有哪几种方式",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring 装配方式有哪些？",
+        "slug": "spring-装配方式有哪些",
+        "link": "#spring-装配方式有哪些",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "如果 byType 装配方式出现多个符合条件的 Bean，如何消除歧义？",
+        "slug": "如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
+        "link": "#如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring Bean 是否有并发安全问题？如果有，如何保证？",
+        "slug": "spring-bean-是否有并发安全问题-如果有-如何保证",
+        "link": "#spring-bean-是否有并发安全问题-如果有-如何保证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring @value 注解有何作用？",
+        "slug": "spring-value-注解有何作用",
+        "link": "#spring-value-注解有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是循环依赖？如何解决？",
+        "slug": "什么是循环依赖-如何解决",
+        "link": "#什么是循环依赖-如何解决",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/1-Ioc.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. AOP",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring AOP 是如何实现的？",
+        "slug": "spring-aop-是如何实现的",
+        "link": "#spring-aop-是如何实现的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring 事务有哪些传播行为？传播行为有什么用？",
+        "slug": "spring-事务有哪些传播行为-传播行为有什么用",
+        "link": "#spring-事务有哪些传播行为-传播行为有什么用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@Transactional 注解在什么场景下会失效？",
+        "slug": "transactional-注解在什么场景下会失效",
+        "link": "#transactional-注解在什么场景下会失效",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/2-aop.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. Spring MVC",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring MVC 是如何处理请求的？",
+        "slug": "spring-mvc-是如何处理请求的",
+        "link": "#spring-mvc-是如何处理请求的",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@RequestBody 和 @ResponseBody 各有什么作用？",
+        "slug": "requestbody-和-responsebody-各有什么作用",
+        "link": "#requestbody-和-responsebody-各有什么作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "@PathVariable 注解有何作用？",
+        "slug": "pathvariable-注解有何作用",
+        "link": "#pathvariable-注解有何作用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spring MVC 如何进行全局异常处理？",
+        "slug": "spring-mvc-如何进行全局异常处理",
+        "link": "#spring-mvc-如何进行全局异常处理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 Restful 风格的接口？",
+        "slug": "什么是-restful-风格的接口",
+        "link": "#什么是-restful-风格的接口",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/3-MVC.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. SpringBoot",
+    "headers": [
+      {
+        "level": 2,
+        "title": "SpringBoot 相比 Spring 有哪些优势？",
+        "slug": "springboot-相比-spring-有哪些优势",
+        "link": "#springboot-相比-spring-有哪些优势",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "SpringBoot 支持哪些嵌入 Web 容器？",
+        "slug": "springboot-支持哪些嵌入-web-容器",
+        "link": "#springboot-支持哪些嵌入-web-容器",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/4-SpringBoot.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "概述",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Spring 用到了那些设计模式？",
+        "slug": "spring-用到了那些设计模式",
+        "link": "#spring-用到了那些设计模式",
+        "children": []
+      }
+    ],
+    "path": "/dev/principle/spring/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "分布式搜索",
     "headers": [
       {
@@ -4938,1526 +6403,6 @@ export const searchIndex = [
       }
     ],
     "path": "/dev/middleware/tdengine/1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "零、常用命令",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、netstat -lnp",
-        "slug": "_1、netstat-lnp",
-        "link": "#_1、netstat-lnp",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、telnet ip port",
-        "slug": "_2、telnet-ip-port",
-        "link": "#_2、telnet-ip-port",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、ps aux | grep nginx",
-        "slug": "_3、ps-aux-grep-nginx",
-        "link": "#_3、ps-aux-grep-nginx",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、curl url",
-        "slug": "_4、curl-url",
-        "link": "#_4、curl-url",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、wget",
-        "slug": "_5、wget",
-        "link": "#_5、wget",
-        "children": []
-      }
-    ],
-    "path": "/dev/other/linux/0-%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "一、Linux 简介",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、Linux 发行版",
-        "slug": "_1、linux-发行版",
-        "link": "#_1、linux-发行版",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、FinalShell",
-        "slug": "_2、finalshell",
-        "link": "#_2、finalshell",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、WSL",
-        "slug": "_3、wsl",
-        "link": "#_3、wsl",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4、虚拟机快照",
-        "slug": "_4、虚拟机快照",
-        "link": "#_4、虚拟机快照",
-        "children": []
-      }
-    ],
-    "path": "/dev/other/linux/1-Linux%E7%AE%80%E4%BB%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "二、Linux 基础命令",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、Linux 目录结构",
-        "slug": "_1、linux-目录结构",
-        "link": "#_1、linux-目录结构",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、Linux 命令入门",
-        "slug": "_2、linux-命令入门",
-        "link": "#_2、linux-命令入门",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) Linux 命令基础格式",
-            "slug": "_1-linux-命令基础格式",
-            "link": "#_1-linux-命令基础格式",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) ls",
-            "slug": "_2-ls",
-            "link": "#_2-ls",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3、目录切换命令：cd/pwd",
-        "slug": "_3、目录切换命令-cd-pwd",
-        "link": "#_3、目录切换命令-cd-pwd",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) cd",
-            "slug": "_1-cd",
-            "link": "#_1-cd",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) pwd",
-            "slug": "_2-pwd",
-            "link": "#_2-pwd",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、创建目录指令：mkdir",
-        "slug": "_4、创建目录指令-mkdir",
-        "link": "#_4、创建目录指令-mkdir",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、文件操作命令",
-        "slug": "_5、文件操作命令",
-        "link": "#_5、文件操作命令",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 创建文件：touch",
-            "slug": "_1-创建文件-touch",
-            "link": "#_1-创建文件-touch",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 查看文件：cat",
-            "slug": "_2-查看文件-cat",
-            "link": "#_2-查看文件-cat",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 查看文件：more",
-            "slug": "_3-查看文件-more",
-            "link": "#_3-查看文件-more",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(4) 复制文件：cp",
-            "slug": "_4-复制文件-cp",
-            "link": "#_4-复制文件-cp",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(5) 移动文件/文件夹：mv",
-            "slug": "_5-移动文件-文件夹-mv",
-            "link": "#_5-移动文件-文件夹-mv",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(6) 删除文件/文件夹：rm",
-            "slug": "_6-删除文件-文件夹-rm",
-            "link": "#_6-删除文件-文件夹-rm",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "6、查找命令",
-        "slug": "_6、查找命令",
-        "link": "#_6、查找命令",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 查找命令：which",
-            "slug": "_1-查找命令-which",
-            "link": "#_1-查找命令-which",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 查找文件：find",
-            "slug": "_2-查找文件-find",
-            "link": "#_2-查找文件-find",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "7、grep、wc 和管道符",
-        "slug": "_7、grep、wc-和管道符",
-        "link": "#_7、grep、wc-和管道符",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) grep",
-            "slug": "_1-grep",
-            "link": "#_1-grep",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) wc",
-            "slug": "_2-wc",
-            "link": "#_2-wc",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) 管道符",
-            "slug": "_3-管道符",
-            "link": "#_3-管道符",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "8、echo、tail 和重定向符",
-        "slug": "_8、echo、tail-和重定向符",
-        "link": "#_8、echo、tail-和重定向符",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) echo",
-            "slug": "_1-echo",
-            "link": "#_1-echo",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 重定向符",
-            "slug": "_2-重定向符",
-            "link": "#_2-重定向符",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(3) tail",
-            "slug": "_3-tail",
-            "link": "#_3-tail",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "9、vi/vim 编辑器",
-        "slug": "_9、vi-vim-编辑器",
-        "link": "#_9、vi-vim-编辑器",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 简介",
-            "slug": "_1-简介",
-            "link": "#_1-简介",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 使用",
-            "slug": "_2-使用",
-            "link": "#_2-使用",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/other/linux/2-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "三、Linux 权限",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1、切换用户与返回：su和 exit",
-        "slug": "_1、切换用户与返回-su和-exit",
-        "link": "#_1、切换用户与返回-su和-exit",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2、临时切换 root 执行某条命令：sudo",
-        "slug": "_2、临时切换-root-执行某条命令-sudo",
-        "link": "#_2、临时切换-root-执行某条命令-sudo",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3、用户与用户组",
-        "slug": "_3、用户与用户组",
-        "link": "#_3、用户与用户组",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) 用户组管理",
-            "slug": "_1-用户组管理",
-            "link": "#_1-用户组管理",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) 用户管理",
-            "slug": "_2-用户管理",
-            "link": "#_2-用户管理",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "4、权限控制信息",
-        "slug": "_4、权限控制信息",
-        "link": "#_4、权限控制信息",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5、修改权限控制：chmod/chown",
-        "slug": "_5、修改权限控制-chmod-chown",
-        "link": "#_5、修改权限控制-chmod-chown",
-        "children": [
-          {
-            "level": 3,
-            "title": "(1) chomod",
-            "slug": "_1-chomod",
-            "link": "#_1-chomod",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "(2) chown",
-            "slug": "_2-chown",
-            "link": "#_2-chown",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/other/linux/3-Linux%E6%9D%83%E9%99%90.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 基础篇",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Java 语言有哪些优势？",
-        "slug": "java-语言有哪些优势",
-        "link": "#java-语言有哪些优势",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如何理解 Java 中的多态特性？",
-        "slug": "如何理解-java-中的多态特性",
-        "link": "#如何理解-java-中的多态特性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "接口和抽象类有什么区别？",
-        "slug": "接口和抽象类有什么区别",
-        "link": "#接口和抽象类有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 中的不可变类是什么？如何实现一个不可变类？",
-        "slug": "java-中的不可变类是什么-如何实现一个不可变类",
-        "link": "#java-中的不可变类是什么-如何实现一个不可变类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 异常体系是怎样的？",
-        "slug": "java-异常体系是怎样的",
-        "link": "#java-异常体系是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "面向对象和面向过程有什么区别？",
-        "slug": "面向对象和面向过程有什么区别",
-        "link": "#面向对象和面向过程有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "String、StringBuffer 和 StringBuilder 有什么区别？",
-        "slug": "string、stringbuffer-和-stringbuilder-有什么区别",
-        "link": "#string、stringbuffer-和-stringbuilder-有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 为什么会有包装类？",
-        "slug": "java-为什么会有包装类",
-        "link": "#java-为什么会有包装类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "JRE、JDK 有什么区别？",
-        "slug": "jre、jdk-有什么区别",
-        "link": "#jre、jdk-有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "深拷贝和浅拷贝各是什么？",
-        "slug": "深拷贝和浅拷贝各是什么",
-        "link": "#深拷贝和浅拷贝各是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java Integer 缓存池是什么？",
-        "slug": "java-integer-缓存池是什么",
-        "link": "#java-integer-缓存池是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 类加载过程是怎样的？",
-        "slug": "java-类加载过程是怎样的",
-        "link": "#java-类加载过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "介绍一下 Java 中的类加载器",
-        "slug": "介绍一下-java-中的类加载器",
-        "link": "#介绍一下-java-中的类加载器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 中的 BigDecimal 类有何作用？",
-        "slug": "java-中的-bigdecimal-类有何作用",
-        "link": "#java-中的-bigdecimal-类有何作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "创建字符串对象的两种方式有何区别？",
-        "slug": "创建字符串对象的两种方式有何区别",
-        "link": "#创建字符串对象的两种方式有何区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java final 关键字有何作用？",
-        "slug": "java-final-关键字有何作用",
-        "link": "#java-final-关键字有何作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 线程的状态有哪些？",
-        "slug": "java-线程的状态有哪些",
-        "link": "#java-线程的状态有哪些",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/java/1-%E5%9F%BA%E7%A1%80%E7%AF%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 集合",
-    "headers": [
-      {
-        "level": 2,
-        "title": "集合和数组有什么区别？",
-        "slug": "集合和数组有什么区别",
-        "link": "#集合和数组有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 中有哪些集合类？",
-        "slug": "java-中有哪些集合类",
-        "link": "#java-中有哪些集合类",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "介绍一下 HashMap 的实现原理",
-        "slug": "介绍一下-hashmap-的实现原理",
-        "link": "#介绍一下-hashmap-的实现原理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HashMap put 和 get 方法过程是怎样的？",
-        "slug": "hashmap-put-和-get-方法过程是怎样的",
-        "link": "#hashmap-put-和-get-方法过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HashMap 一般使用什么作为 key？",
-        "slug": "hashmap-一般使用什么作为-key",
-        "link": "#hashmap-一般使用什么作为-key",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "ConcurrentHashMap 是如何实现的？",
-        "slug": "concurrenthashmap-是如何实现的",
-        "link": "#concurrenthashmap-是如何实现的",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/java/2-%E9%9B%86%E5%90%88.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "3. 并发",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Java 线程和操作系统线程是怎样的对应关系？",
-        "slug": "java-线程和操作系统线程是怎样的对应关系",
-        "link": "#java-线程和操作系统线程是怎样的对应关系",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多线程下通常有哪些问题？",
-        "slug": "多线程下通常有哪些问题",
-        "link": "#多线程下通常有哪些问题",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Java 线程有哪些状态？",
-        "slug": "java-线程有哪些状态",
-        "link": "#java-线程有哪些状态",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "分别介绍一下 synchrinized 关键字和 ReentrantLock",
-        "slug": "分别介绍一下-synchrinized-关键字和-reentrantlock",
-        "link": "#分别介绍一下-synchrinized-关键字和-reentrantlock",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是可重入锁？如何实现可重入锁？",
-        "slug": "什么是可重入锁-如何实现可重入锁",
-        "link": "#什么是可重入锁-如何实现可重入锁",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "voliatile 关键字有何作用？",
-        "slug": "voliatile-关键字有何作用",
-        "link": "#voliatile-关键字有何作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "指令重排序是什么？",
-        "slug": "指令重排序是什么",
-        "link": "#指令重排序是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "公平锁和非公平锁的区别是什么？",
-        "slug": "公平锁和非公平锁的区别是什么",
-        "link": "#公平锁和非公平锁的区别是什么",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/java/3-%E5%B9%B6%E5%8F%91.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "概述",
-    "headers": [],
-    "path": "/dev/principle/java/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 索引篇",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MySQL 索引是使用什么数据结构实现的？",
-        "slug": "mysql-索引是使用什么数据结构实现的",
-        "link": "#mysql-索引是使用什么数据结构实现的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "B+ 树查询数据的全过程是怎样的？",
-        "slug": "b-树查询数据的全过程是怎样的",
-        "link": "#b-树查询数据的全过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "索引的类型",
-        "slug": "索引的类型",
-        "link": "#索引的类型",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "聚簇索引和非聚簇索引有什么区别",
-        "slug": "聚簇索引和非聚簇索引有什么区别",
-        "link": "#聚簇索引和非聚簇索引有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中的回表是什么",
-        "slug": "mysql-中的回表是什么",
-        "link": "#mysql-中的回表是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中覆盖索引是什么",
-        "slug": "mysql-中覆盖索引是什么",
-        "link": "#mysql-中覆盖索引是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "最左前缀匹配原则",
-        "slug": "最左前缀匹配原则",
-        "link": "#最左前缀匹配原则",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中索引下推是什么？",
-        "slug": "mysql-中索引下推是什么",
-        "link": "#mysql-中索引下推是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "索引使用注意事项",
-        "slug": "索引使用注意事项",
-        "link": "#索引使用注意事项",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如何查看索引是否生效？",
-        "slug": "如何查看索引是否生效",
-        "link": "#如何查看索引是否生效",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "索引在什么情况下会失效？",
-        "slug": "索引在什么情况下会失效",
-        "link": "#索引在什么情况下会失效",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/1-%E7%B4%A2%E5%BC%95%E7%AF%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 事务篇",
-    "headers": [
-      {
-        "level": 2,
-        "title": "事务的特性",
-        "slug": "事务的特性",
-        "link": "#事务的特性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 如何实现事务",
-        "slug": "mysql-如何实现事务",
-        "link": "#mysql-如何实现事务",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Undo Log",
-        "slug": "undo-log",
-        "link": "#undo-log",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MVCC",
-        "slug": "mvcc",
-        "link": "#mvcc",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 事务隔离级别",
-        "slug": "mysql-事务隔离级别",
-        "link": "#mysql-事务隔离级别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "锁机制",
-        "slug": "锁机制",
-        "link": "#锁机制",
-        "children": [
-          {
-            "level": 3,
-            "title": "全局锁",
-            "slug": "全局锁",
-            "link": "#全局锁",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "表级锁",
-            "slug": "表级锁",
-            "link": "#表级锁",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "行级锁",
-            "slug": "行级锁",
-            "link": "#行级锁",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Redo Log",
-        "slug": "redo-log",
-        "link": "#redo-log",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/2-%E4%BA%8B%E5%8A%A1%E7%AF%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "3. 使用篇",
-    "headers": [
-      {
-        "level": 2,
-        "title": "为什么不推荐使用外键？",
-        "slug": "为什么不推荐使用外键",
-        "link": "#为什么不推荐使用外键",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "为什么使用逻辑删除",
-        "slug": "为什么使用逻辑删除",
-        "link": "#为什么使用逻辑删除",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "有哪些常见的性能优化方案",
-        "slug": "有哪些常见的性能优化方案",
-        "link": "#有哪些常见的性能优化方案",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如何实现数据库不停服迁移？",
-        "slug": "如何实现数据库不停服迁移",
-        "link": "#如何实现数据库不停服迁移",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中 WAL 技术的实现？",
-        "slug": "mysql-中-wal-技术的实现",
-        "link": "#mysql-中-wal-技术的实现",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "varchar(n) 中的 n 指什么？",
-        "slug": "varchar-n-中的-n-指什么",
-        "link": "#varchar-n-中的-n-指什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "数据库三大范式是什么？",
-        "slug": "数据库三大范式是什么",
-        "link": "#数据库三大范式是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "DATETIME 和 TIMESTAMP 类型有什么区别？",
-        "slug": "datetime-和-timestamp-类型有什么区别",
-        "link": "#datetime-和-timestamp-类型有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中如何解决深度分页问题？",
-        "slug": "mysql-中如何解决深度分页问题",
-        "link": "#mysql-中如何解决深度分页问题",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 中 Inner join、Left join 和 right join 有什么区别？",
-        "slug": "mysql-中-inner-join、left-join-和-right-join-有什么区别",
-        "link": "#mysql-中-inner-join、left-join-和-right-join-有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "drop、delete 和 truncate 有什么区别？",
-        "slug": "drop、delete-和-truncate-有什么区别",
-        "link": "#drop、delete-和-truncate-有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多表联查选择驱动表时，应选择小表还是大表？",
-        "slug": "多表联查选择驱动表时-应选择小表还是大表",
-        "link": "#多表联查选择驱动表时-应选择小表还是大表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 本身有缓存机制吗？",
-        "slug": "mysql-本身有缓存机制吗",
-        "link": "#mysql-本身有缓存机制吗",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/3-%E4%BD%BF%E7%94%A8%E7%AF%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "4. 分库分表",
-    "headers": [
-      {
-        "level": 2,
-        "title": "什么是分库分表",
-        "slug": "什么是分库分表",
-        "link": "#什么是分库分表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "分库分表有哪些策略？",
-        "slug": "分库分表有哪些策略",
-        "link": "#分库分表有哪些策略",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "分库分表有哪些问题？",
-        "slug": "分库分表有哪些问题",
-        "link": "#分库分表有哪些问题",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/4-%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%AF%87.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "5. 集群篇",
-    "headers": [
-      {
-        "level": 2,
-        "title": "MySQL 如何避免单点故障？",
-        "slug": "mysql-如何避免单点故障",
-        "link": "#mysql-如何避免单点故障",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如何实现读写分离？",
-        "slug": "如何实现读写分离",
-        "link": "#如何实现读写分离",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "主从同步是如何实现的？",
-        "slug": "主从同步是如何实现的",
-        "link": "#主从同步是如何实现的",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/5-%E9%9B%86%E7%BE%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "概述",
-    "headers": [
-      {
-        "level": 2,
-        "title": "InnoDB 存储引擎和 MyISAM 存储引擎有什么区别？",
-        "slug": "innodb-存储引擎和-myisam-存储引擎有什么区别",
-        "link": "#innodb-存储引擎和-myisam-存储引擎有什么区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "MySQL 是如何执行一条 SQL 语句的？",
-        "slug": "mysql-是如何执行一条-sql-语句的",
-        "link": "#mysql-是如何执行一条-sql-语句的",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/mysql/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 网络模型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "介绍一下 OSI 七层网络模型和 TCP/IP 网络模型",
-        "slug": "介绍一下-osi-七层网络模型和-tcp-ip-网络模型",
-        "link": "#介绍一下-osi-七层网络模型和-tcp-ip-网络模型",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/network/1-%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 应用层",
-    "headers": [
-      {
-        "level": 2,
-        "title": "HTTP 报文有哪些部分？",
-        "slug": "http-报文有哪些部分",
-        "link": "#http-报文有哪些部分",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 有哪些状态码？",
-        "slug": "http-有哪些状态码",
-        "link": "#http-有哪些状态码",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 长连接是什么？",
-        "slug": "http-长连接是什么",
-        "link": "#http-长连接是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 为什么不安全？",
-        "slug": "http-为什么不安全",
-        "link": "#http-为什么不安全",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTPS 与 HTTP 有什么区别？HTTPS 是如何工作的？",
-        "slug": "https-与-http-有什么区别-https-是如何工作的",
-        "link": "#https-与-http-有什么区别-https-是如何工作的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "客户端如何进行证书校验？",
-        "slug": "客户端如何进行证书校验",
-        "link": "#客户端如何进行证书校验",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是 HTTPS 中间人攻击？如何防范？",
-        "slug": "什么是-https-中间人攻击-如何防范",
-        "link": "#什么是-https-中间人攻击-如何防范",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 2 相比 HTTP 1.1 有哪些改进？",
-        "slug": "http-2-相比-http-1-1-有哪些改进",
-        "link": "#http-2-相比-http-1-1-有哪些改进",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "DNS 的端口号是多少？",
-        "slug": "dns-的端口号是多少",
-        "link": "#dns-的端口号是多少",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "DNS 是基于什么协议实现的？",
-        "slug": "dns-是基于什么协议实现的",
-        "link": "#dns-是基于什么协议实现的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "介绍一下 HTTP 的无状态性",
-        "slug": "介绍一下-http-的无状态性",
-        "link": "#介绍一下-http-的无状态性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "HTTP 是无状态的，如何进行 HTTP 状态管理？",
-        "slug": "http-是无状态的-如何进行-http-状态管理",
-        "link": "#http-是无状态的-如何进行-http-状态管理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是跨域问题？",
-        "slug": "什么是跨域问题",
-        "link": "#什么是跨域问题",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/network/2-%E5%BA%94%E7%94%A8%E5%B1%82.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "3. 传输层",
-    "headers": [
-      {
-        "level": 2,
-        "title": "TCP 头部有哪些重要属性？",
-        "slug": "tcp-头部有哪些重要属性",
-        "link": "#tcp-头部有哪些重要属性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 三次握手过程是怎样的？",
-        "slug": "tcp-三次握手过程是怎样的",
-        "link": "#tcp-三次握手过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 为什么需要三次握手过程？",
-        "slug": "tcp-为什么需要三次握手过程",
-        "link": "#tcp-为什么需要三次握手过程",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 三次握手，报文丢失会发生什么？",
-        "slug": "tcp-三次握手-报文丢失会发生什么",
-        "link": "#tcp-三次握手-报文丢失会发生什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 三次握手过程中，服务端收到 SYN 报文后，在回复 SYN+ACK 之前，做了什么事？",
-        "slug": "tcp-三次握手过程中-服务端收到-syn-报文后-在回复-syn-ack-之前-做了什么事",
-        "link": "#tcp-三次握手过程中-服务端收到-syn-报文后-在回复-syn-ack-之前-做了什么事",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "SYN 攻击是什么？",
-        "slug": "syn-攻击是什么",
-        "link": "#syn-攻击是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 四次挥手过程是怎样的？",
-        "slug": "tcp-四次挥手过程是怎样的",
-        "link": "#tcp-四次挥手过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "为什么 TIME_WAIT 状态时长是 2MSL？",
-        "slug": "为什么-time-wait-状态时长是-2msl",
-        "link": "#为什么-time-wait-状态时长是-2msl",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "服务端出现大量 TIME_WAIT 原因有哪些？",
-        "slug": "服务端出现大量-time-wait-原因有哪些",
-        "link": "#服务端出现大量-time-wait-原因有哪些",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TCP 为什么可靠？",
-        "slug": "tcp-为什么可靠",
-        "link": "#tcp-为什么可靠",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是 TCP 粘包问题？",
-        "slug": "什么是-tcp-粘包问题",
-        "link": "#什么是-tcp-粘包问题",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/network/3-%E4%BC%A0%E8%BE%93%E5%B1%82.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "计算机网络概述",
-    "headers": [],
-    "path": "/dev/principle/network/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. 数据类型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "介绍一下 Redis 常用的数据类型，有哪些应用场景？底层是如何实现的？",
-        "slug": "介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
-        "link": "#介绍一下-redis-常用的数据类型-有哪些应用场景-底层是如何实现的",
-        "children": [
-          {
-            "level": 3,
-            "title": "String",
-            "slug": "string",
-            "link": "#string",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "List",
-            "slug": "list",
-            "link": "#list",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Set",
-            "slug": "set",
-            "link": "#set",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Hash",
-            "slug": "hash",
-            "link": "#hash",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ZSet",
-            "slug": "zset",
-            "link": "#zset",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/dev/principle/redis/1-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. 线程模型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Redis 为什么快？",
-        "slug": "redis-为什么快",
-        "link": "#redis-为什么快",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Redis 是单线程的吗？",
-        "slug": "redis-是单线程的吗",
-        "link": "#redis-是单线程的吗",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/redis/2-%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "3. 事务",
-    "headers": [
-      {
-        "level": 2,
-        "title": "原子性",
-        "slug": "原子性",
-        "link": "#原子性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "持久性",
-        "slug": "持久性",
-        "link": "#持久性",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/redis/3-%E4%BA%8B%E5%8A%A1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "4. 过期删除与内存淘汰",
-    "headers": [
-      {
-        "level": 2,
-        "title": "过期删除",
-        "slug": "过期删除",
-        "link": "#过期删除",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "淘汰策略",
-        "slug": "淘汰策略",
-        "link": "#淘汰策略",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/redis/4-%E8%BF%87%E6%9C%9F%E5%88%A0%E9%99%A4%E4%B8%8E%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "5. 集群",
-    "headers": [
-      {
-        "level": 2,
-        "title": "主从复制",
-        "slug": "主从复制",
-        "link": "#主从复制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "哨兵集群",
-        "slug": "哨兵集群",
-        "link": "#哨兵集群",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "分片集群",
-        "slug": "分片集群",
-        "link": "#分片集群",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/redis/5-%E9%9B%86%E7%BE%A4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "6. 缓存",
-    "headers": [],
-    "path": "/dev/principle/redis/6-%E7%BC%93%E5%AD%98.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "概述",
-    "headers": [],
-    "path": "/dev/principle/redis/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "1. IoC",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Spring IoC 是使用依赖注入实现的，什么是依赖注入？",
-        "slug": "spring-ioc-是使用依赖注入实现的-什么是依赖注入",
-        "link": "#spring-ioc-是使用依赖注入实现的-什么是依赖注入",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是 Spring Bean？",
-        "slug": "什么是-spring-bean",
-        "link": "#什么是-spring-bean",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "BeanFactory 是什么？",
-        "slug": "beanfactory-是什么",
-        "link": "#beanfactory-是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring ApplicationContext 是什么？",
-        "slug": "spring-applicationcontext-是什么",
-        "link": "#spring-applicationcontext-是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring Bean 有哪些作用域？",
-        "slug": "spring-bean-有哪些作用域",
-        "link": "#spring-bean-有哪些作用域",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring Bean 有哪些注入方式？",
-        "slug": "spring-bean-有哪些注入方式",
-        "link": "#spring-bean-有哪些注入方式",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring Bean 生命周期是怎样的？",
-        "slug": "spring-bean-生命周期是怎样的",
-        "link": "#spring-bean-生命周期是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring IoC 容器初始化过程是怎样的？",
-        "slug": "spring-ioc-容器初始化过程是怎样的",
-        "link": "#spring-ioc-容器初始化过程是怎样的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring Bean 注册到容器中有哪几种方式？",
-        "slug": "spring-bean-注册到容器中有哪几种方式",
-        "link": "#spring-bean-注册到容器中有哪几种方式",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring 装配方式有哪些？",
-        "slug": "spring-装配方式有哪些",
-        "link": "#spring-装配方式有哪些",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "如果 byType 装配方式出现多个符合条件的 Bean，如何消除歧义？",
-        "slug": "如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
-        "link": "#如果-bytype-装配方式出现多个符合条件的-bean-如何消除歧义",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring Bean 是否有并发安全问题？如果有，如何保证？",
-        "slug": "spring-bean-是否有并发安全问题-如果有-如何保证",
-        "link": "#spring-bean-是否有并发安全问题-如果有-如何保证",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring @value 注解有何作用？",
-        "slug": "spring-value-注解有何作用",
-        "link": "#spring-value-注解有何作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是循环依赖？如何解决？",
-        "slug": "什么是循环依赖-如何解决",
-        "link": "#什么是循环依赖-如何解决",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/spring/1-Ioc.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "2. AOP",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Spring AOP 是如何实现的？",
-        "slug": "spring-aop-是如何实现的",
-        "link": "#spring-aop-是如何实现的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring 事务有哪些传播行为？传播行为有什么用？",
-        "slug": "spring-事务有哪些传播行为-传播行为有什么用",
-        "link": "#spring-事务有哪些传播行为-传播行为有什么用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "@Transactional 注解在什么场景下会失效？",
-        "slug": "transactional-注解在什么场景下会失效",
-        "link": "#transactional-注解在什么场景下会失效",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/spring/2-aop.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "3. Spring MVC",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Spring MVC 是如何处理请求的？",
-        "slug": "spring-mvc-是如何处理请求的",
-        "link": "#spring-mvc-是如何处理请求的",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "@RequestBody 和 @ResponseBody 各有什么作用？",
-        "slug": "requestbody-和-responsebody-各有什么作用",
-        "link": "#requestbody-和-responsebody-各有什么作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "@PathVariable 注解有何作用？",
-        "slug": "pathvariable-注解有何作用",
-        "link": "#pathvariable-注解有何作用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spring MVC 如何进行全局异常处理？",
-        "slug": "spring-mvc-如何进行全局异常处理",
-        "link": "#spring-mvc-如何进行全局异常处理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "什么是 Restful 风格的接口？",
-        "slug": "什么是-restful-风格的接口",
-        "link": "#什么是-restful-风格的接口",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/spring/3-MVC.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "概述",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Spring 用到了那些设计模式？",
-        "slug": "spring-用到了那些设计模式",
-        "link": "#spring-用到了那些设计模式",
-        "children": []
-      }
-    ],
-    "path": "/dev/principle/spring/",
     "pathLocale": "/",
     "extraFields": []
   },

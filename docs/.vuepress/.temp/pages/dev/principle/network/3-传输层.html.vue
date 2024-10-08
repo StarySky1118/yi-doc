@@ -36,7 +36,7 @@
 <h2 id="为什么-time-wait-状态时长是-2msl" tabindex="-1"><a class="header-anchor" href="#为什么-time-wait-状态时长是-2msl"><span>为什么 TIME_WAIT 状态时长是 2MSL？</span></a></h2>
 <p>主动关闭方发送 ACK 报文后，会进入 TIME_WAIT 状态。
 当最后的 ACK 报文丢失，被动关闭方会重传 FIN 报文，主动关闭方会重传 ACK 报文，TIME_WAIT 状态时长是 2MSL，
-至少允许一次报文丢失。</p>
+这样可以允许一次 ACK 报文重传。</p>
 <h2 id="服务端出现大量-time-wait-原因有哪些" tabindex="-1"><a class="header-anchor" href="#服务端出现大量-time-wait-原因有哪些"><span>服务端出现大量 TIME_WAIT 原因有哪些？</span></a></h2>
 <p>服务端出现大量 TIME_WAIT 说明服务端主动关闭了大量 TCP 连接。</p>
 <p>产生此现象的一个原因是没有使用 HTTP 长连接，导致每进行一次 HTTP 请求-响应，都会建立并关闭连接。</p>
@@ -44,7 +44,7 @@
 <p>TCP 使用了序列号、确认号、超时重传、流量控制和拥塞控制等机制保证了可靠性。</p>
 <p>每个 TCP 报文都有序列号，并通过确认号进行确认。
 长时间收不到确认，就会触发超时重传。
-同时，TCP 使用流量控制与拥塞控制根据收发双方的能力和网络拥塞情况来确定数据传输速率。</p>
+同时，TCP 使用流量控制与拥塞控制根据收发双方的能力和网络拥塞情况来动态调整数据传输速率。</p>
 <h2 id="什么是-tcp-粘包问题" tabindex="-1"><a class="header-anchor" href="#什么是-tcp-粘包问题"><span>什么是 TCP 粘包问题？</span></a></h2>
 <p>TCP 是基于字节流的，应用层需要自行处理数据的重组与分段。</p>
 <p>常见的处理粘包问题的方法包括：</p>

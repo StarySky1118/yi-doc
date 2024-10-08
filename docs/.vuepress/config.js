@@ -9,7 +9,7 @@ export default defineUserConfig({
     base: '/yi-doc/',
 
     title: 'Yi-Docs',
-    description: '你好！我是子亿，一名计算机专业在读研究生。这是我的个人博客。',
+    description: '技术学习博客',
 
     theme: defaultTheme({
         // 导航栏
@@ -67,7 +67,8 @@ export default defineUserConfig({
                                         '/dev/principle/network/',
                                         '/dev/principle/network/1-网络模型',
                                         '/dev/principle/network/2-应用层',
-                                        '/dev/principle/network/3-传输层'
+                                        '/dev/principle/network/3-传输层',
+                                        '/dev/principle/network/4-MQTT详解'
                                     ]
                                 },
                                 {
@@ -89,7 +90,8 @@ export default defineUserConfig({
                                         '/dev/principle/spring/',
                                         '/dev/principle/spring/1-Ioc',
                                         '/dev/principle/spring/2-aop',
-                                        '/dev/principle/spring/3-MVC'
+                                        '/dev/principle/spring/3-MVC',
+                                        '/dev/principle/spring/4-SpringBoot'
                                     ]
                                 },
                                 {
@@ -99,7 +101,8 @@ export default defineUserConfig({
                                         '/dev/principle/java/',
                                         '/dev/principle/java/1-基础篇',
                                         '/dev/principle/java/2-集合',
-                                        '/dev/principle/java/3-并发'
+                                        '/dev/principle/java/3-并发',
+                                        '/dev/principle/java/4-虚拟机'
                                     ]
                                 },
                                 {
